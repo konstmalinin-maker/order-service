@@ -1,0 +1,179 @@
+name: pr8
+services:
+  user-service:
+    build:
+      context: ../user-service
+      secrets:
+      - proxy_ca
+    image: pr8-user-service:local
+    environment:
+      DATA_PATH: /data/users.sqlite3
+      OTEL_EXPORTER_OTLP_ENDPOINT: http://jaeger:4318
+    volumes:
+    - users-data:/data
+    healthcheck:
+      test:
+      - CMD
+      - python
+      - -c
+      - import urllib.request; urllib.request.urlopen('http://localhost:5001/health')
+      interval: 5s
+      timeout: 3s
+      retries: 12
+  order-service:
+    build:
+      context: .
+      secrets:
+      - proxy_ca
+    image: pr8-order-service:local
+    environment:
+      DATA_PATH: /data/orders.sqlite3
+      USER_SERVICE_URL: http://user-service:5001
+      RABBITMQ_URL: amqp://lab:lab-demo@rabbitmq:5672/%2F
+      OTEL_EXPORTER_OTLP_ENDPOINT: http://jaeger:4318
+    volumes:
+    - orders-data:/data
+    depends_on:
+      user-service:
+        condition: service_healthy
+      rabbitmq:
+        condition: service_healthy
+    healthcheck:
+      test:
+      - CMD
+      - python
+      - -c
+      - import urllib.request; urllib.request.urlopen('http://localhost:5002/health')
+      interval: 5s
+      timeout: 3s
+      retries: 12
+  notification-service:
+    image: pr8-order-service:local
+    command:
+    - uvicorn
+    - notification_service.main:app
+    - --host
+    - 0.0.0.0
+    - --port
+    - '5003'
+    environment:
+      DATA_PATH: /data/notifications.sqlite3
+      RABBITMQ_URL: amqp://lab:lab-demo@rabbitmq:5672/%2F
+      OTEL_EXPORTER_OTLP_ENDPOINT: http://jaeger:4318
+    volumes:
+    - notifications-data:/data
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
+    healthcheck:
+      test:
+      - CMD
+      - python
+      - -c
+      - import urllib.request; urllib.request.urlopen('http://localhost:5003/health')
+      interval: 5s
+      timeout: 3s
+      retries: 12
+  rabbitmq:
+    image: rabbitmq:4.1-management-alpine
+    environment:
+      RABBITMQ_DEFAULT_USER: lab
+      RABBITMQ_DEFAULT_PASS: lab-demo
+    ports:
+    - 127.0.0.1:5672:5672
+    - 127.0.0.1:15672:15672
+    volumes:
+    - rabbit-data:/var/lib/rabbitmq
+    healthcheck:
+      test:
+      - CMD
+      - rabbitmq-diagnostics
+      - -q
+      - ping
+      interval: 5s
+      timeout: 5s
+      retries: 24
+  gateway:
+    image: nginx:1.28-alpine
+    ports:
+    - 80:80
+    depends_on:
+      user-service:
+        condition: service_healthy
+      order-service:
+        condition: service_healthy
+      notification-service:
+        condition: service_healthy
+      config-init:
+        condition: service_completed_successfully
+    healthcheck:
+      test:
+      - CMD
+      - wget
+      - -q
+      - -O
+      - /dev/null
+      - http://localhost/health
+      interval: 5s
+      timeout: 3s
+      retries: 12
+    volumes:
+    - nginx-config:/etc/nginx:ro
+  prometheus:
+    image: prom/prometheus:v3.3.0
+    ports:
+    - 127.0.0.1:9090:9090
+    volumes:
+    - prometheus-data:/prometheus
+    - prometheus-config:/etc/prometheus:ro
+    depends_on:
+      config-init:
+        condition: service_completed_successfully
+  grafana:
+    image: grafana/grafana:11.6.0
+    ports:
+    - 127.0.0.1:3000:3000
+    environment:
+      GF_AUTH_ANONYMOUS_ENABLED: 'true'
+      GF_AUTH_ANONYMOUS_ORG_ROLE: Viewer
+      GF_AUTH_DISABLE_LOGIN_FORM: 'true'
+      GF_ANALYTICS_REPORTING_ENABLED: 'false'
+      GF_ANALYTICS_CHECK_FOR_UPDATES: 'false'
+    volumes:
+    - grafana-data:/var/lib/grafana
+    - grafana-config:/etc/grafana/provisioning:ro
+    - dashboard-config:/var/lib/grafana/dashboards:ro
+    depends_on:
+      config-init:
+        condition: service_completed_successfully
+  jaeger:
+    image: jaegertracing/all-in-one:1.68.0
+    ports:
+    - 127.0.0.1:16686:16686
+    environment:
+      COLLECTOR_OTLP_ENABLED: 'true'
+  config-init:
+    image: pr8-order-service:local
+    user: 0:0
+    command:
+    - python
+    - scripts/init_config.py
+    volumes:
+    - nginx-config:/config/nginx
+    - prometheus-config:/config/prometheus
+    - grafana-config:/config/grafana
+    - dashboard-config:/config/dashboards
+volumes:
+  users-data: null
+  orders-data: null
+  notifications-data: null
+  rabbit-data: null
+  prometheus-data: null
+  grafana-data: null
+  nginx-config: null
+  prometheus-config: null
+  grafana-config: null
+  dashboard-config: null
+secrets:
+  proxy_ca:
+    file: ${PR8_CA_BUNDLE:-/etc/ssl/certs/ca-certificates.crt}
