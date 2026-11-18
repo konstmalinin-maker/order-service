@@ -4,6 +4,9 @@ on:
   push:
     paths:
       - 'scripts/lab/**'
+      - 'scripts/init_config.py'
+      - 'docker-compose.yml'
+      - 'deploy/**'
       - '.github/workflows/compose-lab.yml'
 defaults:
   run:
