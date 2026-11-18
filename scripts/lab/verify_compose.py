@@ -29,7 +29,17 @@ def compose(*args):
 
 
 def screenshot(page, url, name):
-    page.goto(url, wait_until="networkidle", timeout=90000)
+    page.goto(url, wait_until="domcontentloaded", timeout=60000)
+    if ":3000/" in url:
+        page.get_by_text("RPS — запросы в секунду", exact=True).wait_for(timeout=60000)
+        page.locator("canvas").first.wait_for(timeout=60000)
+    elif "/docs/" in url:
+        page.locator(".swagger-ui .opblock").first.wait_for(timeout=30000)
+    elif "/trace/" in url:
+        page.get_by_text("user-service", exact=False).first.wait_for(timeout=30000)
+    else:
+        page.get_by_text("order-service", exact=False).first.wait_for(timeout=30000)
+    page.wait_for_timeout(3000)
     page.screenshot(path=str(OUT / (name + ".png")), full_page=True)
 
 
