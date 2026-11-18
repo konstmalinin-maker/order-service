@@ -1,0 +1,1484 @@
+test	Set up job	﻿2026-11-18T12:32:35.7329392Z Current runner version: '2.338.2'
+test	Set up job	2026-11-18T12:32:35.7357636Z ##[group]Runner Image Provisioner
+test	Set up job	2026-11-18T12:32:35.7358540Z Hosted Compute Agent
+test	Set up job	2026-11-18T12:32:35.7359648Z Version: 20261103.629
+test	Set up job	2026-11-18T12:32:35.7360336Z Commit: 15dbd9ccb5dbf34fae002b6ed1a2670f52df37bc
+test	Set up job	2026-11-18T12:32:35.7361143Z Build Date: 2026-11-03T17:26:59Z
+test	Set up job	2026-11-18T12:32:35.7361883Z Worker ID: {9c742cde-296b-422d-801e-c6fbf72a3dc9}
+test	Set up job	2026-11-18T12:32:35.7362575Z Region: westus
+test	Set up job	2026-11-18T12:32:35.7363172Z Cloud: Azure
+test	Set up job	2026-11-18T12:32:35.7363689Z ##[endgroup]
+test	Set up job	2026-11-18T12:32:35.7365280Z ##[group]Operating System
+test	Set up job	2026-11-18T12:32:35.7365998Z Ubuntu
+test	Set up job	2026-11-18T12:32:35.7366520Z 26.04.1
+test	Set up job	2026-11-18T12:32:35.7367112Z LTS
+test	Set up job	2026-11-18T12:32:35.7367609Z ##[endgroup]
+test	Set up job	2026-11-18T12:32:35.7368182Z ##[group]Runner Image
+test	Set up job	2026-11-18T12:32:35.7369045Z Image: ubuntu-26.04
+test	Set up job	2026-11-18T12:32:35.7369636Z Version: 20261111.196.1
+test	Set up job	2026-11-18T12:32:35.7370769Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261111.196/images/ubuntu/Ubuntu2604-Readme.md
+test	Set up job	2026-11-18T12:32:35.7372551Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261111.196
+test	Set up job	2026-11-18T12:32:35.7373608Z ##[endgroup]
+test	Set up job	2026-11-18T12:32:35.7374858Z ##[group]GITHUB_TOKEN Permissions
+test	Set up job	2026-11-18T12:32:35.7377057Z Contents: read
+test	Set up job	2026-11-18T12:32:35.7377699Z Metadata: read
+test	Set up job	2026-11-18T12:32:35.7378935Z ##[endgroup]
+test	Set up job	2026-11-18T12:32:35.7381165Z Secret source: Actions
+test	Set up job	2026-11-18T12:32:35.7382244Z Cache mode: write
+test	Set up job	2026-11-18T12:32:35.7382967Z Prepare workflow directory
+test	Set up job	2026-11-18T12:32:35.7741669Z Prepare all required actions
+test	Set up job	2026-11-18T12:32:35.7795306Z Getting action download info
+test	Set up job	2026-11-18T12:32:36.1388112Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+test	Set up job	2026-11-18T12:32:36.2892289Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+test	Set up job	2026-11-18T12:32:36.3918528Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+test	Set up job	2026-11-18T12:32:36.5857422Z Complete job name: test
+test	Run actions/checkout@v4	﻿2026-11-18T12:32:36.6787159Z ##[group]Run actions/checkout@v4
+test	Run actions/checkout@v4	2026-11-18T12:32:36.6788089Z with:
+test	Run actions/checkout@v4	2026-11-18T12:32:36.6788598Z   repository: konstmalinin-maker/user-service
+test	Run actions/checkout@v4	2026-11-18T12:32:36.6792528Z   token: ***
+test	Run actions/checkout@v4	2026-11-18T12:32:36.6792972Z   ssh-strict: true
+test	Run actions/checkout@v4	2026-11-18T12:32:36.6793406Z   ssh-user: git
+test	Run actions/checkout@v4	2026-11-18T12:32:36.6793855Z   persist-credentials: true
+test	Run actions/checkout@v4	2026-11-18T12:32:36.6794341Z   clean: true
+test	Run actions/checkout@v4	2026-11-18T12:32:36.6794785Z   sparse-checkout-cone-mode: true
+test	Run actions/checkout@v4	2026-11-18T12:32:36.6795312Z   fetch-depth: 1
+test	Run actions/checkout@v4	2026-11-18T12:32:36.6795740Z   fetch-tags: false
+test	Run actions/checkout@v4	2026-11-18T12:32:36.6796177Z   show-progress: true
+test	Run actions/checkout@v4	2026-11-18T12:32:36.6796619Z   lfs: false
+test	Run actions/checkout@v4	2026-11-18T12:32:36.6797031Z   submodules: false
+test	Run actions/checkout@v4	2026-11-18T12:32:36.6797475Z   set-safe-directory: true
+test	Run actions/checkout@v4	2026-11-18T12:32:36.6797971Z   allow-unsafe-pr-checkout: false
+test	Run actions/checkout@v4	2026-11-18T12:32:36.6798877Z ##[endgroup]
+test	Run actions/checkout@v4	2026-11-18T12:32:36.9405210Z Syncing repository: konstmalinin-maker/user-service
+test	Run actions/checkout@v4	2026-11-18T12:32:36.9408210Z ##[group]Getting Git version info
+test	Run actions/checkout@v4	2026-11-18T12:32:36.9409869Z Working directory is '/home/runner/work/user-service/user-service'
+test	Run actions/checkout@v4	2026-11-18T12:32:36.9411811Z [command]/usr/bin/git version
+test	Run actions/checkout@v4	2026-11-18T12:32:36.9426296Z git version 2.56.1
+test	Run actions/checkout@v4	2026-11-18T12:32:36.9453810Z ##[endgroup]
+test	Run actions/checkout@v4	2026-11-18T12:32:36.9471518Z Temporarily overriding HOME='/home/runner/work/_temp/e841c072-372d-4fc4-af0c-c7ba3fd55ab0' before making global git config changes
+test	Run actions/checkout@v4	2026-11-18T12:32:36.9473988Z Adding repository directory to the temporary git global config as a safe directory
+test	Run actions/checkout@v4	2026-11-18T12:32:36.9477417Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/user-service/user-service
+test	Run actions/checkout@v4	2026-11-18T12:32:36.9556827Z Deleting the contents of '/home/runner/work/user-service/user-service'
+test	Run actions/checkout@v4	2026-11-18T12:32:36.9559071Z ##[group]Initializing the repository
+test	Run actions/checkout@v4	2026-11-18T12:32:36.9560262Z [command]/usr/bin/git init /home/runner/work/user-service/user-service
+test	Run actions/checkout@v4	2026-11-18T12:32:36.9662104Z hint: Using 'master' as the name for the initial branch. This default branch name
+test	Run actions/checkout@v4	2026-11-18T12:32:36.9664419Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+test	Run actions/checkout@v4	2026-11-18T12:32:36.9666327Z hint: to use in all of your new repositories, which will suppress this warning,
+test	Run actions/checkout@v4	2026-11-18T12:32:36.9667985Z hint: call:
+test	Run actions/checkout@v4	2026-11-18T12:32:36.9668915Z hint:
+test	Run actions/checkout@v4	2026-11-18T12:32:36.9670288Z hint: 	git config --global init.defaultBranch <name>
+test	Run actions/checkout@v4	2026-11-18T12:32:36.9671612Z hint:
+test	Run actions/checkout@v4	2026-11-18T12:32:36.9672731Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+test	Run actions/checkout@v4	2026-11-18T12:32:36.9674454Z hint: 'development'. The just-created branch can be renamed via this command:
+test	Run actions/checkout@v4	2026-11-18T12:32:36.9675799Z hint:
+test	Run actions/checkout@v4	2026-11-18T12:32:36.9676604Z hint: 	git branch -m <name>
+test	Run actions/checkout@v4	2026-11-18T12:32:36.9677468Z hint:
+test	Run actions/checkout@v4	2026-11-18T12:32:36.9678485Z hint: Disable this message with "git config set advice.defaultBranchName false"
+test	Run actions/checkout@v4	2026-11-18T12:32:36.9680418Z Initialized empty Git repository in /home/runner/work/user-service/user-service/.git/
+test	Run actions/checkout@v4	2026-11-18T12:32:36.9687127Z [command]/usr/bin/git remote add origin https://github.com/konstmalinin-maker/user-service
+test	Run actions/checkout@v4	2026-11-18T12:32:36.9745589Z ##[endgroup]
+test	Run actions/checkout@v4	2026-11-18T12:32:36.9746915Z ##[group]Disabling automatic garbage collection
+test	Run actions/checkout@v4	2026-11-18T12:32:36.9751435Z [command]/usr/bin/git config --local gc.auto 0
+test	Run actions/checkout@v4	2026-11-18T12:32:36.9789493Z ##[endgroup]
+test	Run actions/checkout@v4	2026-11-18T12:32:36.9791227Z ##[group]Setting up auth
+test	Run actions/checkout@v4	2026-11-18T12:32:36.9800150Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test	Run actions/checkout@v4	2026-11-18T12:32:36.9835181Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test	Run actions/checkout@v4	2026-11-18T12:32:37.0353341Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test	Run actions/checkout@v4	2026-11-18T12:32:37.0403485Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test	Run actions/checkout@v4	2026-11-18T12:32:37.0695266Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+test	Run actions/checkout@v4	2026-11-18T12:32:37.0735681Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+test	Run actions/checkout@v4	2026-11-18T12:32:37.1020458Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+test	Run actions/checkout@v4	2026-11-18T12:32:37.1062447Z ##[endgroup]
+test	Run actions/checkout@v4	2026-11-18T12:32:37.1072044Z ##[group]Fetching the repository
+test	Run actions/checkout@v4	2026-11-18T12:32:37.1073633Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +59ad3d2126040f164dd3a172d9884e389c9268aa:refs/remotes/origin/main
+test	Run actions/checkout@v4	2026-11-18T12:32:38.0396268Z From https://github.com/konstmalinin-maker/user-service
+test	Run actions/checkout@v4	2026-11-18T12:32:38.0399051Z  * [new ref]         59ad3d2126040f164dd3a172d9884e389c9268aa -> origin/main
+test	Run actions/checkout@v4	2026-11-18T12:32:38.0405332Z ##[endgroup]
+test	Run actions/checkout@v4	2026-11-18T12:32:38.0407659Z ##[group]Determining the checkout info
+test	Run actions/checkout@v4	2026-11-18T12:32:38.0410765Z ##[endgroup]
+test	Run actions/checkout@v4	2026-11-18T12:32:38.0413104Z [command]/usr/bin/git sparse-checkout disable
+test	Run actions/checkout@v4	2026-11-18T12:32:38.0475115Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+test	Run actions/checkout@v4	2026-11-18T12:32:38.0509005Z ##[group]Checking out the ref
+test	Run actions/checkout@v4	2026-11-18T12:32:38.0513992Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+test	Run actions/checkout@v4	2026-11-18T12:32:38.0664662Z Switched to a new branch 'main'
+test	Run actions/checkout@v4	2026-11-18T12:32:38.0673713Z branch 'main' set up to track 'origin/main'.
+test	Run actions/checkout@v4	2026-11-18T12:32:38.0682173Z ##[endgroup]
+test	Run actions/checkout@v4	2026-11-18T12:32:38.0728684Z [command]/usr/bin/git log -1 --format=%H
+test	Run actions/checkout@v4	2026-11-18T12:32:38.0755094Z 59ad3d2126040f164dd3a172d9884e389c9268aa
+test	Run actions/setup-python@v5	﻿2026-11-18T12:32:38.1172735Z ##[group]Run actions/setup-python@v5
+test	Run actions/setup-python@v5	2026-11-18T12:32:38.1174132Z with:
+test	Run actions/setup-python@v5	2026-11-18T12:32:38.1175068Z   python-version: 3.12
+test	Run actions/setup-python@v5	2026-11-18T12:32:38.1176128Z   cache: pip
+test	Run actions/setup-python@v5	2026-11-18T12:32:38.1177091Z   check-latest: false
+test	Run actions/setup-python@v5	2026-11-18T12:32:38.1187322Z   token: ***
+test	Run actions/setup-python@v5	2026-11-18T12:32:38.1188352Z   update-environment: true
+test	Run actions/setup-python@v5	2026-11-18T12:32:38.1189645Z   allow-prereleases: false
+test	Run actions/setup-python@v5	2026-11-18T12:32:38.1190783Z   freethreaded: false
+test	Run actions/setup-python@v5	2026-11-18T12:32:38.1191813Z ##[endgroup]
+test	Run actions/setup-python@v5	2026-11-18T12:32:38.2894836Z ##[group]Installed versions
+test	Run actions/setup-python@v5	2026-11-18T12:32:38.3812183Z (node:2368) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+test	Run actions/setup-python@v5	2026-11-18T12:32:38.3813337Z (Use `node --trace-deprecation ...` to show where the warning was created)
+test	Run actions/setup-python@v5	2026-11-18T12:32:38.3814228Z Successfully set up CPython (3.12.16)
+test	Run actions/setup-python@v5	2026-11-18T12:32:38.3814949Z ##[endgroup]
+test	Run actions/setup-python@v5	2026-11-18T12:32:38.4693926Z [command]/opt/hostedtoolcache/Python/3.12.16/x64/bin/pip cache dir
+test	Run actions/setup-python@v5	2026-11-18T12:32:40.2499870Z /home/runner/.cache/pip
+test	Run actions/setup-python@v5	2026-11-18T12:32:40.5405131Z Cache hit for: setup-python-Linux-x64-26.04-Ubuntu-python-3.12.16-pip-a10eabb5dfe57f06cd07e7940349f56de734b219d59847643f6275f4a01c4e9e
+test	Run actions/setup-python@v5	2026-11-18T12:32:40.5564544Z (node:2368) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+test	Run actions/setup-python@v5	2026-11-18T12:32:41.8354247Z Received 11477475 of 28254691 (40.6%), 10.9 MBs/sec
+test	Run actions/setup-python@v5	2026-11-18T12:32:41.9756507Z Received 28254691 of 28254691 (100.0%), 23.6 MBs/sec
+test	Run actions/setup-python@v5	2026-11-18T12:32:41.9757467Z Cache Size: ~27 MB (28254691 B)
+test	Run actions/setup-python@v5	2026-11-18T12:32:41.9788141Z [command]/usr/bin/tar -xf /home/runner/work/_temp/d0dbd92e-2df3-40e8-8a52-8656ba5f86c9/cache.tzst -P -C /home/runner/work/user-service/user-service --use-compress-program unzstd
+test	Run actions/setup-python@v5	2026-11-18T12:32:42.0772560Z Cache restored successfully
+test	Run actions/setup-python@v5	2026-11-18T12:32:42.0790032Z Cache restored from key: setup-python-Linux-x64-26.04-Ubuntu-python-3.12.16-pip-a10eabb5dfe57f06cd07e7940349f56de734b219d59847643f6275f4a01c4e9e
+test	Run pip install -r requirements.txt	﻿2026-11-18T12:32:42.1011901Z ##[group]Run pip install -r requirements.txt
+test	Run pip install -r requirements.txt	2026-11-18T12:32:42.1012348Z [36;1mpip install -r requirements.txt[0m
+test	Run pip install -r requirements.txt	2026-11-18T12:32:42.1069511Z shell: /usr/bin/bash -e {0}
+test	Run pip install -r requirements.txt	2026-11-18T12:32:42.1069819Z env:
+test	Run pip install -r requirements.txt	2026-11-18T12:32:42.1070105Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+test	Run pip install -r requirements.txt	2026-11-18T12:32:42.1070563Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+test	Run pip install -r requirements.txt	2026-11-18T12:32:42.1071031Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+test	Run pip install -r requirements.txt	2026-11-18T12:32:42.1071414Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+test	Run pip install -r requirements.txt	2026-11-18T12:32:42.1071816Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+test	Run pip install -r requirements.txt	2026-11-18T12:32:42.1072225Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+test	Run pip install -r requirements.txt	2026-11-18T12:32:42.1072581Z ##[endgroup]
+test	Run pip install -r requirements.txt	2026-11-18T12:32:43.7320335Z Collecting fastapi==0.115.12 (from -r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 1))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:43.7333764Z   Using cached fastapi-0.115.12-py3-none-any.whl.metadata (27 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:43.7551690Z Collecting uvicorn==0.54.0 (from -r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 2))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:43.7563993Z   Using cached uvicorn-0.54.0-py3-none-any.whl.metadata (6.6 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:43.8635016Z Collecting pydantic==2.11.7 (from -r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 3))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:43.8648093Z   Using cached pydantic-2.11.7-py3-none-any.whl.metadata (67 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:43.8765744Z Collecting email-validator==2.4.0 (from -r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 4))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:43.8777243Z   Using cached email_validator-2.4.0-py3-none-any.whl.metadata (26 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:43.8909826Z Collecting httpx==0.28.1 (from -r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 5))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:43.8922169Z   Using cached httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:43.9044430Z Collecting Flask==3.1.3 (from -r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 6))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:43.9056352Z   Using cached flask-3.1.3-py3-none-any.whl.metadata (3.2 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:43.9165654Z Collecting prometheus_flask_exporter==0.23.2 (from -r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 7))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:43.9177268Z   Using cached prometheus_flask_exporter-0.23.2-py3-none-any.whl.metadata (20 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:43.9314243Z Collecting prometheus_client==0.26.0 (from -r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 8))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:43.9326657Z   Using cached prometheus_client-0.26.0-py3-none-any.whl.metadata (2.1 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:43.9471245Z Collecting opentelemetry-sdk==1.34.1 (from -r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 9))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:43.9482505Z   Using cached opentelemetry_sdk-1.34.1-py3-none-any.whl.metadata (1.6 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:43.9603861Z Collecting opentelemetry-exporter-otlp-proto-http==1.34.1 (from -r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 10))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:43.9614936Z   Using cached opentelemetry_exporter_otlp_proto_http-1.34.1-py3-none-any.whl.metadata (2.3 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:43.9750873Z Collecting opentelemetry-instrumentation-fastapi==0.55b1 (from -r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 11))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:43.9762248Z   Using cached opentelemetry_instrumentation_fastapi-0.55b1-py3-none-any.whl.metadata (2.2 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:43.9886807Z Collecting opentelemetry-instrumentation-httpx==0.55b1 (from -r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 12))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:43.9898319Z   Using cached opentelemetry_instrumentation_httpx-0.55b1-py3-none-any.whl.metadata (7.3 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:44.0009946Z Collecting pika==1.5.0 (from -r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 13))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:44.0021309Z   Using cached pika-1.5.0-py3-none-any.whl.metadata (14 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:44.0127153Z Collecting attrs==26.1.0 (from -r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 14))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:44.0138945Z   Using cached attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:44.0239312Z Collecting python-dateutil==2.9.0.post0 (from -r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 15))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:44.0250151Z   Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:44.0467534Z Collecting pytest==9.2.0 (from -r requirements.txt (line 2))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:44.0479654Z   Using cached pytest-9.2.0-py3-none-any.whl.metadata (7.9 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:44.0593624Z Collecting pytest-cov==7.1.0 (from -r requirements.txt (line 3))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:44.0605556Z   Using cached pytest_cov-7.1.0-py3-none-any.whl.metadata (32 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:44.3825814Z Collecting ruff==0.9.10 (from -r requirements.txt (line 4))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:44.3840120Z   Using cached ruff-0.9.10-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (25 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:44.4036599Z Collecting openapi-python-client==0.24.0 (from -r requirements.txt (line 5))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:44.4052112Z   Using cached openapi_python_client-0.24.0-py3-none-any.whl.metadata (11 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:44.4254644Z Collecting starlette<0.47.0,>=0.40.0 (from fastapi==0.115.12->-r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 1))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:44.4270807Z   Using cached starlette-0.46.2-py3-none-any.whl.metadata (6.2 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:44.4414476Z Collecting typing-extensions>=4.8.0 (from fastapi==0.115.12->-r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 1))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:44.4426683Z   Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:44.4508254Z Collecting annotated-types>=0.6.0 (from pydantic==2.11.7->-r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 3))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:44.4524849Z   Using cached annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.1177484Z Collecting pydantic-core==2.33.2 (from pydantic==2.11.7->-r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 3))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.1192214Z   Using cached pydantic_core-2.33.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.8 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.1286252Z Collecting typing-inspection>=0.4.0 (from pydantic==2.11.7->-r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 3))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.1299677Z   Using cached typing_inspection-0.4.5-py3-none-any.whl.metadata (2.6 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.1435696Z Collecting click>=7.0 (from uvicorn==0.54.0->-r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 2))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.1447830Z   Using cached click-8.5.1-py3-none-any.whl.metadata (2.6 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.1527732Z Collecting h11>=0.8 (from uvicorn==0.54.0->-r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 2))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.1539455Z   Using cached h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.1648168Z Collecting dnspython>=2.0.0 (from email-validator==2.4.0->-r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 4))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.1659868Z   Using cached dnspython-2.9.2-py3-none-any.whl.metadata (5.8 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.1794992Z Collecting idna>=2.0.0 (from email-validator==2.4.0->-r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 4))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.1806510Z   Using cached idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.1963683Z Collecting anyio (from httpx==0.28.1->-r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 5))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.1975841Z   Using cached anyio-4.16.0-py3-none-any.whl.metadata (4.7 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.2131098Z Collecting certifi (from httpx==0.28.1->-r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 5))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.2142936Z   Using cached certifi-2026.10.23-py3-none-any.whl.metadata (2.5 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.2586817Z Collecting httpcore==1.* (from httpx==0.28.1->-r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 5))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.2599305Z   Using cached httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.2744939Z Collecting blinker>=1.9.0 (from Flask==3.1.3->-r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 6))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.2756619Z   Using cached blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.2862986Z Collecting itsdangerous>=2.2.0 (from Flask==3.1.3->-r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 6))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.2874465Z   Using cached itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.2975577Z Collecting jinja2>=3.1.2 (from Flask==3.1.3->-r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 6))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.2987186Z   Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.3482008Z Collecting markupsafe>=2.1.1 (from Flask==3.1.3->-r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 6))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.3495541Z   Using cached markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.3640504Z Collecting werkzeug>=3.1.0 (from Flask==3.1.3->-r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 6))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.3652211Z   Using cached werkzeug-3.1.9-py3-none-any.whl.metadata (4.1 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.3803456Z Collecting opentelemetry-api==1.34.1 (from opentelemetry-sdk==1.34.1->-r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 9))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.3815121Z   Using cached opentelemetry_api-1.34.1-py3-none-any.whl.metadata (1.5 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.3941673Z Collecting opentelemetry-semantic-conventions==0.55b1 (from opentelemetry-sdk==1.34.1->-r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 9))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.3953627Z   Using cached opentelemetry_semantic_conventions-0.55b1-py3-none-any.whl.metadata (2.5 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.4108263Z Collecting googleapis-common-protos~=1.52 (from opentelemetry-exporter-otlp-proto-http==1.34.1->-r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 10))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.4120287Z   Using cached googleapis_common_protos-1.76.0-py3-none-any.whl.metadata (8.5 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.4229182Z Collecting opentelemetry-exporter-otlp-proto-common==1.34.1 (from opentelemetry-exporter-otlp-proto-http==1.34.1->-r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 10))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.4240894Z   Using cached opentelemetry_exporter_otlp_proto_common-1.34.1-py3-none-any.whl.metadata (1.9 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.4380339Z Collecting opentelemetry-proto==1.34.1 (from opentelemetry-exporter-otlp-proto-http==1.34.1->-r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 10))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.4392895Z   Using cached opentelemetry_proto-1.34.1-py3-none-any.whl.metadata (2.4 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.4582281Z Collecting requests~=2.7 (from opentelemetry-exporter-otlp-proto-http==1.34.1->-r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 10))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.4594282Z   Using cached requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.4805405Z Collecting importlib-metadata<8.8.0,>=6.0 (from opentelemetry-api==1.34.1->opentelemetry-sdk==1.34.1->-r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 9))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.4817655Z   Using cached importlib_metadata-8.7.1-py3-none-any.whl.metadata (4.7 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.4982482Z Collecting opentelemetry-instrumentation-asgi==0.55b1 (from opentelemetry-instrumentation-fastapi==0.55b1->-r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 11))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.4994390Z   Using cached opentelemetry_instrumentation_asgi-0.55b1-py3-none-any.whl.metadata (2.0 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.5179763Z Collecting opentelemetry-instrumentation==0.55b1 (from opentelemetry-instrumentation-fastapi==0.55b1->-r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 11))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.5191687Z   Using cached opentelemetry_instrumentation-0.55b1-py3-none-any.whl.metadata (6.7 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.5325914Z Collecting opentelemetry-util-http==0.55b1 (from opentelemetry-instrumentation-fastapi==0.55b1->-r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 11))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.5338397Z   Using cached opentelemetry_util_http-0.55b1-py3-none-any.whl.metadata (2.6 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.8726063Z Collecting wrapt<2.0.0,>=1.0.0 (from opentelemetry-instrumentation-httpx==0.55b1->-r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 12))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.8740362Z   Using cached wrapt-1.17.3-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.4 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.8856560Z Collecting six>=1.5 (from python-dateutil==2.9.0.post0->-r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 15))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.8868213Z   Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.8947235Z Collecting iniconfig>=2 (from pytest==9.2.0->-r requirements.txt (line 2))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.8959155Z   Using cached iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.9070285Z Collecting packaging>=24 (from pytest==9.2.0->-r requirements.txt (line 2))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.9082535Z   Using cached packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.9171906Z Collecting pluggy<2,>=1.6 (from pytest==9.2.0->-r requirements.txt (line 2))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.9183914Z   Using cached pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.9320566Z Collecting pygments>=2.15 (from pytest==9.2.0->-r requirements.txt (line 2))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:45.9332675Z   Using cached pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:46.3596612Z Collecting coverage>=7.10.6 (from coverage[toml]>=7.10.6->pytest-cov==7.1.0->-r requirements.txt (line 3))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:46.3611906Z   Using cached coverage-7.17.3-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (8.3 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:46.4720108Z Collecting ruamel-yaml<0.19.0,>=0.18.6 (from openapi-python-client==0.24.0->-r requirements.txt (line 5))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:46.4734479Z   Using cached ruamel_yaml-0.18.17-py3-none-any.whl.metadata (27 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:46.4862220Z Collecting shellingham<2.0.0,>=1.3.2 (from openapi-python-client==0.24.0->-r requirements.txt (line 5))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:46.4874999Z   Using cached shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:46.5054735Z Collecting typer<0.16,>0.6 (from openapi-python-client==0.24.0->-r requirements.txt (line 5))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:46.5066235Z   Using cached typer-0.15.4-py3-none-any.whl.metadata (15 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:46.5261031Z Collecting asgiref~=3.0 (from opentelemetry-instrumentation-asgi==0.55b1->opentelemetry-instrumentation-fastapi==0.55b1->-r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 11))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:46.5271438Z   Using cached asgiref-3.13.0-py3-none-any.whl.metadata (12 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:46.6637059Z Collecting protobuf<6.0,>=5.0 (from opentelemetry-proto==1.34.1->opentelemetry-exporter-otlp-proto-http==1.34.1->-r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 10))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:46.6650073Z   Using cached protobuf-5.29.6-cp38-abi3-manylinux2014_x86_64.whl.metadata (592 bytes)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:46.6718349Z Collecting googleapis-common-protos~=1.52 (from opentelemetry-exporter-otlp-proto-http==1.34.1->-r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 10))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:46.6730215Z   Using cached googleapis_common_protos-1.75.5-py3-none-any.whl.metadata (8.5 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:46.6750116Z INFO: pip is looking at multiple versions of googleapis-common-protos to determine which version is compatible with other requirements. This could take a while.
+test	Run pip install -r requirements.txt	2026-11-18T12:32:46.6766127Z   Using cached googleapis_common_protos-1.75.4-py3-none-any.whl.metadata (8.5 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:46.6798325Z   Using cached googleapis_common_protos-1.75.3-py3-none-any.whl.metadata (8.5 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:46.6830704Z   Using cached googleapis_common_protos-1.75.2-py3-none-any.whl.metadata (8.5 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:46.6863549Z   Using cached googleapis_common_protos-1.75.1-py3-none-any.whl.metadata (8.5 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:46.6895567Z   Using cached googleapis_common_protos-1.75.0-py3-none-any.whl.metadata (8.6 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:46.7077217Z Collecting zipp>=3.20 (from importlib-metadata<8.8.0,>=6.0->opentelemetry-api==1.34.1->opentelemetry-sdk==1.34.1->-r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 9))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:46.7088207Z   Using cached zipp-4.1.2-py3-none-any.whl.metadata (3.6 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:46.8707017Z Collecting charset_normalizer<4,>=2 (from requests~=2.7->opentelemetry-exporter-otlp-proto-http==1.34.1->-r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 10))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:46.8721703Z   Using cached charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:46.8948240Z Collecting urllib3<3,>=1.26 (from requests~=2.7->opentelemetry-exporter-otlp-proto-http==1.34.1->-r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 10))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:46.8960916Z   Using cached urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:46.9319637Z Collecting ruamel.yaml.clib>=0.2.15 (from ruamel-yaml<0.19.0,>=0.18.6->openapi-python-client==0.24.0->-r requirements.txt (line 5))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:46.9332490Z   Using cached ruamel_yaml_clib-0.2.15-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (3.5 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:46.9423384Z Collecting click>=7.0 (from uvicorn==0.54.0->-r /home/runner/work/user-service/user-service/requirements-runtime.txt (line 2))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:46.9435928Z   Using cached click-8.1.8-py3-none-any.whl.metadata (2.3 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:46.9717921Z Collecting rich>=10.11.0 (from typer<0.16,>0.6->openapi-python-client==0.24.0->-r requirements.txt (line 5))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:46.9731211Z   Using cached rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:46.9955260Z Collecting markdown-it-py>=2.2.0 (from rich>=10.11.0->typer<0.16,>0.6->openapi-python-client==0.24.0->-r requirements.txt (line 5))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:46.9967892Z   Using cached markdown_it_py-4.3.0-py3-none-any.whl.metadata (7.9 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0079008Z Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=10.11.0->typer<0.16,>0.6->openapi-python-client==0.24.0->-r requirements.txt (line 5))
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0090856Z   Using cached mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0171517Z Using cached fastapi-0.115.12-py3-none-any.whl (95 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0183845Z Using cached pydantic-2.11.7-py3-none-any.whl (444 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0197249Z Using cached uvicorn-0.54.0-py3-none-any.whl (87 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0209442Z Using cached email_validator-2.4.0-py3-none-any.whl (36 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0221115Z Using cached httpx-0.28.1-py3-none-any.whl (73 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0232821Z Using cached flask-3.1.3-py3-none-any.whl (103 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0244928Z Using cached prometheus_flask_exporter-0.23.2-py3-none-any.whl (19 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0256413Z Using cached prometheus_client-0.26.0-py3-none-any.whl (64 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0268935Z Using cached opentelemetry_sdk-1.34.1-py3-none-any.whl (118 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0281065Z Using cached opentelemetry_exporter_otlp_proto_http-1.34.1-py3-none-any.whl (17 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0292377Z Using cached opentelemetry_api-1.34.1-py3-none-any.whl (65 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0304298Z Using cached opentelemetry_instrumentation_fastapi-0.55b1-py3-none-any.whl (12 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0315919Z Using cached opentelemetry_instrumentation_httpx-0.55b1-py3-none-any.whl (15 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0327175Z Using cached pika-1.5.0-py3-none-any.whl (209 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0339463Z Using cached attrs-26.1.0-py3-none-any.whl (67 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0351333Z Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0363628Z Using cached pytest-9.2.0-py3-none-any.whl (411 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0376613Z Using cached pytest_cov-7.1.0-py3-none-any.whl (22 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0388172Z Using cached ruff-0.9.10-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.3 MB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0444054Z Using cached openapi_python_client-0.24.0-py3-none-any.whl (180 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0456163Z Using cached opentelemetry_exporter_otlp_proto_common-1.34.1-py3-none-any.whl (18 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0467636Z Using cached opentelemetry_instrumentation-0.55b1-py3-none-any.whl (31 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0479402Z Using cached opentelemetry_instrumentation_asgi-0.55b1-py3-none-any.whl (16 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0490851Z Using cached opentelemetry_proto-1.34.1-py3-none-any.whl (55 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0502572Z Using cached opentelemetry_semantic_conventions-0.55b1-py3-none-any.whl (196 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0514743Z Using cached opentelemetry_util_http-0.55b1-py3-none-any.whl (7.3 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0526654Z Using cached pydantic_core-2.33.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.0 MB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0545842Z Using cached asgiref-3.13.0-py3-none-any.whl (27 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0557672Z Using cached googleapis_common_protos-1.75.0-py3-none-any.whl (300 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0570362Z Using cached httpcore-1.0.9-py3-none-any.whl (78 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0582244Z Using cached importlib_metadata-8.7.1-py3-none-any.whl (27 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0593899Z Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0605753Z Using cached pluggy-1.7.0-py3-none-any.whl (27 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0617692Z Using cached protobuf-5.29.6-cp38-abi3-manylinux2014_x86_64.whl (320 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0630394Z Using cached requests-2.34.2-py3-none-any.whl (73 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0642540Z Using cached charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (257 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0654633Z Using cached idna-3.20-py3-none-any.whl (69 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0666358Z Using cached ruamel_yaml-0.18.17-py3-none-any.whl (121 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0678096Z Using cached shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0691880Z Using cached starlette-0.46.2-py3-none-any.whl (72 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0703782Z Using cached anyio-4.16.0-py3-none-any.whl (134 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0715616Z Using cached typer-0.15.4-py3-none-any.whl (45 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0727239Z Using cached click-8.1.8-py3-none-any.whl (98 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0739140Z Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0750845Z Using cached urllib3-2.8.0-py3-none-any.whl (135 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0763083Z Using cached wrapt-1.17.3-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (88 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0774945Z Using cached annotated_types-0.8.0-py3-none-any.whl (13 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0786498Z Using cached blinker-1.9.0-py3-none-any.whl (8.5 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0798191Z Using cached certifi-2026.10.23-py3-none-any.whl (135 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0810701Z Using cached coverage-7.17.3-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (264 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0822946Z Using cached dnspython-2.9.2-py3-none-any.whl (360 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0835502Z Using cached h11-0.16.0-py3-none-any.whl (37 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0847246Z Using cached iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0859141Z Using cached itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0870905Z Using cached markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0882111Z Using cached packaging-26.3-py3-none-any.whl (129 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0894084Z Using cached pygments-2.21.0-py3-none-any.whl (1.3 MB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0910489Z Using cached rich-15.0.0-py3-none-any.whl (310 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0923018Z Using cached markdown_it_py-4.3.0-py3-none-any.whl (96 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0935009Z Using cached mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0947017Z Using cached ruamel_yaml_clib-0.2.15-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (788 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0961369Z Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0972993Z Using cached typing_inspection-0.4.5-py3-none-any.whl (14 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0984572Z Using cached werkzeug-3.1.9-py3-none-any.whl (228 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.0996634Z Using cached zipp-4.1.2-py3-none-any.whl (10 kB)
+test	Run pip install -r requirements.txt	2026-11-18T12:32:47.5687367Z Installing collected packages: zipp, wrapt, urllib3, typing-extensions, six, shellingham, ruff, ruamel.yaml.clib, pygments, protobuf, prometheus_client, pluggy, pika, packaging, opentelemetry-util-http, mdurl, markupsafe, itsdangerous, iniconfig, idna, h11, dnspython, coverage, click, charset_normalizer, certifi, blinker, attrs, asgiref, annotated-types, werkzeug, uvicorn, typing-inspection, ruamel-yaml, requests, python-dateutil, pytest, pydantic-core, opentelemetry-proto, markdown-it-py, jinja2, importlib-metadata, httpcore, googleapis-common-protos, email-validator, anyio, starlette, rich, pytest-cov, pydantic, opentelemetry-exporter-otlp-proto-common, opentelemetry-api, httpx, Flask, typer, prometheus_flask_exporter, opentelemetry-semantic-conventions, fastapi, opentelemetry-sdk, opentelemetry-instrumentation, openapi-python-client, opentelemetry-instrumentation-httpx, opentelemetry-instrumentation-asgi, opentelemetry-exporter-otlp-proto-http, opentelemetry-instrumentation-fastapi
+test	Run pip install -r requirements.txt	2026-11-18T12:32:52.0170561Z 
+test	Run pip install -r requirements.txt	2026-11-18T12:32:52.0228121Z Successfully installed Flask-3.1.3 annotated-types-0.8.0 anyio-4.16.0 asgiref-3.13.0 attrs-26.1.0 blinker-1.9.0 certifi-2026.10.23 charset_normalizer-3.5.2 click-8.1.8 coverage-7.17.3 dnspython-2.9.2 email-validator-2.4.0 fastapi-0.115.12 googleapis-common-protos-1.75.0 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 idna-3.20 importlib-metadata-8.7.1 iniconfig-2.3.1 itsdangerous-2.2.0 jinja2-3.1.6 markdown-it-py-4.3.0 markupsafe-3.0.4 mdurl-0.1.2 openapi-python-client-0.24.0 opentelemetry-api-1.34.1 opentelemetry-exporter-otlp-proto-common-1.34.1 opentelemetry-exporter-otlp-proto-http-1.34.1 opentelemetry-instrumentation-0.55b1 opentelemetry-instrumentation-asgi-0.55b1 opentelemetry-instrumentation-fastapi-0.55b1 opentelemetry-instrumentation-httpx-0.55b1 opentelemetry-proto-1.34.1 opentelemetry-sdk-1.34.1 opentelemetry-semantic-conventions-0.55b1 opentelemetry-util-http-0.55b1 packaging-26.3 pika-1.5.0 pluggy-1.7.0 prometheus_client-0.26.0 prometheus_flask_exporter-0.23.2 protobuf-5.29.6 pydantic-2.11.7 pydantic-core-2.33.2 pygments-2.21.0 pytest-9.2.0 pytest-cov-7.1.0 python-dateutil-2.9.0.post0 requests-2.34.2 rich-15.0.0 ruamel-yaml-0.18.17 ruamel.yaml.clib-0.2.15 ruff-0.9.10 shellingham-1.5.4 six-1.17.0 starlette-0.46.2 typer-0.15.4 typing-extensions-4.16.0 typing-inspection-0.4.5 urllib3-2.8.0 uvicorn-0.54.0 werkzeug-3.1.9 wrapt-1.17.3 zipp-4.1.2
+test	Run ruff check .	﻿2026-11-18T12:32:52.2332696Z ##[group]Run ruff check .
+test	Run ruff check .	2026-11-18T12:32:52.2333013Z [36;1mruff check .[0m
+test	Run ruff check .	2026-11-18T12:32:52.2385530Z shell: /usr/bin/bash -e {0}
+test	Run ruff check .	2026-11-18T12:32:52.2385789Z env:
+test	Run ruff check .	2026-11-18T12:32:52.2386063Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+test	Run ruff check .	2026-11-18T12:32:52.2386518Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+test	Run ruff check .	2026-11-18T12:32:52.2386955Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+test	Run ruff check .	2026-11-18T12:32:52.2387345Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+test	Run ruff check .	2026-11-18T12:32:52.2387739Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+test	Run ruff check .	2026-11-18T12:32:52.2388172Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+test	Run ruff check .	2026-11-18T12:32:52.2388498Z ##[endgroup]
+test	Run ruff check .	2026-11-18T12:32:52.2541482Z All checks passed!
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	﻿2026-11-18T12:32:52.2581857Z ##[group]Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:52.2583010Z [36;1mpython -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml[0m
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:52.2634594Z shell: /usr/bin/bash -e {0}
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:52.2634862Z env:
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:52.2635144Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:52.2635590Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:52.2636022Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:52.2636404Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:52.2636835Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:52.2637226Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:52.2637567Z ##[endgroup]
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:55.7102877Z .....................                                                    [100%]
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:55.7103877Z =============================== warnings summary ===============================
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:55.7104715Z ../../../../../opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/starlette/testclient.py:37
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:55.7106059Z   /opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/starlette/testclient.py:37: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:55.7107221Z     _PortalFactoryType = typing.Callable[[], typing.ContextManager[anyio.abc.BlockingPortal]]
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:55.7107630Z 
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:55.7107973Z ../../../../../opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/starlette/middleware/wsgi.py:14
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:55.7110162Z   /opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/starlette/middleware/wsgi.py:14: DeprecationWarning: starlette.middleware.wsgi is deprecated and will be removed in a future release. Please refer to https://github.com/abersheeran/a2wsgi as a replacement.
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:55.7111385Z     warnings.warn(
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:55.7111530Z 
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:55.7111753Z -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:55.7112265Z ================================ tests coverage ================================
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:55.7112738Z _______________ coverage: platform linux, python 3.12.16-final-0 _______________
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:55.7113057Z 
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:55.7113187Z Name                   Stmts   Miss  Cover   Missing
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:55.7113530Z ----------------------------------------------------
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:55.7113855Z app/__init__.py            0      0   100%
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:55.7114156Z app/common_models.py      12      0   100%
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:55.7114445Z app/main.py               69      0   100%
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:55.7114736Z app/models.py             15      0   100%
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:55.7115055Z app/observability.py      45     10    78%   47-61
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:55.7115388Z app/repositories.py       46      0   100%
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:55.7115695Z ----------------------------------------------------
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:55.7115999Z TOTAL                    187     10    95%
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:55.7116277Z Coverage HTML written to dir htmlcov
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:55.7116560Z Coverage XML written to file coverage.xml
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:55.7116857Z Coverage JSON written to file coverage.json
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:55.7117235Z Required test coverage of 80% reached. Total coverage: 94.65%
+test	Run python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml	2026-11-18T12:32:55.7117599Z 21 passed, 2 warnings in 2.09s
+test	Run actions/upload-artifact@v4	﻿2026-11-18T12:32:55.8123441Z ##[group]Run actions/upload-artifact@v4
+test	Run actions/upload-artifact@v4	2026-11-18T12:32:55.8123780Z with:
+test	Run actions/upload-artifact@v4	2026-11-18T12:32:55.8123990Z   name: tests-and-coverage
+test	Run actions/upload-artifact@v4	2026-11-18T12:32:55.8124292Z   path: coverage.json
+test	Run actions/upload-artifact@v4	coverage.xml
+test	Run actions/upload-artifact@v4	htmlcov/
+test	Run actions/upload-artifact@v4	junit.xml
+test	Run actions/upload-artifact@v4	
+test	Run actions/upload-artifact@v4	2026-11-18T12:32:55.8124628Z   if-no-files-found: warn
+test	Run actions/upload-artifact@v4	2026-11-18T12:32:55.8124863Z   compression-level: 6
+test	Run actions/upload-artifact@v4	2026-11-18T12:32:55.8125082Z   overwrite: false
+test	Run actions/upload-artifact@v4	2026-11-18T12:32:55.8125296Z   include-hidden-files: false
+test	Run actions/upload-artifact@v4	2026-11-18T12:32:55.8125530Z env:
+test	Run actions/upload-artifact@v4	2026-11-18T12:32:55.8125793Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+test	Run actions/upload-artifact@v4	2026-11-18T12:32:55.8126240Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+test	Run actions/upload-artifact@v4	2026-11-18T12:32:55.8126678Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+test	Run actions/upload-artifact@v4	2026-11-18T12:32:55.8127070Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+test	Run actions/upload-artifact@v4	2026-11-18T12:32:55.8127469Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+test	Run actions/upload-artifact@v4	2026-11-18T12:32:55.8127859Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+test	Run actions/upload-artifact@v4	2026-11-18T12:32:55.8128216Z ##[endgroup]
+test	Run actions/upload-artifact@v4	2026-11-18T12:32:55.9824318Z (node:2484) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+test	Run actions/upload-artifact@v4	2026-11-18T12:32:55.9825251Z (Use `node --trace-deprecation ...` to show where the warning was created)
+test	Run actions/upload-artifact@v4	2026-11-18T12:32:55.9948884Z Multiple search paths detected. Calculating the least common ancestor of all paths
+test	Run actions/upload-artifact@v4	2026-11-18T12:32:55.9953168Z The least common ancestor is /home/runner/work/user-service/user-service. This will be the root directory of the artifact
+test	Run actions/upload-artifact@v4	2026-11-18T12:32:55.9954698Z With the provided path, there will be 17 files uploaded
+test	Run actions/upload-artifact@v4	2026-11-18T12:32:55.9961267Z Artifact name is valid!
+test	Run actions/upload-artifact@v4	2026-11-18T12:32:55.9961928Z Root directory input is valid!
+test	Run actions/upload-artifact@v4	2026-11-18T12:32:56.4089839Z Beginning upload of artifact content to blob storage
+test	Run actions/upload-artifact@v4	2026-11-18T12:32:56.4605052Z (node:2484) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+test	Run actions/upload-artifact@v4	2026-11-18T12:32:56.8384175Z Uploaded bytes 46142
+test	Run actions/upload-artifact@v4	2026-11-18T12:32:56.9101855Z Finished uploading artifact content to blob storage!
+test	Run actions/upload-artifact@v4	2026-11-18T12:32:56.9103542Z SHA256 digest of uploaded artifact zip is 06a8819b4d42ca6a2e2668876307997e36efa19fad980f65e9194776a8f772c6
+test	Run actions/upload-artifact@v4	2026-11-18T12:32:56.9104929Z Finalizing artifact upload
+test	Run actions/upload-artifact@v4	2026-11-18T12:32:57.3192467Z Artifact tests-and-coverage.zip successfully finalized. Artifact ID 14427866418
+test	Run actions/upload-artifact@v4	2026-11-18T12:32:57.3193419Z Artifact tests-and-coverage has been successfully uploaded! Final size is 46142 bytes. Artifact ID is 14427866418
+test	Run actions/upload-artifact@v4	2026-11-18T12:32:57.3200915Z Artifact download URL: https://github.com/konstmalinin-maker/user-service/actions/runs/44304910936/artifacts/14427866418
+test	Post Run actions/setup-python@v5	﻿2026-11-18T12:32:57.3405169Z Post job cleanup.
+test	Post Run actions/setup-python@v5	2026-11-18T12:32:57.4657189Z Cache hit occurred on the primary key setup-python-Linux-x64-26.04-Ubuntu-python-3.12.16-pip-a10eabb5dfe57f06cd07e7940349f56de734b219d59847643f6275f4a01c4e9e, not saving cache.
+test	Post Run actions/setup-python@v5	2026-11-18T12:32:57.4659293Z (node:2525) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+test	Post Run actions/setup-python@v5	2026-11-18T12:32:57.4660600Z (Use `node --trace-deprecation ...` to show where the warning was created)
+test	Post Run actions/checkout@v4	﻿2026-11-18T12:32:57.4805895Z Post job cleanup.
+test	Post Run actions/checkout@v4	2026-11-18T12:32:57.5757684Z [command]/usr/bin/git version
+test	Post Run actions/checkout@v4	2026-11-18T12:32:57.5806581Z git version 2.56.1
+test	Post Run actions/checkout@v4	2026-11-18T12:32:57.5855129Z Temporarily overriding HOME='/home/runner/work/_temp/3a4da0d2-7989-4bc0-87bc-80e62551c540' before making global git config changes
+test	Post Run actions/checkout@v4	2026-11-18T12:32:57.5856731Z Adding repository directory to the temporary git global config as a safe directory
+test	Post Run actions/checkout@v4	2026-11-18T12:32:57.5858282Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/user-service/user-service
+test	Post Run actions/checkout@v4	2026-11-18T12:32:57.5900309Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test	Post Run actions/checkout@v4	2026-11-18T12:32:57.5941564Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test	Post Run actions/checkout@v4	2026-11-18T12:32:57.6257798Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test	Post Run actions/checkout@v4	2026-11-18T12:32:57.6287375Z http.https://github.com/.extraheader
+test	Post Run actions/checkout@v4	2026-11-18T12:32:57.6300654Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+test	Post Run actions/checkout@v4	2026-11-18T12:32:57.6351111Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test	Post Run actions/checkout@v4	2026-11-18T12:32:57.6800758Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+test	Post Run actions/checkout@v4	2026-11-18T12:32:57.6844887Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+test	Complete job	﻿2026-11-18T12:32:57.7344619Z Cleaning up orphan processes
+test	Complete job	2026-11-18T12:32:57.7933449Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+build-and-publish	Set up job	﻿2026-11-18T12:33:05.0056114Z Current runner version: '2.338.2'
+build-and-publish	Set up job	2026-11-18T12:33:05.0079763Z ##[group]Runner Image Provisioner
+build-and-publish	Set up job	2026-11-18T12:33:05.0080758Z Hosted Compute Agent
+build-and-publish	Set up job	2026-11-18T12:33:05.0081327Z Version: 20261103.629
+build-and-publish	Set up job	2026-11-18T12:33:05.0081968Z Commit: 15dbd9ccb5dbf34fae002b6ed1a2670f52df37bc
+build-and-publish	Set up job	2026-11-18T12:33:05.0082639Z Build Date: 2026-11-03T17:26:59Z
+build-and-publish	Set up job	2026-11-18T12:33:05.0083266Z Worker ID: {4e22e1a4-1c7d-46b1-a3b8-26b04b0289ae}
+build-and-publish	Set up job	2026-11-18T12:33:05.0084014Z Region: us-west-2
+build-and-publish	Set up job	2026-11-18T12:33:05.0084564Z Cloud: AWS
+build-and-publish	Set up job	2026-11-18T12:33:05.0085369Z ##[endgroup]
+build-and-publish	Set up job	2026-11-18T12:33:05.0087124Z ##[group]Operating System
+build-and-publish	Set up job	2026-11-18T12:33:05.0087770Z Ubuntu
+build-and-publish	Set up job	2026-11-18T12:33:05.0088332Z 26.04.1
+build-and-publish	Set up job	2026-11-18T12:33:05.0088831Z LTS
+build-and-publish	Set up job	2026-11-18T12:33:05.0089333Z ##[endgroup]
+build-and-publish	Set up job	2026-11-18T12:33:05.0089860Z ##[group]Runner Image
+build-and-publish	Set up job	2026-11-18T12:33:05.0090444Z Image: ubuntu-26.04
+build-and-publish	Set up job	2026-11-18T12:33:05.0091247Z Version: 20261111.82.6
+build-and-publish	Set up job	2026-11-18T12:33:05.0092453Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261111.82/images/ubuntu/Ubuntu2604-Readme.md
+build-and-publish	Set up job	2026-11-18T12:33:05.0094286Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261111.82
+build-and-publish	Set up job	2026-11-18T12:33:05.0095509Z ##[endgroup]
+build-and-publish	Set up job	2026-11-18T12:33:05.0096683Z ##[group]GITHUB_TOKEN Permissions
+build-and-publish	Set up job	2026-11-18T12:33:05.0098890Z Contents: read
+build-and-publish	Set up job	2026-11-18T12:33:05.0099513Z Metadata: read
+build-and-publish	Set up job	2026-11-18T12:33:05.0100036Z Packages: write
+build-and-publish	Set up job	2026-11-18T12:33:05.0100633Z ##[endgroup]
+build-and-publish	Set up job	2026-11-18T12:33:05.0102732Z Secret source: Actions
+build-and-publish	Set up job	2026-11-18T12:33:05.0103555Z Cache mode: write
+build-and-publish	Set up job	2026-11-18T12:33:05.0104279Z Prepare workflow directory
+build-and-publish	Set up job	2026-11-18T12:33:05.0328016Z Prepare all required actions
+build-and-publish	Set up job	2026-11-18T12:33:05.0375260Z Getting action download info
+build-and-publish	Set up job	2026-11-18T12:33:05.3891976Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+build-and-publish	Set up job	2026-11-18T12:33:07.4392300Z Download action repository 'docker/setup-buildx-action@v3' (SHA:8d2750c68a42422c14e847fe6c8ac0403b4cbd6f)
+build-and-publish	Set up job	2026-11-18T12:33:07.8384779Z Download action repository 'docker/login-action@v3' (SHA:c94ce9fb468520275223c153574b00df6fe4bcc9)
+build-and-publish	Set up job	2026-11-18T12:33:08.2377400Z Download action repository 'docker/build-push-action@v6' (SHA:10e90e3645eae34f1e60eeb005ba3a3d33f178e8)
+build-and-publish	Set up job	2026-11-18T12:33:08.6548344Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+build-and-publish	Set up job	2026-11-18T12:33:08.9470530Z Complete job name: build-and-publish
+build-and-publish	Run actions/checkout@v4	﻿2026-11-18T12:33:09.0035542Z ##[group]Run actions/checkout@v4
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:09.0036154Z with:
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:09.0036488Z   repository: konstmalinin-maker/user-service
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:09.0038585Z   token: ***
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:09.0038827Z   ssh-strict: true
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:09.0039112Z   ssh-user: git
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:09.0039383Z   persist-credentials: true
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:09.0039672Z   clean: true
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:09.0039967Z   sparse-checkout-cone-mode: true
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:09.0040264Z   fetch-depth: 1
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:09.0040543Z   fetch-tags: false
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:09.0040827Z   show-progress: true
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:09.0041107Z   lfs: false
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:09.0041373Z   submodules: false
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:09.0041650Z   set-safe-directory: true
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:09.0041950Z   allow-unsafe-pr-checkout: false
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:09.0042328Z ##[endgroup]
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:13.9331405Z Syncing repository: konstmalinin-maker/user-service
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:13.9333280Z ##[group]Getting Git version info
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:13.9333809Z Working directory is '/home/runner/work/user-service/user-service'
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:13.9334567Z [command]/usr/bin/git version
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:13.9335156Z git version 2.56.1
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:13.9347909Z ##[endgroup]
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:13.9356071Z Temporarily overriding HOME='/home/runner/work/_temp/31bddd4d-b8e4-4e30-8c65-aa037900b5d5' before making global git config changes
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:13.9356957Z Adding repository directory to the temporary git global config as a safe directory
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:13.9358664Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/user-service/user-service
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:13.9436875Z Deleting the contents of '/home/runner/work/user-service/user-service'
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:13.9441594Z ##[group]Initializing the repository
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:13.9442292Z [command]/usr/bin/git init /home/runner/work/user-service/user-service
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.0039856Z hint: Using 'master' as the name for the initial branch. This default branch name
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.0040592Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.0041238Z hint: to use in all of your new repositories, which will suppress this warning,
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.0041728Z hint: call:
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.0042006Z hint:
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.0042306Z hint: 	git config --global init.defaultBranch <name>
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.0042586Z hint:
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.0042834Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.0043200Z hint: 'development'. The just-created branch can be renamed via this command:
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.0043490Z hint:
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.0043690Z hint: 	git branch -m <name>
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.0043877Z hint:
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.0044131Z hint: Disable this message with "git config set advice.defaultBranchName false"
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.0062966Z Initialized empty Git repository in /home/runner/work/user-service/user-service/.git/
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.0070128Z [command]/usr/bin/git remote add origin https://github.com/konstmalinin-maker/user-service
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.0127695Z ##[endgroup]
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.0128185Z ##[group]Disabling automatic garbage collection
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.0130892Z [command]/usr/bin/git config --local gc.auto 0
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.0151688Z ##[endgroup]
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.0152211Z ##[group]Setting up auth
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.0156710Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.0178926Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.2151591Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.2174746Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.2348548Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.2369986Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.2542916Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.2567281Z ##[endgroup]
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.2567786Z ##[group]Fetching the repository
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.2573781Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +59ad3d2126040f164dd3a172d9884e389c9268aa:refs/remotes/origin/main
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.8076608Z From https://github.com/konstmalinin-maker/user-service
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.8077116Z  * [new ref]         59ad3d2126040f164dd3a172d9884e389c9268aa -> origin/main
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.8079826Z ##[endgroup]
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.8080199Z ##[group]Determining the checkout info
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.8081475Z ##[endgroup]
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.8086998Z [command]/usr/bin/git sparse-checkout disable
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.8155756Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.8156580Z ##[group]Checking out the ref
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.8165901Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.8286108Z Switched to a new branch 'main'
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.8294703Z branch 'main' set up to track 'origin/main'.
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.8299342Z ##[endgroup]
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.8336533Z [command]/usr/bin/git log -1 --format=%H
+build-and-publish	Run actions/checkout@v4	2026-11-18T12:33:14.8351686Z 59ad3d2126040f164dd3a172d9884e389c9268aa
+build-and-publish	Run docker/setup-buildx-action@v3	﻿2026-11-18T12:33:14.8526217Z ##[group]Run docker/setup-buildx-action@v3
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:14.8526455Z with:
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:14.8526624Z   driver: docker-container
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:14.8526792Z   use: true
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:14.8526951Z   keep-state: false
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:14.8527109Z   cache-binary: true
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:14.8527271Z   cleanup: true
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:14.8527437Z   install: false
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:14.8527632Z ##[endgroup]
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:15.0325965Z (node:2373) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:15.0327029Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:15.0390606Z ##[group]Docker info
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:15.0391114Z [command]/usr/bin/docker version
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:15.8209432Z Client: Docker Engine - Community
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:15.8209820Z  Version:           29.4.2
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:15.8210127Z  API version:       1.54
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:15.8210348Z  Go version:        go1.26.2
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:15.8210701Z  Git commit:        055a478
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:15.8210939Z  Built:             Fri May  1 10:24:04 2026
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:15.8211326Z  OS/Arch:           linux/amd64
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:15.8211601Z  Context:           default
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:15.8211809Z 
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:15.8212570Z Server: Docker Engine - Community
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:15.8212951Z  Engine:
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:15.8213198Z   Version:          29.4.2
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:15.8213482Z   API version:      1.54 (minimum version 1.40)
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:15.8213796Z   Go version:       go1.26.2
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:15.8214062Z   Git commit:       d329809
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:15.8214329Z   Built:            Fri May  1 10:24:04 2026
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:15.8214630Z   OS/Arch:          linux/amd64
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:15.8215036Z   Experimental:     false
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:15.8215263Z  containerd:
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:15.8215489Z   Version:          v2.4.2
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:15.8215825Z   GitCommit:        b7a25261e029d68978bbf290df0a62fc819b3c51
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:15.8216157Z  runc:
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:15.8216363Z   Version:          1.5.2
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:15.8216605Z   GitCommit:        v1.5.2-0-g29dd3dc2
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:15.8216869Z  docker-init:
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:15.8217081Z   Version:          0.19.0
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:15.8217326Z   GitCommit:        de40ad0
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:15.8236065Z [command]/usr/bin/docker info
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4030860Z Client: Docker Engine - Community
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4037624Z  Version:    29.4.2
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4038274Z  Context:    default
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4038553Z  Debug Mode: false
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4038723Z  Plugins:
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4038886Z   buildx: Docker Buildx (Docker Inc.)
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4039107Z     Version:  v0.39.0
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4039435Z     Path:     /usr/libexec/docker/cli-plugins/docker-buildx
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4039753Z   compose: Docker Compose (Docker Inc.)
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4039985Z     Version:  v5.1.3
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4040267Z     Path:     /usr/libexec/docker/cli-plugins/docker-compose
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4040501Z 
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4040573Z Server:
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4040720Z  Containers: 0
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4040868Z   Running: 0
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4041010Z   Paused: 0
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4041149Z   Stopped: 0
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4041378Z  Images: 6
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4041543Z  Server Version: 29.4.2
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4041718Z  Storage Driver: overlayfs
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4041915Z   driver-type: io.containerd.snapshotter.v1
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4042135Z  Logging Driver: json-file
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4042310Z  Cgroup Driver: systemd
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4042476Z  Cgroup Version: 2
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4042629Z  Plugins:
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4042773Z   Volume: local
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4042969Z   Network: bridge host ipvlan macvlan null overlay
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4043342Z   Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4043617Z  CDI spec directories:
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4044051Z   /etc/cdi
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4044201Z   /var/run/cdi
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4044487Z  Swarm: inactive
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4044664Z  Runtimes: io.containerd.runc.v2 runc
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4045113Z  Default Runtime: runc
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4045331Z  Init Binary: docker-init
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4045739Z  containerd version: b7a25261e029d68978bbf290df0a62fc819b3c51
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4046020Z  runc version: v1.5.2-0-g29dd3dc2
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4046217Z  init version: de40ad0
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4046379Z  Security Options:
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4046551Z   apparmor
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4046711Z   seccomp
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4046859Z    Profile: builtin
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4047005Z   cgroupns
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4047161Z  Kernel Version: 7.0.0-1016-aws
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4047376Z  Operating System: Ubuntu 26.04.1 LTS
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4047578Z  OSType: linux
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4047758Z  Architecture: x86_64
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4047915Z  CPUs: 4
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4048071Z  Total Memory: 15.33GiB
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4048290Z  Name: ip-10-0-133-83
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4048493Z  ID: d737e892-89f8-4638-9c92-cb3c7827a0bf
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4048708Z  Docker Root Dir: /var/lib/docker
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4048912Z  Debug Mode: false
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4049084Z  Username: githubactions
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4049287Z  Experimental: false
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4049468Z  Insecure Registries:
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4054681Z   ::1/128
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4055045Z   127.0.0.0/8
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4055223Z  Live Restore Enabled: false
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4055418Z  Firewall Backend: iptables
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4055528Z 
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4055900Z ##[endgroup]
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4657587Z ##[group]Buildx version
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.4674308Z [command]/usr/bin/docker buildx version
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.5116011Z github.com/docker/buildx v0.39.0 360040a78d6113dc84e5d4dcdf0f438e1be7a41f
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.5133508Z ##[endgroup]
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.5241411Z ##[group]Inspecting default docker context
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.5344002Z [
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.5344261Z   {
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.5344463Z     "Name": "default",
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.5344740Z     "Metadata": {},
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.5345180Z     "Endpoints": {
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.5345388Z       "docker": {
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.5345625Z         "Host": "unix:///var/run/docker.sock",
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.5345911Z         "SkipTLSVerify": false
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.5346156Z       }
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.5346331Z     },
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.5346511Z     "TLSMaterial": {},
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.5346715Z     "Storage": {
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.5346929Z       "MetadataPath": "<IN MEMORY>",
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.5347199Z       "TLSPath": "<IN MEMORY>"
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.5347435Z     }
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.5347596Z   }
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.5347776Z ]
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.5348207Z ##[endgroup]
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.5348600Z ##[group]Creating a new builder instance
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.6252260Z [command]/usr/bin/docker buildx create --name builder-986226bb-a223-4be2-8857-4b3a5197941d --driver docker-container --buildkitd-flags --allow-insecure-entitlement security.insecure --allow-insecure-entitlement network.host --use
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.6789881Z builder-986226bb-a223-4be2-8857-4b3a5197941d
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.6809650Z ##[endgroup]
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.6810241Z ##[group]Booting builder
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.6831918Z [command]/usr/bin/docker buildx inspect --bootstrap --builder builder-986226bb-a223-4be2-8857-4b3a5197941d
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.7231129Z #1 [internal] booting buildkit
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:17.8739372Z #1 pulling image moby/buildkit:buildx-stable-1
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:19.9160043Z #1 pulling image moby/buildkit:buildx-stable-1 2.2s done
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:20.5058275Z #1 creating container buildx_buildkit_builder-986226bb-a223-4be2-8857-4b3a5197941d0
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1083935Z #1 creating container buildx_buildkit_builder-986226bb-a223-4be2-8857-4b3a5197941d0 0.6s done
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1409427Z #1 DONE 3.4s
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1664398Z Name:          builder-986226bb-a223-4be2-8857-4b3a5197941d
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1665356Z Driver:        docker-container
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1665643Z Last Activity: 2026-11-18 12:33:17 +0000 UTC
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1665962Z 
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1666080Z Nodes:
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1666336Z Name:                  builder-986226bb-a223-4be2-8857-4b3a5197941d0
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1666697Z Endpoint:              unix:///var/run/docker.sock
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1666976Z Status:                running
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1667445Z BuildKit daemon flags: --allow-insecure-entitlement security.insecure --allow-insecure-entitlement network.host
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1667833Z BuildKit version:      v0.34.2
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1668116Z Platforms:             linux/amd64, linux/amd64/v2, linux/amd64/v3, linux/amd64/v4, linux/386
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1668406Z Labels:
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1668606Z  org.mobyproject.buildkit.worker.executor:         oci
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1668915Z  org.mobyproject.buildkit.worker.hostname:         3d6b2313e06b
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1669235Z  org.mobyproject.buildkit.worker.network:          host
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1669542Z  org.mobyproject.buildkit.worker.oci.process-mode: sandbox
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1669861Z  org.mobyproject.buildkit.worker.selinux.enabled:  false
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1670173Z  org.mobyproject.buildkit.worker.snapshotter:      overlayfs
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1670439Z GC Policy rule#0:
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1670598Z  All:            false
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1670855Z  Filters:        type==source.local type==exec.cachemount type==source.git.checkout
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1671147Z  Keep Duration:  48h0m0s
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1671323Z  Max Used Space: 488.3MiB
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1671495Z GC Policy rule#1:
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1671643Z  All:            false
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1671809Z  Keep Duration:  1440h0m0s
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1671989Z  Reserved Space: 9.313GiB
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1672160Z  Max Used Space: 93.13GiB
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1672329Z  Min Free Space: 27.01GiB
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1672496Z GC Policy rule#2:
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1672650Z  All:            false
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1672808Z  Reserved Space: 9.313GiB
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1672965Z  Max Used Space: 93.13GiB
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1673146Z  Min Free Space: 27.01GiB
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1673330Z GC Policy rule#3:
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1673481Z  All:            true
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1673640Z  Reserved Space: 9.313GiB
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1673812Z  Max Used Space: 93.13GiB
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1673977Z  Min Free Space: 27.01GiB
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.1705258Z ##[endgroup]
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.2439149Z ##[group]Inspect builder
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4562025Z {
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4562482Z   "nodes": [
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4562700Z     {
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4562968Z       "name": "builder-986226bb-a223-4be2-8857-4b3a5197941d0",
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4563301Z       "endpoint": "unix:///var/run/docker.sock",
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4563571Z       "status": "running",
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4564099Z       "buildkitd-flags": "--allow-insecure-entitlement security.insecure --allow-insecure-entitlement network.host",
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4564633Z       "buildkit": "v0.34.2",
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4565263Z       "platforms": "linux/amd64,linux/amd64/v2,linux/amd64/v3,linux/amd64/v4,linux/386",
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4565661Z       "features": {
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4565950Z         "Automatically load images to the Docker Engine image store": true,
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4566295Z         "Cache export": true,
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4566517Z         "Direct push": true,
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4566767Z         "Docker exporter": true,
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4566998Z         "Multi-platform build": true,
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4567238Z         "OCI exporter": true
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4567446Z       },
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4567610Z       "labels": {
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4567864Z         "org.mobyproject.buildkit.worker.executor": "oci",
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4568173Z         "org.mobyproject.buildkit.worker.hostname": "3d6b2313e06b",
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4568468Z         "org.mobyproject.buildkit.worker.network": "host",
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4569061Z         "org.mobyproject.buildkit.worker.oci.process-mode": "sandbox",
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4569390Z         "org.mobyproject.buildkit.worker.selinux.enabled": "false",
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4569792Z         "org.mobyproject.buildkit.worker.snapshotter": "overlayfs"
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4570034Z       },
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4570170Z       "gcPolicy": [
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4570318Z         {
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4570454Z           "all": false,
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4570612Z           "filter": [
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4570866Z             "type==source.local type==exec.cachemount type==source.git.checkout"
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4571129Z           ],
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4571282Z           "keepDuration": "48h0m0s",
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4571476Z           "maxUsedSpace": "488.3MiB"
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4571661Z         },
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4571793Z         {
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4571925Z           "all": false,
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4572201Z           "keepDuration": "1440h0m0s",
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4572410Z           "reservedSpace": "9.313GiB",
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4572604Z           "maxUsedSpace": "93.13GiB",
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4572795Z           "minFreeSpace": "27.01GiB"
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4572972Z         },
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4573110Z         {
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4573248Z           "all": false,
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4573419Z           "reservedSpace": "9.313GiB",
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4573625Z           "maxUsedSpace": "93.13GiB",
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4573809Z           "minFreeSpace": "27.01GiB"
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4573986Z         },
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4574121Z         {
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4574257Z           "all": true,
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4574426Z           "reservedSpace": "9.313GiB",
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4574617Z           "maxUsedSpace": "93.13GiB",
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4574803Z           "minFreeSpace": "27.01GiB"
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4575182Z         }
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4575332Z       ]
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4575468Z     }
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4575604Z   ],
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4575791Z   "name": "builder-986226bb-a223-4be2-8857-4b3a5197941d",
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4576022Z   "driver": "docker-container",
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4576220Z   "lastActivity": "2026-11-18T12:33:17.000Z"
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4576414Z }
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4576805Z ##[endgroup]
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4577087Z ##[group]BuildKit version
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4577295Z builder-986226bb-a223-4be2-8857-4b3a5197941d0: v0.34.2
+build-and-publish	Run docker/setup-buildx-action@v3	2026-11-18T12:33:21.4577609Z ##[endgroup]
+build-and-publish	Run docker/login-action@v3	﻿2026-11-18T12:33:21.4701834Z ##[group]Run docker/login-action@v3
+build-and-publish	Run docker/login-action@v3	2026-11-18T12:33:21.4702245Z with:
+build-and-publish	Run docker/login-action@v3	2026-11-18T12:33:21.4702456Z   registry: ghcr.io
+build-and-publish	Run docker/login-action@v3	2026-11-18T12:33:21.4702682Z   username: konstmalinin-maker
+build-and-publish	Run docker/login-action@v3	2026-11-18T12:33:21.4704732Z   password: ***
+build-and-publish	Run docker/login-action@v3	2026-11-18T12:33:21.4705699Z   logout: true
+build-and-publish	Run docker/login-action@v3	2026-11-18T12:33:21.4705988Z ##[endgroup]
+build-and-publish	Run docker/login-action@v3	2026-11-18T12:33:21.6944437Z Logging into ghcr.io...
+build-and-publish	Run docker/login-action@v3	2026-11-18T12:33:21.6959162Z (node:2853) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-publish	Run docker/login-action@v3	2026-11-18T12:33:21.6960164Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-publish	Run docker/login-action@v3	2026-11-18T12:33:22.0822214Z Login Succeeded!
+build-and-publish	Run docker/build-push-action@v6	﻿2026-11-18T12:33:22.0969554Z ##[group]Run docker/build-push-action@v6
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.0969920Z with:
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.0970144Z   context: .
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.0970357Z   push: true
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.0970809Z   tags: ghcr.io/konstmalinin-maker/user-service:latest
+build-and-publish	Run docker/build-push-action@v6	ghcr.io/konstmalinin-maker/user-service:59ad3d2126040f164dd3a172d9884e389c9268aa
+build-and-publish	Run docker/build-push-action@v6	
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.0971438Z   labels: org.opencontainers.image.source=https://github.com/konstmalinin-maker/user-service
+build-and-publish	Run docker/build-push-action@v6	
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.0971850Z   cache-from: type=gha
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.0972198Z   cache-to: type=gha,mode=max
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.0972512Z   load: false
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.0972739Z   no-cache: false
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.0972951Z   pull: false
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.0975011Z   github-token: ***
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.0975318Z ##[endgroup]
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.2707484Z (node:2874) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.2713278Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.2721846Z ##[group]GitHub Actions runtime token ACs
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.2727132Z refs/heads/main: read/write
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.2728009Z ##[endgroup]
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.2728604Z ##[group]Docker info
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.2772827Z [command]/usr/bin/docker version
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.2995609Z Client: Docker Engine - Community
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3015589Z  Version:           29.4.2
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3025539Z  API version:       1.54
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3026292Z  Go version:        go1.26.2
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3026794Z  Git commit:        055a478
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3027233Z  Built:             Fri May  1 10:24:04 2026
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3027736Z  OS/Arch:           linux/amd64
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3028186Z  Context:           default
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3028461Z 
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3028759Z Server: Docker Engine - Community
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3029240Z  Engine:
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3029649Z   Version:          29.4.2
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3030100Z   API version:      1.54 (minimum version 1.40)
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3030594Z   Go version:       go1.26.2
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3031067Z   Git commit:       d329809
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3031502Z   Built:            Fri May  1 10:24:04 2026
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3031963Z   OS/Arch:          linux/amd64
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3032401Z   Experimental:     false
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3032824Z  containerd:
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3033214Z   Version:          v2.4.2
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3033712Z   GitCommit:        b7a25261e029d68978bbf290df0a62fc819b3c51
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3034241Z  runc:
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3034619Z   Version:          1.5.2
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3035313Z   GitCommit:        v1.5.2-0-g29dd3dc2
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3035787Z  docker-init:
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3036199Z   Version:          0.19.0
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3036800Z   GitCommit:        de40ad0
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3063534Z [command]/usr/bin/docker info
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3440882Z Client: Docker Engine - Community
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3441407Z  Version:    29.4.2
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3441726Z  Context:    default
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3441992Z  Debug Mode: false
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3442561Z  Plugins:
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3442864Z   buildx: Docker Buildx (Docker Inc.)
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3443245Z     Version:  v0.39.0
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3443593Z     Path:     /usr/libexec/docker/cli-plugins/docker-buildx
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3444009Z   compose: Docker Compose (Docker Inc.)
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3444376Z     Version:  v5.1.3
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3444753Z     Path:     /usr/libexec/docker/cli-plugins/docker-compose
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3445297Z 
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3445429Z Server:
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3445694Z  Containers: 1
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3445964Z   Running: 1
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3446225Z   Paused: 0
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3446517Z   Stopped: 0
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3446776Z  Images: 7
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3447036Z  Server Version: 29.4.2
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3447322Z  Storage Driver: overlayfs
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3447680Z   driver-type: io.containerd.snapshotter.v1
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3448104Z  Logging Driver: json-file
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3448824Z  Cgroup Driver: systemd
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3449133Z  Cgroup Version: 2
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3449389Z  Plugins:
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3449680Z   Volume: local
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3450021Z   Network: bridge host ipvlan macvlan null overlay
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3450510Z   Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3451115Z  CDI spec directories:
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3451379Z   /etc/cdi
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3451628Z   /var/run/cdi
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3451913Z  Swarm: inactive
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3452315Z  Runtimes: io.containerd.runc.v2 runc
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3452676Z  Default Runtime: runc
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3452959Z  Init Binary: docker-init
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3453402Z  containerd version: b7a25261e029d68978bbf290df0a62fc819b3c51
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3453822Z  runc version: v1.5.2-0-g29dd3dc2
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3454324Z  init version: de40ad0
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3454627Z  Security Options:
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3455140Z   apparmor
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3455399Z   seccomp
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3455711Z    Profile: builtin
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3455970Z   cgroupns
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3456215Z  Kernel Version: 7.0.0-1016-aws
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3456529Z  Operating System: Ubuntu 26.04.1 LTS
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3456859Z  OSType: linux
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3457141Z  Architecture: x86_64
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3457417Z  CPUs: 4
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3457667Z  Total Memory: 15.33GiB
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3457957Z  Name: ip-10-0-133-83
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3458253Z  ID: d737e892-89f8-4638-9c92-cb3c7827a0bf
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3458612Z  Docker Root Dir: /var/lib/docker
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3458926Z  Debug Mode: false
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3459213Z  Username: githubactions
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3459534Z  Experimental: false
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3459875Z  Insecure Registries:
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3460223Z   ::1/128
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3460489Z   127.0.0.0/8
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3460738Z  Live Restore Enabled: false
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3461237Z  Firewall Backend: iptables
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3461437Z 
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3461872Z ##[endgroup]
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3462384Z ##[group]Proxy configuration
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3462688Z No proxy configuration found
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3463173Z ##[endgroup]
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3920199Z ##[group]Buildx version
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.3934165Z [command]/usr/bin/docker buildx version
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.4341018Z github.com/docker/buildx v0.39.0 360040a78d6113dc84e5d4dcdf0f438e1be7a41f
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.4359906Z ##[endgroup]
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.4360475Z ##[group]Builder info
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5178531Z {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5179048Z   "nodes": [
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5179330Z     {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5179664Z       "name": "builder-986226bb-a223-4be2-8857-4b3a5197941d0",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5180113Z       "endpoint": "unix:///var/run/docker.sock",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5180479Z       "status": "running",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5181114Z       "buildkitd-flags": "--allow-insecure-entitlement security.insecure --allow-insecure-entitlement network.host",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5181731Z       "buildkit": "v0.34.2",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5182153Z       "platforms": "linux/amd64,linux/amd64/v2,linux/amd64/v3,linux/amd64/v4,linux/386",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5182563Z       "features": {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5182937Z         "Automatically load images to the Docker Engine image store": true,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5183370Z         "Cache export": true,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5183678Z         "Direct push": true,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5183993Z         "Docker exporter": true,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5184396Z         "Multi-platform build": true,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5184729Z         "OCI exporter": true
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5185321Z       },
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5185581Z       "labels": {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5185918Z         "org.mobyproject.buildkit.worker.executor": "oci",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5186427Z         "org.mobyproject.buildkit.worker.hostname": "3d6b2313e06b",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5186965Z         "org.mobyproject.buildkit.worker.network": "host",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5187770Z         "org.mobyproject.buildkit.worker.oci.process-mode": "sandbox",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5188328Z         "org.mobyproject.buildkit.worker.selinux.enabled": "false",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5188889Z         "org.mobyproject.buildkit.worker.snapshotter": "overlayfs"
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5189384Z       },
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5189628Z       "gcPolicy": [
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5189904Z         {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5190157Z           "all": false,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5190444Z           "filter": [
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5190868Z             "type==source.local type==exec.cachemount type==source.git.checkout"
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5191322Z           ],
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5191682Z           "keepDuration": "48h0m0s",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5192051Z           "maxUsedSpace": "488.3MiB"
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5192386Z         },
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5192685Z         {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5192951Z           "all": false,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5193442Z           "keepDuration": "1440h0m0s",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5193830Z           "reservedSpace": "9.313GiB",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5194187Z           "maxUsedSpace": "93.13GiB",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5194542Z           "minFreeSpace": "27.01GiB"
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5195110Z         },
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5195395Z         {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5195686Z           "all": false,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5195993Z           "reservedSpace": "9.313GiB",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5196448Z           "maxUsedSpace": "93.13GiB",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5196786Z           "minFreeSpace": "27.01GiB"
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5197116Z         },
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5197512Z         {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5197833Z           "all": true,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5198248Z           "reservedSpace": "9.313GiB",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5198602Z           "maxUsedSpace": "93.13GiB",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5198956Z           "minFreeSpace": "27.01GiB"
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5199257Z         }
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5199534Z       ]
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5199795Z     }
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5200113Z   ],
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5200472Z   "name": "builder-986226bb-a223-4be2-8857-4b3a5197941d",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5200936Z   "driver": "docker-container",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5201309Z   "lastActivity": "2026-11-18T12:33:17.000Z"
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5201645Z }
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.5202247Z ##[endgroup]
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.6401221Z [command]/usr/bin/docker buildx build --cache-from type=gha --cache-to type=gha,mode=max --iidfile /home/runner/work/_temp/docker-actions-toolkit-0um3sk/build-iidfile-f4944d86c5.txt --label org.opencontainers.image.source=https://github.com/konstmalinin-maker/user-service --attest type=provenance,mode=max,builder-id=https://github.com/konstmalinin-maker/user-service/actions/runs/44304910936/attempts/1 --tag ghcr.io/konstmalinin-maker/user-service:latest --tag ghcr.io/konstmalinin-maker/user-service:59ad3d2126040f164dd3a172d9884e389c9268aa --metadata-file /home/runner/work/_temp/docker-actions-toolkit-0um3sk/build-metadata-0ba0838ff5.json --push .
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.8860281Z #0 building with "builder-986226bb-a223-4be2-8857-4b3a5197941d" instance using docker-container driver
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.8860793Z 
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.8860910Z #1 [internal] load build definition from Dockerfile
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.8861485Z #1 transferring dockerfile: 555B done
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.8861753Z #1 DONE 0.0s
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.8861850Z 
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:22.8862094Z #2 resolve image config for docker-image://docker.io/docker/dockerfile:1
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:23.0665402Z #2 ...
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:23.0665618Z 
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:23.0665830Z #3 [auth] docker/dockerfile:pull token for registry-1.docker.io
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:23.0666182Z #3 DONE 0.0s
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:23.2170819Z 
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:23.2171752Z #2 resolve image config for docker-image://docker.io/docker/dockerfile:1
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:23.5015508Z #2 DONE 0.8s
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:23.6489068Z 
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:23.6493015Z #4 docker-image://docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:23.6494213Z #4 resolve docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e done
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:23.6495783Z #4 sha256:9d2b4f57f9e20f33279375ce25c6ff14f30f64270ed5c7b613b2b30256754f62 14.28MB / 14.28MB 0.1s done
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:23.7862555Z #4 extracting sha256:9d2b4f57f9e20f33279375ce25c6ff14f30f64270ed5c7b613b2b30256754f62 0.1s done
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:23.7863089Z #4 DONE 0.2s
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:23.7863219Z 
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:23.7863477Z #5 [internal] load metadata for docker.io/library/python:3.12-slim
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:23.9949974Z #5 ...
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:23.9950501Z 
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:23.9950684Z #6 [auth] library/python:pull token for registry-1.docker.io
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:23.9951043Z #6 DONE 0.0s
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:24.1453065Z 
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:24.1454018Z #5 [internal] load metadata for docker.io/library/python:3.12-slim
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:24.3900303Z #5 DONE 0.6s
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:24.6112357Z 
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:24.6113607Z #7 [internal] load .dockerignore
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:24.6114302Z #7 transferring context: 219B done
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:24.6114614Z #7 DONE 0.0s
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:24.6114717Z 
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:24.6114823Z #8 [internal] load build context
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:24.6115277Z #8 DONE 0.0s
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:24.6115409Z 
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:24.6115763Z #9 [stage-0 1/5] FROM docker.io/library/python:3.12-slim@sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:24.6116401Z #9 resolve docker.io/library/python:3.12-slim@sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b done
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:24.6116832Z #9 DONE 0.0s
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:24.6116959Z 
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:24.6117087Z #10 importing cache manifest from gha:12732248174483120627
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:25.0451202Z #10 DONE 0.6s
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:25.2145466Z 
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:25.2146521Z #8 [internal] load build context
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:25.2146937Z #8 transferring context: 1.64MB 0.0s done
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:25.2147259Z #8 DONE 0.0s
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:25.2147496Z 
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:25.2147610Z #11 [stage-0 2/5] WORKDIR /app
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:25.2147914Z #11 CACHED
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:25.2148090Z 
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:25.2148251Z #12 [stage-0 3/5] COPY requirements-runtime.txt .
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:25.2148641Z #12 CACHED
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:25.2148765Z 
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:25.2149531Z #13 [stage-0 4/5] RUN --mount=type=secret,id=proxy_ca,required=false     if [ -f /run/secrets/proxy_ca ]; then PIP_CERT=/run/secrets/proxy_ca pip install --no-cache-dir -r requirements-runtime.txt; else pip install --no-cache-dir -r requirements-runtime.txt; fi && mkdir -p /data && chown 10001:10001 /data
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:25.2150389Z #13 CACHED
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:25.2150507Z 
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:25.2150626Z #14 [stage-0 5/5] COPY --chown=10001:10001 . .
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:25.2459784Z #14 CACHED
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:25.3726236Z 
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:25.3727058Z #15 [auth] konstmalinin-maker/user-service:pull,push token for ghcr.io
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:25.5229045Z #15 DONE 0.0s
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:25.5229373Z 
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:25.5229475Z #16 exporting to image
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:25.5230098Z #16 exporting layers done
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:25.5230548Z #16 exporting manifest sha256:7787d42f3469ca38c2b2ae0b3288c4eaca172d1eae625990afe4844aa0394d32 done
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:25.5231125Z #16 exporting config sha256:edad3a6c8ec4a8ef1506052d15fbf5bb9ce8aa2c770a7737ed40ba957297f450 done
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:25.5231696Z #16 exporting attestation manifest sha256:db256e9ad35248cc9847e5e96a2b3dbab125e4ff2242bb022de6d5a4889821c0 done
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:25.5232255Z #16 exporting manifest list sha256:2c1d9457717fe606a4c2b1d33a0b0c048f840e16ae1f7deccab67fffe116c63a done
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:25.5232671Z #16 pushing layers
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:26.8580013Z #16 ...
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:26.8580524Z 
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:26.8580649Z #17 exporting to GitHub Actions Cache
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:26.8581031Z #17 preparing build cache for export done
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:26.8581341Z #17 sending cache export 1.6s done
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:26.8581603Z #17 DONE 1.6s
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:27.0088872Z 
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:27.0089553Z #16 exporting to image
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:27.1261300Z #16 pushing layers 1.9s done
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:27.1262669Z #16 pushing manifest for ghcr.io/konstmalinin-maker/user-service:latest@sha256:2c1d9457717fe606a4c2b1d33a0b0c048f840e16ae1f7deccab67fffe116c63a
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:29.0697098Z #16 pushing manifest for ghcr.io/konstmalinin-maker/user-service:latest@sha256:2c1d9457717fe606a4c2b1d33a0b0c048f840e16ae1f7deccab67fffe116c63a 1.9s done
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:29.4276286Z #16 pushing layers 0.4s done
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:29.4277424Z #16 pushing manifest for ghcr.io/konstmalinin-maker/user-service:59ad3d2126040f164dd3a172d9884e389c9268aa@sha256:2c1d9457717fe606a4c2b1d33a0b0c048f840e16ae1f7deccab67fffe116c63a
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5009098Z #16 pushing manifest for ghcr.io/konstmalinin-maker/user-service:59ad3d2126040f164dd3a172d9884e389c9268aa@sha256:2c1d9457717fe606a4c2b1d33a0b0c048f840e16ae1f7deccab67fffe116c63a 1.1s done
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5010061Z #16 DONE 5.3s
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5150442Z 
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5150851Z #18 resolving provenance for metadata file
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5151371Z #18 DONE 0.0s
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5210619Z ##[group]ImageID
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5211058Z sha256:2c1d9457717fe606a4c2b1d33a0b0c048f840e16ae1f7deccab67fffe116c63a
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5211623Z ##[endgroup]
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5212034Z ##[group]Digest
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5212330Z sha256:2c1d9457717fe606a4c2b1d33a0b0c048f840e16ae1f7deccab67fffe116c63a
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5213264Z ##[endgroup]
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5213793Z ##[group]Metadata
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5214129Z {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5214405Z   "buildx.build.provenance": {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5214710Z     "builder": {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5215318Z       "id": "https://github.com/konstmalinin-maker/user-service/actions/runs/44304910936/attempts/1"
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5215813Z     },
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5216162Z     "buildType": "https://mobyproject.org/buildkit@v1",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5216584Z     "materials": [
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5216920Z       {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5217203Z         "uri": "pkg:docker/docker/dockerfile@1",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5217541Z         "digest": {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5217972Z           "sha256": "4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e"
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5218415Z         }
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5218666Z       },
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5218887Z       {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5219156Z         "uri": "pkg:docker/python@3.12-slim?platform=linux%2Famd64",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5219555Z         "digest": {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5219921Z           "sha256": "5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b"
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5220366Z         }
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5220617Z       }
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5220823Z     ],
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5221060Z     "invocation": {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5221278Z       "configSource": {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5221538Z         "entryPoint": "Dockerfile"
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5221789Z       },
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5221991Z       "parameters": {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5222253Z         "frontend": "gateway.v0",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5222516Z         "args": {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5222737Z           "cmdline": "docker/dockerfile:1",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5223203Z           "label:org.opencontainers.image.source": "https://github.com/konstmalinin-maker/user-service",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5223610Z           "source": "docker/dockerfile:1"
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5223917Z         },
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5224115Z         "secrets": [
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5224319Z           {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5224548Z             "id": "proxy_ca",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5224783Z             "optional": true
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5225330Z           }
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5225527Z         ],
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5225710Z         "locals": [
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5225936Z           {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5226138Z             "name": "context"
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5226391Z           },
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5226600Z           {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5226805Z             "name": "dockerfile"
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5227053Z           }
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5227252Z         ],
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5227491Z         "root": {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5227763Z           "configSource": {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5228186Z             "path": "Dockerfile"
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5228435Z           },
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5228643Z           "request": {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5228876Z             "args": {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5229321Z               "label:org.opencontainers.image.source": "https://github.com/konstmalinin-maker/user-service",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5229736Z               "vcs:localdir:context": ".",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5230013Z               "vcs:localdir:dockerfile": ".",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5230358Z               "vcs:revision": "59ad3d2126040f164dd3a172d9884e389c9268aa",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5230803Z               "vcs:source": "https://github.com/konstmalinin-maker/user-service"
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5231186Z             }
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5231402Z           }
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5231614Z         },
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5231837Z         "compatibilityVersion": 30
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5232200Z       },
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5232414Z       "environment": {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5232657Z         "github_actor": "konstmalinin-maker",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5232923Z         "github_actor_id": "332810774",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5233229Z         "github_event_name": "push",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5233623Z         "github_event_payload": {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5233919Z           "after": "59ad3d2126040f164dd3a172d9884e389c9268aa",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5234223Z           "base_ref": null,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5234524Z           "before": "a8e8862d2ca6edd2cd29757b1b18a25cd5ed133b",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5235134Z           "commits": [
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5235361Z             {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5235579Z               "author": {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5235817Z                 "email": "konstmalinin@gmail.com",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5236084Z                 "name": "Konstantin",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5236389Z                 "username": "konstmalinin-maker"
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5236647Z               },
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5236857Z               "committer": {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5237118Z                 "email": "konstmalinin@gmail.com",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5237407Z                 "name": "Konstantin",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5237709Z                 "username": "konstmalinin-maker"
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5237965Z               },
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5238172Z               "distinct": true,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5238446Z               "id": "59ad3d2126040f164dd3a172d9884e389c9268aa",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5238823Z               "message": "docs: describe API, Compose deployment and all laboratory extensions",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5239220Z               "timestamp": "2026-11-18T15:32:27+03:00",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5239524Z               "tree_id": "7b22aeac1e4512319b823aa0f1a22d992a729903",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5240017Z               "url": "https://github.com/konstmalinin-maker/user-service/commit/59ad3d2126040f164dd3a172d9884e389c9268aa"
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5240435Z             }
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5240636Z           ],
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5241025Z           "compare": "https://github.com/konstmalinin-maker/user-service/compare/a8e8862d2ca6...59ad3d212604",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5241426Z           "created": false,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5241648Z           "deleted": false,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5241897Z           "forced": false,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5242121Z           "head_commit": {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5242365Z             "author": {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5242635Z               "email": "konstmalinin@gmail.com",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5242890Z               "name": "Konstantin",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5243177Z               "username": "konstmalinin-maker"
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5243433Z             },
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5243658Z             "committer": {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5243903Z               "email": "konstmalinin@gmail.com",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5244162Z               "name": "Konstantin",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5244477Z               "username": "konstmalinin-maker"
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5244724Z             },
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5245090Z             "distinct": true,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5245425Z             "id": "59ad3d2126040f164dd3a172d9884e389c9268aa",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5245886Z             "message": "docs: describe API, Compose deployment and all laboratory extensions",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5246263Z             "timestamp": "2026-11-18T15:32:27+03:00",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5246569Z             "tree_id": "7b22aeac1e4512319b823aa0f1a22d992a729903",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5247105Z             "url": "https://github.com/konstmalinin-maker/user-service/commit/59ad3d2126040f164dd3a172d9884e389c9268aa"
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5247693Z           },
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5247924Z           "pusher": {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5248185Z             "email": "konstmalinin@gmail.com",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5248512Z             "name": "konstmalinin-maker"
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5248780Z           },
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5249013Z           "ref": "refs/heads/main",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5249258Z           "repository": {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5249596Z             "allow_forking": true,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5250098Z             "archive_url": "https://api.github.com/repos/konstmalinin-maker/user-service/{archive_format}{/ref}",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5250516Z             "archived": false,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5250917Z             "assignees_url": "https://api.github.com/repos/konstmalinin-maker/user-service/assignees{/user}",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5251431Z             "blobs_url": "https://api.github.com/repos/konstmalinin-maker/user-service/git/blobs{/sha}",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5251940Z             "branches_url": "https://api.github.com/repos/konstmalinin-maker/user-service/branches{/branch}",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5252428Z             "clone_url": "https://github.com/konstmalinin-maker/user-service.git",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5253046Z             "collaborators_url": "https://api.github.com/repos/konstmalinin-maker/user-service/collaborators{/collaborator}",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5253761Z             "comments_url": "https://api.github.com/repos/konstmalinin-maker/user-service/comments{/number}",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5254280Z             "commits_url": "https://api.github.com/repos/konstmalinin-maker/user-service/commits{/sha}",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5255219Z             "compare_url": "https://api.github.com/repos/konstmalinin-maker/user-service/compare/{base}...{head}",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5255807Z             "contents_url": "https://api.github.com/repos/konstmalinin-maker/user-service/contents/{+path}",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5256345Z             "contributors_url": "https://api.github.com/repos/konstmalinin-maker/user-service/contributors",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5256784Z             "created_at": 1794999835,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5257037Z             "default_branch": "main",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5258266Z             "deployments_url": "https://api.github.com/repos/konstmalinin-maker/user-service/deployments",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5258766Z             "description": null,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5259021Z             "disabled": false,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5259405Z             "downloads_url": "https://api.github.com/repos/konstmalinin-maker/user-service/downloads",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5259905Z             "events_url": "https://api.github.com/repos/konstmalinin-maker/user-service/events",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5260259Z             "fork": false,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5260552Z             "forks": 0,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5260779Z             "forks_count": 0,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5261133Z             "forks_url": "https://api.github.com/repos/konstmalinin-maker/user-service/forks",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5261531Z             "full_name": "konstmalinin-maker/user-service",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5261949Z             "git_commits_url": "https://api.github.com/repos/konstmalinin-maker/user-service/git/commits{/sha}",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5262507Z             "git_refs_url": "https://api.github.com/repos/konstmalinin-maker/user-service/git/refs{/sha}",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5263012Z             "git_tags_url": "https://api.github.com/repos/konstmalinin-maker/user-service/git/tags{/sha}",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5263470Z             "git_url": "git://github.com/konstmalinin-maker/user-service.git",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5263924Z             "has_discussions": false,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5264189Z             "has_downloads": true,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5264463Z             "has_issues": true,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5264709Z             "has_pages": false,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5265094Z             "has_projects": true,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5265397Z             "has_pull_requests": true,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5265670Z             "has_wiki": true,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5265949Z             "homepage": null,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5266287Z             "hooks_url": "https://api.github.com/repos/konstmalinin-maker/user-service/hooks",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5266741Z             "html_url": "https://github.com/konstmalinin-maker/user-service",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5267066Z             "id": 1462681867,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5267319Z             "is_template": false,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5267745Z             "issue_comment_url": "https://api.github.com/repos/konstmalinin-maker/user-service/issues/comments{/number}",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5268405Z             "issue_events_url": "https://api.github.com/repos/konstmalinin-maker/user-service/issues/events{/number}",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5268925Z             "issues_url": "https://api.github.com/repos/konstmalinin-maker/user-service/issues{/number}",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5269438Z             "keys_url": "https://api.github.com/repos/konstmalinin-maker/user-service/keys{/key_id}",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5269958Z             "labels_url": "https://api.github.com/repos/konstmalinin-maker/user-service/labels{/name}",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5270332Z             "language": "Python",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5270690Z             "languages_url": "https://api.github.com/repos/konstmalinin-maker/user-service/languages",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5271053Z             "license": {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5271306Z               "key": "mit",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5271563Z               "name": "MIT License",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5271830Z               "node_id": "MDc6TGljZW5zZTEz",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5272108Z               "spdx_id": "MIT",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5272407Z               "url": "https://api.github.com/licenses/mit"
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5272720Z             },
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5272928Z             "master_branch": "main",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5273278Z             "merges_url": "https://api.github.com/repos/konstmalinin-maker/user-service/merges",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5273778Z             "milestones_url": "https://api.github.com/repos/konstmalinin-maker/user-service/milestones{/number}",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5274171Z             "mirror_url": null,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5274418Z             "name": "user-service",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5274687Z             "node_id": "R_kgDOVy7BCw",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5275408Z             "notifications_url": "https://api.github.com/repos/konstmalinin-maker/user-service/notifications{?since,all,participating}",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5275930Z             "open_issues": 0,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5276173Z             "open_issues_count": 0,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5276444Z             "owner": {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5276747Z               "avatar_url": "https://avatars.githubusercontent.com/u/332810774?v=4",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5277085Z               "email": "konstmalinin@gmail.com",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5277470Z               "events_url": "https://api.github.com/users/konstmalinin-maker/events{/privacy}",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5277916Z               "followers_url": "https://api.github.com/users/konstmalinin-maker/followers",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5278442Z               "following_url": "https://api.github.com/users/konstmalinin-maker/following{/other_user}",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5278900Z               "gists_url": "https://api.github.com/users/konstmalinin-maker/gists{/gist_id}",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5279235Z               "gravatar_id": "",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5279538Z               "html_url": "https://github.com/konstmalinin-maker",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5279827Z               "id": 332810774,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5280071Z               "login": "konstmalinin-maker",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5280364Z               "name": "konstmalinin-maker",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5280695Z               "node_id": "U_kgDOE9ZKFg",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5281157Z               "organizations_url": "https://api.github.com/users/konstmalinin-maker/orgs",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5281714Z               "received_events_url": "https://api.github.com/users/konstmalinin-maker/received_events",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5282179Z               "repos_url": "https://api.github.com/users/konstmalinin-maker/repos",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5282513Z               "site_admin": false,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5282867Z               "starred_url": "https://api.github.com/users/konstmalinin-maker/starred{/owner}{/repo}",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5283352Z               "subscriptions_url": "https://api.github.com/users/konstmalinin-maker/subscriptions",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5283712Z               "type": "User",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5284001Z               "url": "https://api.github.com/users/konstmalinin-maker",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5284411Z               "user_view_type": "public"
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5284658Z             },
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5285049Z             "private": false,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5285310Z             "pull_request_creation_policy": "all",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5285710Z             "pulls_url": "https://api.github.com/repos/konstmalinin-maker/user-service/pulls{/number}",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5286108Z             "pushed_at": 1795005149,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5286523Z             "releases_url": "https://api.github.com/repos/konstmalinin-maker/user-service/releases{/id}",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5286893Z             "size": 435,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5287235Z             "ssh_url": "git@github.com:konstmalinin-maker/user-service.git",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5287533Z             "stargazers": 0,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5287787Z             "stargazers_count": 0,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5288151Z             "stargazers_url": "https://api.github.com/repos/konstmalinin-maker/user-service/stargazers",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5288655Z             "statuses_url": "https://api.github.com/repos/konstmalinin-maker/user-service/statuses/{sha}",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5289163Z             "subscribers_url": "https://api.github.com/repos/konstmalinin-maker/user-service/subscribers",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5289686Z             "subscription_url": "https://api.github.com/repos/konstmalinin-maker/user-service/subscription",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5290171Z             "svn_url": "https://github.com/konstmalinin-maker/user-service",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5290582Z             "tags_url": "https://api.github.com/repos/konstmalinin-maker/user-service/tags",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5291025Z             "teams_url": "https://api.github.com/repos/konstmalinin-maker/user-service/teams",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5291400Z             "topics": [],
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5291751Z             "trees_url": "https://api.github.com/repos/konstmalinin-maker/user-service/git/trees{/sha}",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5292146Z             "updated_at": "2026-11-18T12:11:53Z",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5292493Z             "url": "https://api.github.com/repos/konstmalinin-maker/user-service",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5292999Z             "visibility": "public",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5293350Z             "watchers": 0,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5293656Z             "watchers_count": 0,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5293996Z             "web_commit_signoff_required": false
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5294292Z           },
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5294617Z           "sender": {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5295297Z             "avatar_url": "https://avatars.githubusercontent.com/u/332810774?v=4",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5295847Z             "events_url": "https://api.github.com/users/konstmalinin-maker/events{/privacy}",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5296396Z             "followers_url": "https://api.github.com/users/konstmalinin-maker/followers",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5297066Z             "following_url": "https://api.github.com/users/konstmalinin-maker/following{/other_user}",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5297734Z             "gists_url": "https://api.github.com/users/konstmalinin-maker/gists{/gist_id}",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5298351Z             "gravatar_id": "",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5298887Z             "html_url": "https://github.com/konstmalinin-maker",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5299311Z             "id": 332810774,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5299752Z             "login": "konstmalinin-maker",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5300146Z             "node_id": "U_kgDOE9ZKFg",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5300601Z             "organizations_url": "https://api.github.com/users/konstmalinin-maker/orgs",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5301175Z             "received_events_url": "https://api.github.com/users/konstmalinin-maker/received_events",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5301623Z             "repos_url": "https://api.github.com/users/konstmalinin-maker/repos",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5301954Z             "site_admin": false,
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5302313Z             "starred_url": "https://api.github.com/users/konstmalinin-maker/starred{/owner}{/repo}",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5302802Z             "subscriptions_url": "https://api.github.com/users/konstmalinin-maker/subscriptions",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5303260Z             "type": "User",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5303555Z             "url": "https://api.github.com/users/konstmalinin-maker",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5303866Z             "user_view_type": "public"
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5304119Z           }
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5304335Z         },
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5304559Z         "github_job": "build-and-publish",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5304822Z         "github_ref": "refs/heads/main",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5305271Z         "github_ref_name": "main",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5305688Z         "github_ref_protected": "false",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5305940Z         "github_ref_type": "branch",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5306259Z         "github_repository": "konstmalinin-maker/user-service",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5306601Z         "github_repository_id": "1462681867",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5306943Z         "github_repository_owner": "konstmalinin-maker",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5307333Z         "github_repository_owner_id": "332810774",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5307635Z         "github_run_attempt": "1",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5307975Z         "github_run_id": "44304910936",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5308266Z         "github_run_number": "10",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5308510Z         "github_runner_arch": "X64",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5308809Z         "github_runner_environment": "github-hosted",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5309095Z         "github_runner_image_os": "ubuntu26",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5309391Z         "github_runner_image_version": "20261111.82.6",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5309685Z         "github_runner_name": "GitHub Actions 1000000240",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5309954Z         "github_runner_os": "Linux",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5310316Z         "github_runner_tracking_id": "github_a5aa9849-58ef-490b-98b5-bc9f9ae145f9",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5310704Z         "github_server_url": "https://github.com",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5311008Z         "github_triggering_actor": "konstmalinin-maker",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5311291Z         "github_workflow": "CI and GHCR",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5311671Z         "github_workflow_ref": "konstmalinin-maker/user-service/.github/workflows/ci.yml@refs/heads/main",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5312157Z         "github_workflow_sha": "59ad3d2126040f164dd3a172d9884e389c9268aa",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5312472Z         "platform": "linux/amd64"
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5312704Z       }
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5312903Z     }
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5313106Z   },
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5313585Z   "buildx.build.ref": "builder-986226bb-a223-4be2-8857-4b3a5197941d/builder-986226bb-a223-4be2-8857-4b3a5197941d0/ciuz644pn5uszv3gtudgo1w9g",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5314100Z   "containerimage.descriptor": {
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5314607Z     "mediaType": "application/vnd.oci.image.index.v1+json",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5315227Z     "digest": "sha256:2c1d9457717fe606a4c2b1d33a0b0c048f840e16ae1f7deccab67fffe116c63a",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5315589Z     "size": 856
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5315826Z   },
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5316169Z   "containerimage.digest": "sha256:2c1d9457717fe606a4c2b1d33a0b0c048f840e16ae1f7deccab67fffe116c63a",
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5316900Z   "image.name": "ghcr.io/konstmalinin-maker/user-service:latest,ghcr.io/konstmalinin-maker/user-service:59ad3d2126040f164dd3a172d9884e389c9268aa"
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5317520Z }
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5317949Z ##[endgroup]
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5318363Z ##[group]Reference
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5318757Z builder-986226bb-a223-4be2-8857-4b3a5197941d/builder-986226bb-a223-4be2-8857-4b3a5197941d0/ciuz644pn5uszv3gtudgo1w9g
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5319363Z ##[endgroup]
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5319705Z ##[group]Check build summary support
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5320117Z Build summary supported!
+build-and-publish	Run docker/build-push-action@v6	2026-11-18T12:33:30.5320491Z ##[endgroup]
+build-and-publish	Record image digest	﻿2026-11-18T12:33:30.5376387Z ##[group]Run echo 'sha256:2c1d9457717fe606a4c2b1d33a0b0c048f840e16ae1f7deccab67fffe116c63a' > image-digest.txt
+build-and-publish	Record image digest	2026-11-18T12:33:30.5377134Z [36;1mecho 'sha256:2c1d9457717fe606a4c2b1d33a0b0c048f840e16ae1f7deccab67fffe116c63a' > image-digest.txt[0m
+build-and-publish	Record image digest	2026-11-18T12:33:30.5399409Z shell: /usr/bin/bash -e {0}
+build-and-publish	Record image digest	2026-11-18T12:33:30.5399815Z ##[endgroup]
+build-and-publish	Run actions/upload-artifact@v4	﻿2026-11-18T12:33:30.5491991Z ##[group]Run actions/upload-artifact@v4
+build-and-publish	Run actions/upload-artifact@v4	2026-11-18T12:33:30.5492259Z with:
+build-and-publish	Run actions/upload-artifact@v4	2026-11-18T12:33:30.5492475Z   name: image-digest
+build-and-publish	Run actions/upload-artifact@v4	2026-11-18T12:33:30.5492860Z   path: image-digest.txt
+build-and-publish	Run actions/upload-artifact@v4	2026-11-18T12:33:30.5493128Z   if-no-files-found: warn
+build-and-publish	Run actions/upload-artifact@v4	2026-11-18T12:33:30.5493369Z   compression-level: 6
+build-and-publish	Run actions/upload-artifact@v4	2026-11-18T12:33:30.5493597Z   overwrite: false
+build-and-publish	Run actions/upload-artifact@v4	2026-11-18T12:33:30.5493850Z   include-hidden-files: false
+build-and-publish	Run actions/upload-artifact@v4	2026-11-18T12:33:30.5494109Z ##[endgroup]
+build-and-publish	Run actions/upload-artifact@v4	2026-11-18T12:33:30.6733103Z (node:3208) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-publish	Run actions/upload-artifact@v4	2026-11-18T12:33:30.6733785Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-publish	Run actions/upload-artifact@v4	2026-11-18T12:33:30.6763785Z With the provided path, there will be 1 file uploaded
+build-and-publish	Run actions/upload-artifact@v4	2026-11-18T12:33:30.6785732Z Artifact name is valid!
+build-and-publish	Run actions/upload-artifact@v4	2026-11-18T12:33:30.6805703Z Root directory input is valid!
+build-and-publish	Run actions/upload-artifact@v4	2026-11-18T12:33:31.2583286Z Beginning upload of artifact content to blob storage
+build-and-publish	Run actions/upload-artifact@v4	2026-11-18T12:33:31.2709087Z (node:3208) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+build-and-publish	Run actions/upload-artifact@v4	2026-11-18T12:33:31.6033109Z Uploaded bytes 208
+build-and-publish	Run actions/upload-artifact@v4	2026-11-18T12:33:31.6939264Z Finished uploading artifact content to blob storage!
+build-and-publish	Run actions/upload-artifact@v4	2026-11-18T12:33:31.6940114Z SHA256 digest of uploaded artifact zip is d4245959d6f6566e091fe4dac151b158ac7a825b75b6aedaa1b6dcffaa70fed6
+build-and-publish	Run actions/upload-artifact@v4	2026-11-18T12:33:31.6940704Z Finalizing artifact upload
+build-and-publish	Run actions/upload-artifact@v4	2026-11-18T12:33:32.1115462Z Artifact image-digest.zip successfully finalized. Artifact ID 14428001014
+build-and-publish	Run actions/upload-artifact@v4	2026-11-18T12:33:32.1116485Z Artifact image-digest has been successfully uploaded! Final size is 208 bytes. Artifact ID is 14428001014
+build-and-publish	Run actions/upload-artifact@v4	2026-11-18T12:33:32.1120541Z Artifact download URL: https://github.com/konstmalinin-maker/user-service/actions/runs/44304910936/artifacts/14428001014
+build-and-publish	Post Run docker/build-push-action@v6	﻿2026-11-18T12:33:32.1279895Z Post job cleanup.
+build-and-publish	Post Run docker/build-push-action@v6	2026-11-18T12:33:32.2952047Z ##[group]Generating build summary
+build-and-publish	Post Run docker/build-push-action@v6	2026-11-18T12:33:32.2953488Z exporting build record to /home/runner/work/_temp/docker-actions-toolkit-zQcTGn/export
+build-and-publish	Post Run docker/build-push-action@v6	2026-11-18T12:33:32.2961778Z (node:3220) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-publish	Post Run docker/build-push-action@v6	2026-11-18T12:33:32.2962731Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-publish	Post Run docker/build-push-action@v6	2026-11-18T12:33:32.4663095Z [command]/usr/bin/docker buildx history export --builder builder-986226bb-a223-4be2-8857-4b3a5197941d --output /home/runner/work/_temp/docker-actions-toolkit-zQcTGn/export/konstmalinin-maker~user-service~CIUZ64.dockerbuild ciuz644pn5uszv3gtudgo1w9g --finalize
+build-and-publish	Post Run docker/build-push-action@v6	2026-11-18T12:33:32.5838297Z Build record written to /home/runner/work/_temp/docker-actions-toolkit-zQcTGn/export/konstmalinin-maker~user-service~CIUZ64.dockerbuild (41.9 KB)
+build-and-publish	Post Run docker/build-push-action@v6	2026-11-18T12:33:32.5853255Z Uploading konstmalinin-maker~user-service~CIUZ64.dockerbuild to blob storage
+build-and-publish	Post Run docker/build-push-action@v6	2026-11-18T12:33:32.9738136Z Beginning upload of artifact content to blob storage
+build-and-publish	Post Run docker/build-push-action@v6	2026-11-18T12:33:32.9798042Z (node:3220) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+build-and-publish	Post Run docker/build-push-action@v6	2026-11-18T12:33:32.9804632Z Uploaded bytes 42905
+build-and-publish	Post Run docker/build-push-action@v6	2026-11-18T12:33:33.4661594Z Finished uploading artifact content to blob storage!
+build-and-publish	Post Run docker/build-push-action@v6	2026-11-18T12:33:33.4665284Z SHA256 hash of uploaded artifact is 9d9cb16e97192be89a1187d2b62eb43056b4aeae5165de05920f7c9e85de7a8a
+build-and-publish	Post Run docker/build-push-action@v6	2026-11-18T12:33:33.4666368Z Finalizing artifact upload
+build-and-publish	Post Run docker/build-push-action@v6	2026-11-18T12:33:34.0988853Z Artifact successfully finalized (14426723350)
+build-and-publish	Post Run docker/build-push-action@v6	2026-11-18T12:33:34.0989877Z Artifact download URL: https://github.com/konstmalinin-maker/user-service/actions/runs/44304910936/artifacts/14426723350
+build-and-publish	Post Run docker/build-push-action@v6	2026-11-18T12:33:34.1009146Z Writing summary
+build-and-publish	Post Run docker/build-push-action@v6	2026-11-18T12:33:34.1019019Z ##[endgroup]
+build-and-publish	Post Run docker/build-push-action@v6	2026-11-18T12:33:34.1019826Z ##[group]Removing temp folder /home/runner/work/_temp/docker-actions-toolkit-0um3sk
+build-and-publish	Post Run docker/build-push-action@v6	2026-11-18T12:33:34.1020964Z ##[endgroup]
+build-and-publish	Post Run docker/build-push-action@v6	2026-11-18T12:33:34.1021579Z ##[group]Post cache
+build-and-publish	Post Run docker/build-push-action@v6	2026-11-18T12:33:34.1022347Z State not set
+build-and-publish	Post Run docker/build-push-action@v6	2026-11-18T12:33:34.1022889Z ##[endgroup]
+build-and-publish	Post Run docker/login-action@v3	﻿2026-11-18T12:33:34.1141484Z Post job cleanup.
+build-and-publish	Post Run docker/login-action@v3	2026-11-18T12:33:34.3346675Z ##[group]Logout from ghcr.io
+build-and-publish	Post Run docker/login-action@v3	2026-11-18T12:33:34.3361116Z (node:3360) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-publish	Post Run docker/login-action@v3	2026-11-18T12:33:34.3361925Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-publish	Post Run docker/login-action@v3	2026-11-18T12:33:34.3373797Z [command]/usr/bin/docker logout ghcr.io
+build-and-publish	Post Run docker/login-action@v3	2026-11-18T12:33:34.3503788Z Removing login credentials for ghcr.io
+build-and-publish	Post Run docker/login-action@v3	2026-11-18T12:33:34.3524297Z ##[endgroup]
+build-and-publish	Post Run docker/login-action@v3	2026-11-18T12:33:34.3525213Z ##[group]Post cache
+build-and-publish	Post Run docker/login-action@v3	2026-11-18T12:33:34.3525643Z State not set
+build-and-publish	Post Run docker/login-action@v3	2026-11-18T12:33:34.3526378Z ##[endgroup]
+build-and-publish	Post Run docker/setup-buildx-action@v3	﻿2026-11-18T12:33:34.3639098Z Post job cleanup.
+build-and-publish	Post Run docker/setup-buildx-action@v3	2026-11-18T12:33:34.5451654Z ##[group]Removing builder
+build-and-publish	Post Run docker/setup-buildx-action@v3	2026-11-18T12:33:34.5455944Z (node:3381) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-publish	Post Run docker/setup-buildx-action@v3	2026-11-18T12:33:34.5456681Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-publish	Post Run docker/setup-buildx-action@v3	2026-11-18T12:33:34.6275408Z [command]/usr/bin/docker buildx rm builder-986226bb-a223-4be2-8857-4b3a5197941d
+build-and-publish	Post Run docker/setup-buildx-action@v3	2026-11-18T12:33:34.7388513Z builder-986226bb-a223-4be2-8857-4b3a5197941d removed
+build-and-publish	Post Run docker/setup-buildx-action@v3	2026-11-18T12:33:34.7410981Z ##[endgroup]
+build-and-publish	Post Run docker/setup-buildx-action@v3	2026-11-18T12:33:34.7411613Z ##[group]Cleaning up certificates
+build-and-publish	Post Run docker/setup-buildx-action@v3	2026-11-18T12:33:34.7412203Z ##[endgroup]
+build-and-publish	Post Run docker/setup-buildx-action@v3	2026-11-18T12:33:34.7414469Z ##[group]Post cache
+build-and-publish	Post Run docker/setup-buildx-action@v3	2026-11-18T12:33:34.7414819Z State not set
+build-and-publish	Post Run docker/setup-buildx-action@v3	2026-11-18T12:33:34.7415495Z ##[endgroup]
+build-and-publish	Post Run actions/checkout@v4	﻿2026-11-18T12:33:34.7534450Z Post job cleanup.
+build-and-publish	Post Run actions/checkout@v4	2026-11-18T12:33:34.8150776Z [command]/usr/bin/git version
+build-and-publish	Post Run actions/checkout@v4	2026-11-18T12:33:34.8177901Z git version 2.56.1
+build-and-publish	Post Run actions/checkout@v4	2026-11-18T12:33:34.8206357Z Temporarily overriding HOME='/home/runner/work/_temp/16437af3-f026-4439-bd05-78e8dbe7e3c0' before making global git config changes
+build-and-publish	Post Run actions/checkout@v4	2026-11-18T12:33:34.8207133Z Adding repository directory to the temporary git global config as a safe directory
+build-and-publish	Post Run actions/checkout@v4	2026-11-18T12:33:34.8211593Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/user-service/user-service
+build-and-publish	Post Run actions/checkout@v4	2026-11-18T12:33:34.8241340Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build-and-publish	Post Run actions/checkout@v4	2026-11-18T12:33:34.8265490Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build-and-publish	Post Run actions/checkout@v4	2026-11-18T12:33:34.8452057Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build-and-publish	Post Run actions/checkout@v4	2026-11-18T12:33:34.8468070Z http.https://github.com/.extraheader
+build-and-publish	Post Run actions/checkout@v4	2026-11-18T12:33:34.8476029Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+build-and-publish	Post Run actions/checkout@v4	2026-11-18T12:33:34.8503601Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build-and-publish	Post Run actions/checkout@v4	2026-11-18T12:33:34.8683160Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build-and-publish	Post Run actions/checkout@v4	2026-11-18T12:33:34.8704145Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build-and-publish	Complete job	﻿2026-11-18T12:33:34.8993206Z Cleaning up orphan processes
+build-and-publish	Complete job	2026-11-18T12:33:34.9278848Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/upload-artifact@v4, docker/build-push-action@v6, docker/login-action@v3, docker/setup-buildx-action@v3. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

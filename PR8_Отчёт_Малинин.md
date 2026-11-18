@@ -149,7 +149,7 @@ SDK создан командой openapi-python-client generate из зафик
 
 В Swagger выполнен GET /orders через Try it out → Execute. Сервер вернул 200 и сохранённые заказы. Документация и рабочая реализация используют одни модели ответов.
 
-![Скриншот 15 — фактический ответ сервера в Swagger UI.](docs/pr8-images/swagger-execute.png)
+![Скриншот 15 — фактический ответ сервера в Swagger UI.](docs/pr8-images/swagger-execute-response.png)
 
 Скриншот 15 — фактический ответ сервера в Swagger UI.
 

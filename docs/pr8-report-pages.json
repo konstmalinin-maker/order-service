@@ -44,14 +44,16 @@
         "path": "docs/pr8-images/10-user-contract.png",
         "caption": "Скриншот 1 — контракт User API и последовательность коммитов.",
         "width": 17,
-        "maxheight": 12
+        "maxheight": 12,
+        "visible_height": 750
       },
       {
         "kind": "image",
         "path": "docs/pr8-images/11-order-contract.png",
         "caption": "Скриншот 2 — контракт Order API, retry, circuit breaker и событие OrderCreated.",
         "width": 17,
-        "maxheight": 10
+        "maxheight": 10,
+        "visible_height": 900
       }
     ]
   },
@@ -67,7 +69,8 @@
         "path": "docs/pr8-images/compose-containers.png",
         "caption": "Скриншот 3 — docker compose ps полного стенда: API и очередь healthy, мониторинг запущен.",
         "width": 17,
-        "maxheight": 14
+        "maxheight": 14,
+        "visible_height": 640
       },
       {
         "kind": "p",
@@ -87,7 +90,8 @@
         "path": "docs/pr8-images/03-users-crud.png",
         "caption": "Скриншот 4 — реальные curl-запросы создания, чтения и изменения пользователя.",
         "width": 17,
-        "maxheight": 16
+        "maxheight": 16,
+        "visible_height": 720
       }
     ]
   },
@@ -103,7 +107,8 @@
         "path": "docs/pr8-images/19-user-delete.png",
         "caption": "Скриншот 5 — создание тестовой записи, удаление 204 и повторное чтение 404.",
         "width": 17,
-        "maxheight": 16
+        "maxheight": 16,
+        "visible_height": 560
       }
     ]
   },
@@ -119,7 +124,8 @@
         "path": "docs/pr8-images/16-compose-orders.png",
         "caption": "Скриншот 6 — создание и чтение заказов в контейнерном стенде.",
         "width": 17,
-        "maxheight": 16
+        "maxheight": 16,
+        "visible_height": 660
       }
     ]
   },
@@ -135,7 +141,8 @@
         "path": "docs/pr8-images/05-errors-400-404.png",
         "caption": "Скриншот 7 — ответы 400 и 404 контейнерного Order API.",
         "width": 17,
-        "maxheight": 16
+        "maxheight": 16,
+        "visible_height": 820
       },
       {
         "kind": "p",
@@ -155,7 +162,8 @@
         "path": "docs/pr8-images/06-upstream-503.png",
         "caption": "Скриншот 8 — 503 при остановленном контейнере user-service.",
         "width": 17,
-        "maxheight": 16
+        "maxheight": 16,
+        "visible_height": 400
       }
     ]
   },
@@ -191,7 +199,8 @@
         "path": "docs/pr8-images/08-user-tests.png",
         "caption": "Скриншот 10 — запуск pytest-cov для user-service.",
         "width": 17,
-        "maxheight": 16
+        "maxheight": 16,
+        "visible_height": 520
       }
     ]
   },
@@ -207,7 +216,8 @@
         "path": "docs/pr8-images/12-order-tests.png",
         "caption": "Скриншот 11 — сохранённый журнал реального запуска с TEST_RABBITMQ_URL, без пропущенного брокерного теста.",
         "width": 17,
-        "maxheight": 16
+        "maxheight": 16,
+        "visible_height": 660
       },
       {
         "kind": "p",
@@ -227,7 +237,8 @@
         "path": "docs/pr8-images/18-sqlite-persistence.png",
         "caption": "Скриншот 12 — после docker compose restart сохранены пользователь ID 1 и заказ ID 2.",
         "width": 17,
-        "maxheight": 14
+        "maxheight": 14,
+        "visible_height": 230
       },
       {
         "kind": "p",
@@ -276,7 +287,7 @@
       },
       {
         "kind": "image",
-        "path": "docs/pr8-images/swagger-execute.png",
+        "path": "docs/pr8-images/swagger-execute-response.png",
         "caption": "Скриншот 15 — фактический ответ сервера в Swagger UI.",
         "width": 17,
         "maxheight": 20
@@ -315,14 +326,16 @@
         "path": "docs/pr8-images/15-containers-notification.png",
         "caption": "Скриншот 17 — контейнеры healthy и уведомление для созданного заказа.",
         "width": 17,
-        "maxheight": 10
+        "maxheight": 10,
+        "visible_height": 260
       },
       {
         "kind": "image",
         "path": "docs/pr8-images/notification-delivery.png",
         "caption": "Скриншот 18 — лог фактической обработки OrderCreated из полного Compose-стенда.",
         "width": 17,
-        "maxheight": 8
+        "maxheight": 8,
+        "visible_height": 210
       },
       {
         "kind": "p",
@@ -397,14 +410,16 @@
         "path": "docs/pr8-images/17-user-ghcr.png",
         "caption": "Скриншот 23 — реальный успешный push user-service в GHCR из main.",
         "width": 17,
-        "maxheight": 10
+        "maxheight": 10,
+        "visible_height": 420
       },
       {
         "kind": "image",
         "path": "docs/pr8-images/order-ghcr.png",
         "caption": "Скриншот 24 — реальный успешный push order-service в GHCR из main.",
         "width": 17,
-        "maxheight": 9
+        "maxheight": 9,
+        "visible_height": 380
       },
       {
         "kind": "p",
@@ -424,7 +439,8 @@
         "path": "docs/pr8-images/13-kubernetes-replicas.png",
         "caption": "Скриншот 25 — исходный вывод kubectl из реального kind: Order Service 3/3 Ready.",
         "width": 17,
-        "maxheight": 15
+        "maxheight": 15,
+        "visible_height": 750
       },
       {
         "kind": "p",

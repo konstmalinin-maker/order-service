@@ -1,0 +1,399 @@
++ kind create cluster --name pr8-lab --image kindest/node:v1.34.0 --wait 180s
+Creating cluster "pr8-lab" ...
+ • Ensuring node image (kindest/node:v1.34.0) 🖼  ...
+ ✓ Ensuring node image (kindest/node:v1.34.0) 🖼
+ • Preparing nodes 📦   ...
+ ✓ Preparing nodes 📦 
+ • Writing configuration 📜  ...
+ ✓ Writing configuration 📜
+ • Starting control-plane 🕹️  ...
+ ✓ Starting control-plane 🕹️
+ • Installing CNI 🔌  ...
+ ✓ Installing CNI 🔌
+ • Installing StorageClass 💾  ...
+ ✓ Installing StorageClass 💾
+ • Waiting ≤ 3m0s for control-plane = Ready ⏳  ...
+ ✓ Waiting ≤ 3m0s for control-plane = Ready ⏳
+ • Ready after 17s 💚
+Set kubectl context to "kind-pr8-lab"
+You can now use your cluster with:
+
+kubectl cluster-info --context kind-pr8-lab
+
+Have a question, bug, or feature request? Let us know! https://kind.sigs.k8s.io/#community 🙂
++ USER_SERVICE_DIR=./user-service-source
++ docker build -t pr8-user-service:local ./user-service-source
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 535B done
+#1 DONE 0.0s
+
+#2 [auth] docker/dockerfile:pull token for registry-1.docker.io
+#2 DONE 0.0s
+
+#3 resolve image config for docker-image://docker.io/docker/dockerfile:1
+#3 DONE 0.5s
+
+#4 docker-image://docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e
+#4 resolve docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e 0.0s done
+#4 sha256:9d2b4f57f9e20f33279375ce25c6ff14f30f64270ed5c7b613b2b30256754f62 14.28MB / 14.28MB 0.1s done
+#4 extracting sha256:9d2b4f57f9e20f33279375ce25c6ff14f30f64270ed5c7b613b2b30256754f62
+#4 extracting sha256:9d2b4f57f9e20f33279375ce25c6ff14f30f64270ed5c7b613b2b30256754f62 0.2s done
+#4 DONE 0.4s
+
+#5 [auth] library/python:pull token for registry-1.docker.io
+#5 DONE 0.0s
+
+#6 [internal] load metadata for docker.io/library/python:3.12-slim
+#6 DONE 0.4s
+
+#7 [internal] load .dockerignore
+#7 transferring context: 219B done
+#7 DONE 0.0s
+
+#8 [internal] load build context
+#8 transferring context: 1.64MB 0.0s done
+#8 DONE 0.0s
+
+#9 [stage-0 1/5] FROM docker.io/library/python:3.12-slim@sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b
+#9 resolve docker.io/library/python:3.12-slim@sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b 0.0s done
+#9 sha256:05e0eee5572e9c9f50408a2132590133b830a668a1cf2ff2b150f19c57707e2b 248B / 248B 0.0s done
+#9 sha256:68bced9e0afa4479df17c3646e27c7c7e9ce9ba70c0e6c73b6826487b89037d9 1.29MB / 1.29MB 0.1s done
+#9 sha256:2dc99d2d0a39fce31e37615eb4c932e16dcc4c2b0ce9993714280081b5dbe085 12.12MB / 12.12MB 0.1s done
+#9 sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 29.86MB / 29.86MB 0.2s done
+#9 extracting sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41
+#9 extracting sha256:37fb86c2a767b88d500c6872195f88078f64765fe0d2f9cc375cc2efbd4c0a41 0.7s done
+#9 DONE 0.9s
+
+#9 [stage-0 1/5] FROM docker.io/library/python:3.12-slim@sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b
+#9 extracting sha256:68bced9e0afa4479df17c3646e27c7c7e9ce9ba70c0e6c73b6826487b89037d9 0.1s done
+#9 extracting sha256:2dc99d2d0a39fce31e37615eb4c932e16dcc4c2b0ce9993714280081b5dbe085
+#9 extracting sha256:2dc99d2d0a39fce31e37615eb4c932e16dcc4c2b0ce9993714280081b5dbe085 0.4s done
+#9 DONE 1.4s
+
+#9 [stage-0 1/5] FROM docker.io/library/python:3.12-slim@sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b
+#9 extracting sha256:05e0eee5572e9c9f50408a2132590133b830a668a1cf2ff2b150f19c57707e2b done
+#9 DONE 1.4s
+
+#10 [stage-0 2/5] WORKDIR /app
+#10 DONE 0.1s
+
+#11 [stage-0 3/5] COPY requirements-runtime.txt .
+#11 DONE 0.0s
+
+#12 [stage-0 4/5] RUN --mount=type=secret,id=proxy_ca,required=false     if [ -f /run/secrets/proxy_ca ]; then PIP_CERT=/run/secrets/proxy_ca pip install --no-cache-dir -r requirements-runtime.txt; else pip install --no-cache-dir -r requirements-runtime.txt; fi && mkdir -p /data && chown 10001:10001 /data
+#12 1.540 Collecting fastapi==0.115.12 (from -r requirements-runtime.txt (line 1))
+#12 1.560   Downloading fastapi-0.115.12-py3-none-any.whl.metadata (27 kB)
+#12 1.592 Collecting uvicorn==0.54.0 (from -r requirements-runtime.txt (line 2))
+#12 1.596   Downloading uvicorn-0.54.0-py3-none-any.whl.metadata (6.6 kB)
+#12 1.698 Collecting pydantic==2.11.7 (from -r requirements-runtime.txt (line 3))
+#12 1.701   Downloading pydantic-2.11.7-py3-none-any.whl.metadata (67 kB)
+#12 1.716 Collecting email-validator==2.4.0 (from -r requirements-runtime.txt (line 4))
+#12 1.720   Downloading email_validator-2.4.0-py3-none-any.whl.metadata (26 kB)
+#12 1.748 Collecting httpx==0.28.1 (from -r requirements-runtime.txt (line 5))
+#12 1.751   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+#12 1.766 Collecting Flask==3.1.3 (from -r requirements-runtime.txt (line 6))
+#12 1.769   Downloading flask-3.1.3-py3-none-any.whl.metadata (3.2 kB)
+#12 1.783 Collecting prometheus_flask_exporter==0.23.2 (from -r requirements-runtime.txt (line 7))
+#12 1.786   Downloading prometheus_flask_exporter-0.23.2-py3-none-any.whl.metadata (20 kB)
+#12 1.798 Collecting prometheus_client==0.26.0 (from -r requirements-runtime.txt (line 8))
+#12 1.801   Downloading prometheus_client-0.26.0-py3-none-any.whl.metadata (2.1 kB)
+#12 1.818 Collecting opentelemetry-sdk==1.34.1 (from -r requirements-runtime.txt (line 9))
+#12 1.821   Downloading opentelemetry_sdk-1.34.1-py3-none-any.whl.metadata (1.6 kB)
+#12 1.835 Collecting opentelemetry-exporter-otlp-proto-http==1.34.1 (from -r requirements-runtime.txt (line 10))
+#12 1.838   Downloading opentelemetry_exporter_otlp_proto_http-1.34.1-py3-none-any.whl.metadata (2.3 kB)
+#12 1.856 Collecting opentelemetry-instrumentation-fastapi==0.55b1 (from -r requirements-runtime.txt (line 11))
+#12 1.860   Downloading opentelemetry_instrumentation_fastapi-0.55b1-py3-none-any.whl.metadata (2.2 kB)
+#12 1.875 Collecting opentelemetry-instrumentation-httpx==0.55b1 (from -r requirements-runtime.txt (line 12))
+#12 1.880   Downloading opentelemetry_instrumentation_httpx-0.55b1-py3-none-any.whl.metadata (7.3 kB)
+#12 1.891 Collecting pika==1.5.0 (from -r requirements-runtime.txt (line 13))
+#12 1.895   Downloading pika-1.5.0-py3-none-any.whl.metadata (14 kB)
+#12 1.906 Collecting attrs==26.1.0 (from -r requirements-runtime.txt (line 14))
+#12 1.909   Downloading attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+#12 1.919 Collecting python-dateutil==2.9.0.post0 (from -r requirements-runtime.txt (line 15))
+#12 1.922   Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+#12 1.951 Collecting starlette<0.47.0,>=0.40.0 (from fastapi==0.115.12->-r requirements-runtime.txt (line 1))
+#12 1.955   Downloading starlette-0.46.2-py3-none-any.whl.metadata (6.2 kB)
+#12 1.988 Collecting typing-extensions>=4.8.0 (from fastapi==0.115.12->-r requirements-runtime.txt (line 1))
+#12 1.991   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+#12 2.008 Collecting click>=7.0 (from uvicorn==0.54.0->-r requirements-runtime.txt (line 2))
+#12 2.012   Downloading click-8.5.1-py3-none-any.whl.metadata (2.6 kB)
+#12 2.019 Collecting h11>=0.8 (from uvicorn==0.54.0->-r requirements-runtime.txt (line 2))
+#12 2.022   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+#12 2.030 Collecting annotated-types>=0.6.0 (from pydantic==2.11.7->-r requirements-runtime.txt (line 3))
+#12 2.033   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+#12 2.689 Collecting pydantic-core==2.33.2 (from pydantic==2.11.7->-r requirements-runtime.txt (line 3))
+#12 2.692   Downloading pydantic_core-2.33.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.8 kB)
+#12 2.704 Collecting typing-inspection>=0.4.0 (from pydantic==2.11.7->-r requirements-runtime.txt (line 3))
+#12 2.707   Downloading typing_inspection-0.4.5-py3-none-any.whl.metadata (2.6 kB)
+#12 2.717 Collecting dnspython>=2.0.0 (from email-validator==2.4.0->-r requirements-runtime.txt (line 4))
+#12 2.721   Downloading dnspython-2.9.2-py3-none-any.whl.metadata (5.8 kB)
+#12 2.735 Collecting idna>=2.0.0 (from email-validator==2.4.0->-r requirements-runtime.txt (line 4))
+#12 2.738   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+#12 2.755 Collecting anyio (from httpx==0.28.1->-r requirements-runtime.txt (line 5))
+#12 2.758   Downloading anyio-4.16.0-py3-none-any.whl.metadata (4.7 kB)
+#12 2.774 Collecting certifi (from httpx==0.28.1->-r requirements-runtime.txt (line 5))
+#12 2.778   Downloading certifi-2026.10.23-py3-none-any.whl.metadata (2.5 kB)
+#12 2.793 Collecting httpcore==1.* (from httpx==0.28.1->-r requirements-runtime.txt (line 5))
+#12 2.797   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+#12 2.807 Collecting blinker>=1.9.0 (from Flask==3.1.3->-r requirements-runtime.txt (line 6))
+#12 2.811   Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+#12 2.824 Collecting itsdangerous>=2.2.0 (from Flask==3.1.3->-r requirements-runtime.txt (line 6))
+#12 2.827   Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+#12 2.838 Collecting jinja2>=3.1.2 (from Flask==3.1.3->-r requirements-runtime.txt (line 6))
+#12 2.841   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+#12 2.893 Collecting markupsafe>=2.1.1 (from Flask==3.1.3->-r requirements-runtime.txt (line 6))
+#12 2.898   Downloading markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+#12 2.916 Collecting werkzeug>=3.1.0 (from Flask==3.1.3->-r requirements-runtime.txt (line 6))
+#12 2.920   Downloading werkzeug-3.1.9-py3-none-any.whl.metadata (4.1 kB)
+#12 2.939 Collecting opentelemetry-api==1.34.1 (from opentelemetry-sdk==1.34.1->-r requirements-runtime.txt (line 9))
+#12 2.943   Downloading opentelemetry_api-1.34.1-py3-none-any.whl.metadata (1.5 kB)
+#12 2.959 Collecting opentelemetry-semantic-conventions==0.55b1 (from opentelemetry-sdk==1.34.1->-r requirements-runtime.txt (line 9))
+#12 2.962   Downloading opentelemetry_semantic_conventions-0.55b1-py3-none-any.whl.metadata (2.5 kB)
+#12 2.986 Collecting googleapis-common-protos~=1.52 (from opentelemetry-exporter-otlp-proto-http==1.34.1->-r requirements-runtime.txt (line 10))
+#12 2.989   Downloading googleapis_common_protos-1.76.0-py3-none-any.whl.metadata (8.5 kB)
+#12 3.005 Collecting opentelemetry-exporter-otlp-proto-common==1.34.1 (from opentelemetry-exporter-otlp-proto-http==1.34.1->-r requirements-runtime.txt (line 10))
+#12 3.009   Downloading opentelemetry_exporter_otlp_proto_common-1.34.1-py3-none-any.whl.metadata (1.9 kB)
+#12 3.025 Collecting opentelemetry-proto==1.34.1 (from opentelemetry-exporter-otlp-proto-http==1.34.1->-r requirements-runtime.txt (line 10))
+#12 3.028   Downloading opentelemetry_proto-1.34.1-py3-none-any.whl.metadata (2.4 kB)
+#12 3.065 Collecting requests~=2.7 (from opentelemetry-exporter-otlp-proto-http==1.34.1->-r requirements-runtime.txt (line 10))
+#12 3.068   Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+#12 3.092 Collecting opentelemetry-instrumentation-asgi==0.55b1 (from opentelemetry-instrumentation-fastapi==0.55b1->-r requirements-runtime.txt (line 11))
+#12 3.095   Downloading opentelemetry_instrumentation_asgi-0.55b1-py3-none-any.whl.metadata (2.0 kB)
+#12 3.113 Collecting opentelemetry-instrumentation==0.55b1 (from opentelemetry-instrumentation-fastapi==0.55b1->-r requirements-runtime.txt (line 11))
+#12 3.116   Downloading opentelemetry_instrumentation-0.55b1-py3-none-any.whl.metadata (6.7 kB)
+#12 3.132 Collecting opentelemetry-util-http==0.55b1 (from opentelemetry-instrumentation-fastapi==0.55b1->-r requirements-runtime.txt (line 11))
+#12 3.135   Downloading opentelemetry_util_http-0.55b1-py3-none-any.whl.metadata (2.6 kB)
+#12 3.480 Collecting wrapt<2.0.0,>=1.0.0 (from opentelemetry-instrumentation-httpx==0.55b1->-r requirements-runtime.txt (line 12))
+#12 3.484   Downloading wrapt-1.17.3-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.4 kB)
+#12 3.497 Collecting six>=1.5 (from python-dateutil==2.9.0.post0->-r requirements-runtime.txt (line 15))
+#12 3.500   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+#12 3.535 Collecting importlib-metadata<8.8.0,>=6.0 (from opentelemetry-api==1.34.1->opentelemetry-sdk==1.34.1->-r requirements-runtime.txt (line 9))
+#12 3.538   Downloading importlib_metadata-8.7.1-py3-none-any.whl.metadata (4.7 kB)
+#12 3.571 Collecting packaging>=18.0 (from opentelemetry-instrumentation==0.55b1->opentelemetry-instrumentation-fastapi==0.55b1->-r requirements-runtime.txt (line 11))
+#12 3.574   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+#12 3.596 Collecting asgiref~=3.0 (from opentelemetry-instrumentation-asgi==0.55b1->opentelemetry-instrumentation-fastapi==0.55b1->-r requirements-runtime.txt (line 11))
+#12 3.601   Downloading asgiref-3.13.0-py3-none-any.whl.metadata (12 kB)
+#12 3.743 Collecting protobuf<6.0,>=5.0 (from opentelemetry-proto==1.34.1->opentelemetry-exporter-otlp-proto-http==1.34.1->-r requirements-runtime.txt (line 10))
+#12 3.747   Downloading protobuf-5.29.6-cp38-abi3-manylinux2014_x86_64.whl.metadata (592 bytes)
+#12 3.776 INFO: pip is looking at multiple versions of googleapis-common-protos to determine which version is compatible with other requirements. This could take a while.
+#12 3.777 Collecting googleapis-common-protos~=1.52 (from opentelemetry-exporter-otlp-proto-http==1.34.1->-r requirements-runtime.txt (line 10))
+#12 3.780   Downloading googleapis_common_protos-1.75.5-py3-none-any.whl.metadata (8.5 kB)
+#12 3.786   Downloading googleapis_common_protos-1.75.4-py3-none-any.whl.metadata (8.5 kB)
+#12 3.791   Downloading googleapis_common_protos-1.75.3-py3-none-any.whl.metadata (8.5 kB)
+#12 3.796   Downloading googleapis_common_protos-1.75.2-py3-none-any.whl.metadata (8.5 kB)
+#12 3.801   Downloading googleapis_common_protos-1.75.1-py3-none-any.whl.metadata (8.5 kB)
+#12 3.807   Downloading googleapis_common_protos-1.75.0-py3-none-any.whl.metadata (8.6 kB)
+#12 3.952 Collecting charset_normalizer<4,>=2 (from requests~=2.7->opentelemetry-exporter-otlp-proto-http==1.34.1->-r requirements-runtime.txt (line 10))
+#12 3.956   Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+#12 3.987 Collecting urllib3<3,>=1.26 (from requests~=2.7->opentelemetry-exporter-otlp-proto-http==1.34.1->-r requirements-runtime.txt (line 10))
+#12 3.991   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+#12 4.049 Collecting zipp>=3.20 (from importlib-metadata<8.8.0,>=6.0->opentelemetry-api==1.34.1->opentelemetry-sdk==1.34.1->-r requirements-runtime.txt (line 9))
+#12 4.052   Downloading zipp-4.1.2-py3-none-any.whl.metadata (3.6 kB)
+#12 4.067 Downloading fastapi-0.115.12-py3-none-any.whl (95 kB)
+#12 4.071 Downloading uvicorn-0.54.0-py3-none-any.whl (87 kB)
+#12 4.074 Downloading pydantic-2.11.7-py3-none-any.whl (444 kB)
+#12 4.080 Downloading email_validator-2.4.0-py3-none-any.whl (36 kB)
+#12 4.083 Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+#12 4.087 Downloading flask-3.1.3-py3-none-any.whl (103 kB)
+#12 4.090 Downloading prometheus_flask_exporter-0.23.2-py3-none-any.whl (19 kB)
+#12 4.093 Downloading prometheus_client-0.26.0-py3-none-any.whl (64 kB)
+#12 4.097 Downloading opentelemetry_sdk-1.34.1-py3-none-any.whl (118 kB)
+#12 4.100 Downloading opentelemetry_exporter_otlp_proto_http-1.34.1-py3-none-any.whl (17 kB)
+#12 4.105 Downloading opentelemetry_instrumentation_fastapi-0.55b1-py3-none-any.whl (12 kB)
+#12 4.108 Downloading opentelemetry_instrumentation_httpx-0.55b1-py3-none-any.whl (15 kB)
+#12 4.111 Downloading pika-1.5.0-py3-none-any.whl (209 kB)
+#12 4.115 Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
+#12 4.118 Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+#12 4.122 Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+#12 4.125 Downloading opentelemetry_api-1.34.1-py3-none-any.whl (65 kB)
+#12 4.128 Downloading opentelemetry_exporter_otlp_proto_common-1.34.1-py3-none-any.whl (18 kB)
+#12 4.132 Downloading opentelemetry_instrumentation-0.55b1-py3-none-any.whl (31 kB)
+#12 4.136 Downloading opentelemetry_instrumentation_asgi-0.55b1-py3-none-any.whl (16 kB)
+#12 4.139 Downloading opentelemetry_proto-1.34.1-py3-none-any.whl (55 kB)
+#12 4.143 Downloading opentelemetry_semantic_conventions-0.55b1-py3-none-any.whl (196 kB)
+#12 4.146 Downloading opentelemetry_util_http-0.55b1-py3-none-any.whl (7.3 kB)
+#12 4.150 Downloading pydantic_core-2.33.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.0 MB)
+#12 4.159    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 294.3 MB/s eta 0:00:00
+#12 4.162 Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+#12 4.166 Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+#12 4.169 Downloading click-8.5.1-py3-none-any.whl (126 kB)
+#12 4.174 Downloading dnspython-2.9.2-py3-none-any.whl (360 kB)
+#12 4.178 Downloading googleapis_common_protos-1.75.0-py3-none-any.whl (300 kB)
+#12 4.182 Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+#12 4.186 Downloading idna-3.20-py3-none-any.whl (69 kB)
+#12 4.189 Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+#12 4.192 Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+#12 4.196 Downloading markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+#12 4.199 Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+#12 4.203 Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+#12 4.207 Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+#12 4.210 Downloading starlette-0.46.2-py3-none-any.whl (72 kB)
+#12 4.214 Downloading anyio-4.16.0-py3-none-any.whl (134 kB)
+#12 4.218 Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+#12 4.222 Downloading typing_inspection-0.4.5-py3-none-any.whl (14 kB)
+#12 4.225 Downloading werkzeug-3.1.9-py3-none-any.whl (228 kB)
+#12 4.229 Downloading wrapt-1.17.3-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (88 kB)
+#12 4.232 Downloading asgiref-3.13.0-py3-none-any.whl (27 kB)
+#12 4.236 Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (257 kB)
+#12 4.239 Downloading importlib_metadata-8.7.1-py3-none-any.whl (27 kB)
+#12 4.243 Downloading packaging-26.3-py3-none-any.whl (129 kB)
+#12 4.246 Downloading protobuf-5.29.6-cp38-abi3-manylinux2014_x86_64.whl (320 kB)
+#12 4.250 Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+#12 4.253 Downloading zipp-4.1.2-py3-none-any.whl (10 kB)
+#12 4.372 Installing collected packages: zipp, wrapt, urllib3, typing-extensions, six, protobuf, prometheus_client, pika, packaging, opentelemetry-util-http, markupsafe, itsdangerous, idna, h11, dnspython, click, charset_normalizer, certifi, blinker, attrs, asgiref, annotated-types, werkzeug, uvicorn, typing-inspection, requests, python-dateutil, pydantic-core, opentelemetry-proto, jinja2, importlib-metadata, httpcore, googleapis-common-protos, email-validator, anyio, starlette, pydantic, opentelemetry-exporter-otlp-proto-common, opentelemetry-api, httpx, Flask, prometheus_flask_exporter, opentelemetry-semantic-conventions, fastapi, opentelemetry-sdk, opentelemetry-instrumentation, opentelemetry-instrumentation-httpx, opentelemetry-instrumentation-asgi, opentelemetry-exporter-otlp-proto-http, opentelemetry-instrumentation-fastapi
+#12 6.965 Successfully installed Flask-3.1.3 annotated-types-0.8.0 anyio-4.16.0 asgiref-3.13.0 attrs-26.1.0 blinker-1.9.0 certifi-2026.10.23 charset_normalizer-3.5.2 click-8.5.1 dnspython-2.9.2 email-validator-2.4.0 fastapi-0.115.12 googleapis-common-protos-1.75.0 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 idna-3.20 importlib-metadata-8.7.1 itsdangerous-2.2.0 jinja2-3.1.6 markupsafe-3.0.4 opentelemetry-api-1.34.1 opentelemetry-exporter-otlp-proto-common-1.34.1 opentelemetry-exporter-otlp-proto-http-1.34.1 opentelemetry-instrumentation-0.55b1 opentelemetry-instrumentation-asgi-0.55b1 opentelemetry-instrumentation-fastapi-0.55b1 opentelemetry-instrumentation-httpx-0.55b1 opentelemetry-proto-1.34.1 opentelemetry-sdk-1.34.1 opentelemetry-semantic-conventions-0.55b1 opentelemetry-util-http-0.55b1 packaging-26.3 pika-1.5.0 prometheus_client-0.26.0 prometheus_flask_exporter-0.23.2 protobuf-5.29.6 pydantic-2.11.7 pydantic-core-2.33.2 python-dateutil-2.9.0.post0 requests-2.34.2 six-1.17.0 starlette-0.46.2 typing-extensions-4.16.0 typing-inspection-0.4.5 urllib3-2.8.0 uvicorn-0.54.0 werkzeug-3.1.9 wrapt-1.17.3 zipp-4.1.2
+#12 6.965 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#12 7.030 
+#12 7.030 [notice] A new release of pip is available: 25.0.1 -> 26.3
+#12 7.030 [notice] To update, run: pip install --upgrade pip
+#12 DONE 7.3s
+
+#13 [stage-0 5/5] COPY . .
+#13 DONE 0.0s
+
+#14 exporting to image
+#14 exporting layers
+#14 exporting layers 1.8s done
+#14 exporting manifest sha256:9bcc866db944815dfc6033d12ff3f06acea088a6352a3710bc3ba679f6d3c0b8 done
+#14 exporting config sha256:0ac0c36dfc6e113280dcef369f46eed2f0f60f09fe2d07597d48906b641108c6 done
+#14 exporting attestation manifest sha256:0ffdc9ff41a860d9c1983db904fc3b8251c3299f2591239898b12d5433214b45 done
+#14 exporting manifest list sha256:de4b86f9c19fbfc1b367ce0b7edce841dbb6e52a37a9d903a8526781f35fc26d done
+#14 naming to docker.io/library/pr8-user-service:local done
+#14 unpacking to docker.io/library/pr8-user-service:local
+#14 unpacking to docker.io/library/pr8-user-service:local 0.7s done
+#14 DONE 2.5s
++ docker build -t pr8-order-service:local .
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 535B done
+#1 DONE 0.0s
+
+#2 resolve image config for docker-image://docker.io/docker/dockerfile:1
+#2 DONE 0.1s
+
+#3 docker-image://docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e
+#3 resolve docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e 0.0s done
+#3 CACHED
+
+#4 [internal] load metadata for docker.io/library/python:3.12-slim
+#4 DONE 0.1s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 219B done
+#5 DONE 0.0s
+
+#6 [internal] load build context
+#6 transferring context: 1.72MB 0.0s done
+#6 DONE 0.0s
+
+#7 [stage-0 1/5] FROM docker.io/library/python:3.12-slim@sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b
+#7 resolve docker.io/library/python:3.12-slim@sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b 0.0s done
+#7 DONE 0.0s
+
+#8 [stage-0 2/5] WORKDIR /app
+#8 CACHED
+
+#9 [stage-0 3/5] COPY requirements-runtime.txt .
+#9 CACHED
+
+#10 [stage-0 4/5] RUN --mount=type=secret,id=proxy_ca,required=false     if [ -f /run/secrets/proxy_ca ]; then PIP_CERT=/run/secrets/proxy_ca pip install --no-cache-dir -r requirements-runtime.txt; else pip install --no-cache-dir -r requirements-runtime.txt; fi && mkdir -p /data && chown 10001:10001 /data
+#10 CACHED
+
+#11 [stage-0 5/5] COPY . .
+#11 DONE 0.0s
+
+#12 exporting to image
+#12 exporting layers 0.1s done
+#12 exporting manifest sha256:0b7a0ee64b1c4364dc62fca901969bc6fbc3c0e3fb02d0637cb521ca76848bab done
+#12 exporting config sha256:ab776e5aafc267ad5be0656a1837eff6a95b4738e5d252c9340e82fd7b177492 done
+#12 exporting attestation manifest sha256:e2d89e8d84281b004cd71453140ac88d05a15882e4917279053797482f137daf done
+#12 exporting manifest list sha256:9a08d79c5b551f99c24c7013020e4124335067e302905d02f27fe0f46c1fd0c5 done
+#12 naming to docker.io/library/pr8-order-service:local done
+#12 unpacking to docker.io/library/pr8-order-service:local 0.0s done
+#12 DONE 0.1s
++ kind load docker-image --name pr8-lab pr8-user-service:local pr8-order-service:local
+Image: "pr8-user-service:local" with ID "sha256:de4b86f9c19fbfc1b367ce0b7edce841dbb6e52a37a9d903a8526781f35fc26d" not yet present on node "pr8-lab-control-plane", loading...
+Image: "pr8-order-service:local" with ID "sha256:9a08d79c5b551f99c24c7013020e4124335067e302905d02f27fe0f46c1fd0c5" not yet present on node "pr8-lab-control-plane", loading...
++ kubectl apply -f k8s/services.yaml
+namespace/pr8 created
+configmap/user-service created
+persistentvolumeclaim/user-service-data created
+deployment.apps/user-service created
+service/user-service created
+configmap/order-service created
+persistentvolumeclaim/order-service-data created
+deployment.apps/order-service created
+service/order-service created
+configmap/notification-service created
+persistentvolumeclaim/notification-service-data created
+deployment.apps/notification-service created
+service/notification-service created
+configmap/rabbitmq created
+persistentvolumeclaim/rabbitmq-data created
+deployment.apps/rabbitmq created
+service/rabbitmq created
++ kubectl rollout status -n pr8 deployment/rabbitmq --timeout=240s
+Waiting for deployment "rabbitmq" rollout to finish: 0 of 1 updated replicas are available...
+deployment "rabbitmq" successfully rolled out
++ kubectl rollout status -n pr8 deployment/user-service --timeout=240s
+deployment "user-service" successfully rolled out
++ kubectl rollout status -n pr8 deployment/order-service --timeout=240s
+deployment "order-service" successfully rolled out
++ kubectl rollout status -n pr8 deployment/notification-service --timeout=240s
+Waiting for deployment "notification-service" rollout to finish: 0 of 1 updated replicas are available...
+deployment "notification-service" successfully rolled out
++ kubectl scale -n pr8 deployment order-service --replicas=3
+deployment.apps/order-service scaled
++ kubectl rollout status -n pr8 deployment/order-service --timeout=240s
+Waiting for deployment "order-service" rollout to finish: 1 of 3 updated replicas are available...
+Waiting for deployment "order-service" rollout to finish: 2 of 3 updated replicas are available...
+deployment "order-service" successfully rolled out
++ kubectl get -n pr8 deployments,pods,services,pvc -o wide
++ tee k8s/evidence/scaled-resources.txt
+NAME                                   READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS             IMAGES                    SELECTOR
+deployment.apps/notification-service   1/1     1            1           25s   notification-service   pr8-order-service:local   app=notification-service
+deployment.apps/order-service          3/3     3            3           25s   order-service          pr8-order-service:local   app=order-service
+deployment.apps/rabbitmq               1/1     1            1           25s   rabbitmq               rabbitmq:4.1-alpine       app=rabbitmq
+deployment.apps/user-service           1/1     1            1           25s   user-service           pr8-user-service:local    app=user-service
+
+NAME                                        READY   STATUS    RESTARTS   AGE   IP            NODE                    NOMINATED NODE   READINESS GATES
+pod/notification-service-5b468c5dcf-pbqlb   1/1     Running   0          25s   10.244.0.11   pr8-lab-control-plane   <none>           <none>
+pod/order-service-77ff76c499-4szt4          1/1     Running   0          7s    10.244.0.13   pr8-lab-control-plane   <none>           <none>
+pod/order-service-77ff76c499-7qsqg          1/1     Running   0          25s   10.244.0.10   pr8-lab-control-plane   <none>           <none>
+pod/order-service-77ff76c499-pw56d          1/1     Running   0          7s    10.244.0.14   pr8-lab-control-plane   <none>           <none>
+pod/rabbitmq-c7cfbddbf-v2z5q                1/1     Running   0          25s   10.244.0.12   pr8-lab-control-plane   <none>           <none>
+pod/user-service-6d9d45db7c-rv5nl           1/1     Running   0          25s   10.244.0.9    pr8-lab-control-plane   <none>           <none>
+
+NAME                           TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)    AGE   SELECTOR
+service/notification-service   ClusterIP   10.96.144.250   <none>        5003/TCP   25s   app=notification-service
+service/order-service          ClusterIP   10.96.112.99    <none>        5002/TCP   25s   app=order-service
+service/rabbitmq               ClusterIP   10.96.30.252    <none>        5672/TCP   25s   app=rabbitmq
+service/user-service           ClusterIP   10.96.172.110   <none>        5001/TCP   25s   app=user-service
+
+NAME                                              STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   VOLUMEATTRIBUTESCLASS   AGE   VOLUMEMODE
+persistentvolumeclaim/notification-service-data   Bound    pvc-19deb7ce-1a6f-4a45-83bf-09b5826d70b2   256Mi      RWO            standard       <unset>                 25s   Filesystem
+persistentvolumeclaim/order-service-data          Bound    pvc-e08720c6-bec0-4007-947d-5097be6afc24   256Mi      RWO            standard       <unset>                 25s   Filesystem
+persistentvolumeclaim/rabbitmq-data               Bound    pvc-a07f4fb5-eb88-4e43-aa7e-56a4db997d6e   256Mi      RWO            standard       <unset>                 25s   Filesystem
+persistentvolumeclaim/user-service-data           Bound    pvc-4d02946f-1e30-4df7-82f8-eb3b6e132bce   256Mi      RWO            standard       <unset>                 25s   Filesystem
++ kubectl port-forward -n pr8 service/user-service 15001:5001
++ PF_USERS=13000
++ kubectl port-forward -n pr8 service/order-service 15002:5002
++ PF_ORDERS=13001
++ PF_NOTIFY=13002
++ trap 'kill "$PF_USERS" "$PF_ORDERS" "$PF_NOTIFY" 2>/dev/null || true' EXIT
++ python k8s/verify_cluster.py
++ kubectl port-forward -n pr8 service/notification-service 15003:5003
+Three HTTP orders created: [1, 2, 3]
+$ kubectl exec -n pr8 order-service-77ff76c499-4szt4 -- python -c import urllib.request;print(urllib.request.urlopen('http://localhost:5002/orders').read().decode())
+order-service-77ff76c499-4szt4 sees orders [1, 2, 3]
+$ kubectl exec -n pr8 order-service-77ff76c499-7qsqg -- python -c import urllib.request;print(urllib.request.urlopen('http://localhost:5002/orders').read().decode())
+order-service-77ff76c499-7qsqg sees orders [1, 2, 3]
+$ kubectl exec -n pr8 order-service-77ff76c499-pw56d -- python -c import urllib.request;print(urllib.request.urlopen('http://localhost:5002/orders').read().decode())
+order-service-77ff76c499-pw56d sees orders [1, 2, 3]
+PASS: 3 Ready replicas, shared SQLite PVC, HTTP create/read and RabbitMQ notifications
++ kubectl get -n pr8 deployment order-service -o json
++ kubectl get -n pr8 pods -o json
++ kill 13000 13001 13002

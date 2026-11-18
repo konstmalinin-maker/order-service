@@ -84,10 +84,10 @@
     "sha256": "20c5351b5f175acf5a70d90155898b5e69ee9e91c3f642a595c2eb6580513f75"
   },
   {
-    "file": "docs/pr8-images/swagger-execute.png",
+    "file": "docs/pr8-images/swagger-execute-response.png",
     "caption": "Скриншот 15 — фактический ответ сервера в Swagger UI.",
-    "source": "Compose browser screenshot, Actions run 44308798651",
-    "sha256": "02c95deac5189fb5103852607286d75cd7c123d68d22017c0eb1b808d48ece5d"
+    "source": "Headless browser: live Swagger Try-it-out GET /orders, local Docker API port 5002, HTTP 200",
+    "sha256": "defacd1438bef83f1eac9497532f27de4979f9820c0ac185e0b18fbad738320c"
   },
   {
     "file": "docs/pr8-images/gateway-rate-limit.png",
