@@ -11,4 +11,6 @@ for src, dst in [
     Path(dst).parent.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(src, dst)
 shutil.copytree("deploy/grafana/provisioning", "/config/grafana", dirs_exist_ok=True)
+for path in Path("/config").rglob("*"):
+    path.chmod(0o755 if path.is_dir() else 0o644)
 print("Configuration volumes initialized")
