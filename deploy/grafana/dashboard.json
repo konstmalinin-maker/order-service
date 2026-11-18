@@ -1,0 +1,207 @@
+{
+  "uid": "pr8",
+  "title": "Практика №8 — Microservices",
+  "schemaVersion": 40,
+  "version": 1,
+  "refresh": "5s",
+  "time": {
+    "from": "now-15m",
+    "to": "now"
+  },
+  "panels": [
+    {
+      "id": 1,
+      "title": "RPS — запросы в секунду",
+      "type": "timeseries",
+      "datasource": {
+        "type": "prometheus",
+        "uid": "prometheus"
+      },
+      "gridPos": {
+        "x": 0,
+        "y": 0,
+        "w": 12,
+        "h": 9
+      },
+      "targets": [
+        {
+          "expr": "sum(rate(api_requests_total{service=~\"user-service|order-service\"}[1m])) by (service)",
+          "refId": "A",
+          "legendFormat": "{{service}}"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "reqps",
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 1
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "options": {
+        "legend": {
+          "displayMode": "list",
+          "placement": "bottom"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "title": "Latency p95 — секунды",
+      "type": "timeseries",
+      "datasource": {
+        "type": "prometheus",
+        "uid": "prometheus"
+      },
+      "gridPos": {
+        "x": 12,
+        "y": 0,
+        "w": 12,
+        "h": 9
+      },
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95,sum(rate(api_request_duration_seconds_bucket{service=~\"user-service|order-service\"}[1m])) by (le,service))",
+          "refId": "A",
+          "legendFormat": "{{service}}"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "s",
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 1
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "options": {
+        "legend": {
+          "displayMode": "list",
+          "placement": "bottom"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "title": "Error rate — доля 5xx",
+      "type": "timeseries",
+      "datasource": {
+        "type": "prometheus",
+        "uid": "prometheus"
+      },
+      "gridPos": {
+        "x": 0,
+        "y": 9,
+        "w": 12,
+        "h": 9
+      },
+      "targets": [
+        {
+          "expr": "sum(rate(api_requests_total{service=\"order-service\",status=~\"5..\"}[1m])) / clamp_min(sum(rate(api_requests_total{service=\"order-service\"}[1m])),0.00001)",
+          "refId": "A",
+          "legendFormat": "{{service}}"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percentunit",
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 1
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "options": {
+        "legend": {
+          "displayMode": "list",
+          "placement": "bottom"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "title": "Circuit breaker — 0 closed / 1 open",
+      "type": "stat",
+      "datasource": {
+        "type": "prometheus",
+        "uid": "prometheus"
+      },
+      "gridPos": {
+        "x": 12,
+        "y": 9,
+        "w": 12,
+        "h": 9
+      },
+      "targets": [
+        {
+          "expr": "circuit_breaker_state{service=\"order-service\"}",
+          "refId": "A",
+          "legendFormat": "{{service}}",
+          "instant": true,
+          "range": false
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "none",
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 1
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "options": {
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "values": false
+        },
+        "colorMode": "background",
+        "graphMode": "area"
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+name: Compose acceptance and screenshots
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/lab/**'
+      - 'scripts/init_config.py'
+      - 'docker-compose.yml'
+      - 'deploy/**'
+      - '.github/workflows/compose-lab.yml'
+defaults:
+  run:
+    shell: bash
+permissions:
+  contents: read
+jobs:
+  compose-lab:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: order-service
+      - uses: actions/checkout@v4
+        with:
+          repository: konstmalinin-maker/user-service
+          path: user-service
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.24'
+      - run: pip install httpx playwright && python -m playwright install --with-deps chromium
+      - run: go install github.com/rakyll/hey@v0.1.4
+      - name: Build and run the complete Compose stack
+        working-directory: order-service
+        run: |
+          mkdir -p evidence/compose
+          cp /etc/ssl/certs/ca-certificates.crt .proxy-ca.crt
+          PR8_CA_BUNDLE=./.proxy-ca.crt docker compose build 2>&1 | tee evidence/compose/build.log
+          docker compose up -d --no-build --wait --wait-timeout 240 2>&1 | tee evidence/compose/startup.log
+          docker compose ps -a | tee evidence/compose/containers.txt
+      - name: Live acceptance and real browser screenshots
+        working-directory: order-service
+        run: python scripts/lab/verify_compose.py 2>&1 | tee evidence/compose/acceptance.log
+      - name: Preserve logs
+        if: always()
+        working-directory: order-service
+        run: |
+          docker compose ps -a > evidence/compose/containers-final.txt
+          docker inspect pr8-gateway-1 --format '{{json .State.Health}}' > evidence/compose/gateway-health.json || true
+          docker compose logs --no-color > evidence/compose/services.log
+          docker compose exec -T gateway nginx -T > evidence/compose/nginx-effective.txt 2>&1 || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: compose-lab-evidence
+          path: order-service/evidence/compose/
+      - name: Remove disposable Compose lab
+        if: always()
+        working-directory: order-service
+        run: docker compose down -v

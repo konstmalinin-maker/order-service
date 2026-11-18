@@ -1,0 +1,109 @@
+name: CI and GHCR
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      rabbitmq:
+        image: rabbitmq:4.1-alpine
+        env:
+          RABBITMQ_DEFAULT_USER: lab
+          RABBITMQ_DEFAULT_PASS: lab-demo
+        ports: ['5672:5672']
+        options: >-
+          --health-cmd "rabbitmq-diagnostics -q ping"
+          --health-interval 5s --health-timeout 5s --health-retries 24
+    env:
+      TEST_RABBITMQ_URL: amqp://lab:lab-demo@localhost:5672/%2F
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: ruff check .
+      - run: python -m pytest -q --cov --cov-report=term-missing --cov-report=json --cov-report=xml --cov-report=html --cov-fail-under=80 --junitxml=junit.xml
+      - uses: actions/upload-artifact@v4
+        with:
+          name: tests-and-coverage
+          path: |
+            coverage.json
+            coverage.xml
+            htmlcov/
+            junit.xml
+  build-and-publish:
+    needs: test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-buildx-action@v3
+      - uses: docker/login-action@v3
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - uses: docker/build-push-action@v6
+        id: image
+        with:
+          context: .
+          push: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+          tags: |
+            ghcr.io/${{ github.repository }}:latest
+            ghcr.io/${{ github.repository }}:${{ github.sha }}
+          labels: |
+            org.opencontainers.image.source=https://github.com/${{ github.repository }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+      - name: Record image digest
+        run: echo '${{ steps.image.outputs.digest }}' > image-digest.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: image-digest
+          path: image-digest.txt
+
+  kubernetes-lab:
+    needs: test
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: konstmalinin-maker/user-service
+          path: user-service-source
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install httpx
+      - name: Install official kind
+        run: |
+          curl -fsSL https://kind.sigs.k8s.io/dl/v0.30.0/kind-linux-amd64 -o "$RUNNER_TEMP/kind"
+          chmod +x "$RUNNER_TEMP/kind"
+          echo "$RUNNER_TEMP" >> "$GITHUB_PATH"
+      - name: Real local kind cluster, services and three replicas
+        env:
+          USER_SERVICE_DIR: ./user-service-source
+        run: bash k8s/run_kind_lab.sh
+      - name: Preserve diagnostics
+        if: always()
+        run: |
+          kubectl get -n pr8 pods -o wide > k8s/evidence/pods-final.txt 2>&1 || true
+          kubectl logs -n pr8 -l app=order-service --all-containers --tail=100 > k8s/evidence/order-logs.txt 2>&1 || true
+          kubectl logs -n pr8 -l app=notification-service --all-containers --tail=100 > k8s/evidence/notification-logs.txt 2>&1 || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: kubernetes-lab-evidence
+          path: k8s/evidence/
+      - name: Remove disposable lab cluster
+        if: always()
+        run: kind delete cluster --name pr8-lab || true

@@ -240,3 +240,5 @@ metrics.json
 *.sqlite3*
 *.db*
 .env
+
+.proxy-ca.crt
