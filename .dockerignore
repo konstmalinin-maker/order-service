@@ -19,3 +19,5 @@ docs
 .github
 user-service-source
 k8s/evidence
+
+.proxy-ca.crt

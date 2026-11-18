@@ -5,6 +5,9 @@ on:
     paths:
       - 'scripts/lab/**'
       - '.github/workflows/compose-lab.yml'
+defaults:
+  run:
+    shell: bash
 permissions:
   contents: read
 jobs:
@@ -31,7 +34,9 @@ jobs:
         working-directory: order-service
         run: |
           mkdir -p evidence/compose
-          docker compose up -d --build --wait --wait-timeout 240 2>&1 | tee evidence/compose/startup.log
+          cp /etc/ssl/certs/ca-certificates.crt .proxy-ca.crt
+          PR8_CA_BUNDLE=./.proxy-ca.crt docker compose build 2>&1 | tee evidence/compose/build.log
+          docker compose up -d --no-build --wait --wait-timeout 240 2>&1 | tee evidence/compose/startup.log
           docker compose ps -a | tee evidence/compose/containers.txt
       - name: Live acceptance and real browser screenshots
         working-directory: order-service
