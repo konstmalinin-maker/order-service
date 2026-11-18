@@ -10,6 +10,7 @@ services:
       DATA_PATH: /data/users.sqlite3
       OTEL_EXPORTER_OTLP_ENDPOINT: http://jaeger:4318
       NO_PROXY: localhost,127.0.0.1,user-service,order-service,notification-service,rabbitmq,jaeger
+      no_proxy: localhost,127.0.0.1,user-service,order-service,notification-service,rabbitmq,jaeger
     volumes:
     - users-data:/data
     healthcheck:
@@ -33,6 +34,7 @@ services:
       RABBITMQ_URL: amqp://lab:lab-demo@rabbitmq:5672/%2F
       OTEL_EXPORTER_OTLP_ENDPOINT: http://jaeger:4318
       NO_PROXY: localhost,127.0.0.1,user-service,order-service,notification-service,rabbitmq,jaeger
+      no_proxy: localhost,127.0.0.1,user-service,order-service,notification-service,rabbitmq,jaeger
     volumes:
     - orders-data:/data
     depends_on:
@@ -63,6 +65,7 @@ services:
       RABBITMQ_URL: amqp://lab:lab-demo@rabbitmq:5672/%2F
       OTEL_EXPORTER_OTLP_ENDPOINT: http://jaeger:4318
       NO_PROXY: localhost,127.0.0.1,user-service,order-service,notification-service,rabbitmq,jaeger
+      no_proxy: localhost,127.0.0.1,user-service,order-service,notification-service,rabbitmq,jaeger
     volumes:
     - notifications-data:/data
     depends_on:
