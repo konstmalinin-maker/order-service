@@ -33,6 +33,8 @@ def screenshot(page, url, name):
     if ":3000/" in url:
         page.get_by_text("RPS — запросы в секунду", exact=True).wait_for(timeout=60000)
         page.locator("canvas").first.wait_for(timeout=60000)
+        if name == "grafana-breaker-open":
+            page.get_by_text("1", exact=True).first.wait_for(timeout=15000)
     elif "/docs/" in url:
         page.locator(".swagger-ui .opblock").first.wait_for(timeout=30000)
     elif "/trace/" in url:
@@ -136,7 +138,12 @@ with sync_playwright() as p:
         "orders_unchanged": True,
     }
     print("BREAKER OPEN:", json.dumps(results["outage"]), flush=True)
-    time.sleep(6)
+    time.sleep(3)
+    breaker_metric = httpx.get(
+        "http://127.0.0.1:9090/api/v1/query", params={"query": 'circuit_breaker_state{service="order-service"}'}
+    ).json()
+    (OUT / "breaker-open-metric.json").write_text(json.dumps(breaker_metric, indent=2))
+    assert breaker_metric["data"]["result"][0]["value"][1] == "1", breaker_metric
     screenshot(
         page, "http://127.0.0.1:3000/d/pr8/praktika?orgId=1&from=now-5m&to=now&refresh=5s&kiosk", "grafana-breaker-open"
     )

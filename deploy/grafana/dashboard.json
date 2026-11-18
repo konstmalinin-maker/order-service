@@ -168,7 +168,9 @@
         {
           "expr": "circuit_breaker_state{service=\"order-service\"}",
           "refId": "A",
-          "legendFormat": "{{service}}"
+          "legendFormat": "{{service}}",
+          "instant": true,
+          "range": false
         }
       ],
       "fieldConfig": {
