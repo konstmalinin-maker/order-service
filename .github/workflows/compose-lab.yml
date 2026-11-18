@@ -49,6 +49,7 @@ jobs:
         working-directory: order-service
         run: |
           docker compose ps -a > evidence/compose/containers-final.txt
+          docker inspect pr8-gateway-1 --format '{{json .State.Health}}' > evidence/compose/gateway-health.json || true
           docker compose logs --no-color > evidence/compose/services.log
           docker compose exec -T gateway nginx -T > evidence/compose/nginx-effective.txt 2>&1 || true
       - uses: actions/upload-artifact@v4
