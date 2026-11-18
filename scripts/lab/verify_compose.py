@@ -143,7 +143,8 @@ with sync_playwright() as p:
     # Save the real exported trace (shared trace id, both service resources).
     for _ in range(30):
         traces = httpx.get(
-            "http://127.0.0.1:16686/api/traces", params={"service": "order-service", "limit": 100, "lookback": "1h"}
+            "http://127.0.0.1:16686/api/traces",
+            params={"service": "order-service", "limit": 100, "lookback": "1h", "operation": "POST /orders"},
         ).json()["data"]
         matches = [
             t
@@ -153,6 +154,7 @@ with sync_playwright() as p:
         if matches:
             break
         time.sleep(1)
+    (OUT / "jaeger-query.json").write_text(json.dumps(traces, indent=2))
     assert matches, "No actual cross-service trace"
     trace = matches[0]
     (OUT / "cross-service-trace.json").write_text(json.dumps(trace, indent=2))
