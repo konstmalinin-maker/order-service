@@ -93,6 +93,9 @@ results["persistence_after_restart"] = True
 # Real hey traffic, through nginx and directly inside the Compose network.
 with (OUT / "hey-gateway.txt").open("w") as stream:
     subprocess.run(["hey", "-n", "200", "-c", "20", "http://127.0.0.1/api/orders"], stdout=stream, check=True)
+time.sleep(0.2)
+with (OUT / "hey-load.txt").open("w") as stream:
+    subprocess.run(["hey", "-z", "20s", "-c", "1", "-q", "5", "http://127.0.0.1/api/orders"], stdout=stream, check=True)
 with ThreadPoolExecutor(max_workers=20) as pool:
     statuses = list(pool.map(lambda _: httpx.get("http://127.0.0.1/api/orders").status_code, range(40)))
 assert 429 in statuses
