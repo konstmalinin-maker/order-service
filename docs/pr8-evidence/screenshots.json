@@ -1,0 +1,158 @@
+[
+  {
+    "file": "docs/pr8-images/10-user-contract.png",
+    "caption": "Скриншот 1 — контракт User API и последовательность коммитов.",
+    "source": "Native terminal: live curl / pytest or displayed original command log",
+    "sha256": "22318bafb4e34ace3cb2c830940bd534d0fee1d3b3f734d44f79bd73c3881e46"
+  },
+  {
+    "file": "docs/pr8-images/11-order-contract.png",
+    "caption": "Скриншот 2 — контракт Order API, retry, circuit breaker и событие OrderCreated.",
+    "source": "Native terminal: live curl / pytest or displayed original command log",
+    "sha256": "62c655a26dfd2911acda895278f1269ed2cc436db8f596f5aa14c5c929517d49"
+  },
+  {
+    "file": "docs/pr8-images/compose-containers.png",
+    "caption": "Скриншот 3 — docker compose ps полного стенда: API и очередь healthy, мониторинг запущен.",
+    "source": "Native terminal showing original Compose/hey logs, Actions run 44307634410",
+    "sha256": "678deb38881d496836b48a7b1b21e1321c9d1d0a55edda96f3bc496f48ec5ba7"
+  },
+  {
+    "file": "docs/pr8-images/03-users-crud.png",
+    "caption": "Скриншот 4 — реальные curl-запросы создания, чтения и изменения пользователя.",
+    "source": "Native terminal: live curl / pytest or displayed original command log",
+    "sha256": "f8f3eb63a678243cd62c6b3168cb1d852825a4d5482feb619098a630e9c3f8c5"
+  },
+  {
+    "file": "docs/pr8-images/19-user-delete.png",
+    "caption": "Скриншот 5 — создание тестовой записи, удаление 204 и повторное чтение 404.",
+    "source": "Native terminal: live curl / pytest or displayed original command log",
+    "sha256": "e4a5d69b13615bd0c294b252ed7c936de458cd2f0d2846c86dac03c3f93df693"
+  },
+  {
+    "file": "docs/pr8-images/16-compose-orders.png",
+    "caption": "Скриншот 6 — создание и чтение заказов в контейнерном стенде.",
+    "source": "Native terminal: live curl / pytest or displayed original command log",
+    "sha256": "399526c0f532849c158579d99086bd9101cb5cc1bb163972daae36a96eb48c46"
+  },
+  {
+    "file": "docs/pr8-images/05-errors-400-404.png",
+    "caption": "Скриншот 7 — ответы 400 и 404 контейнерного Order API.",
+    "source": "Native terminal: live curl / pytest or displayed original command log",
+    "sha256": "d6db17d0e9bbfeb48660f34816e14d51616281f70c3e8fd2b99d0ffe1a6ebae6"
+  },
+  {
+    "file": "docs/pr8-images/06-upstream-503.png",
+    "caption": "Скриншот 8 — 503 при остановленном контейнере user-service.",
+    "source": "Native terminal: live curl / pytest or displayed original command log",
+    "sha256": "a9181dc885824d0a73c904be6dfd31d5ce3fbb3aecf7530247e60de38e4fc47e"
+  },
+  {
+    "file": "docs/pr8-images/07-breaker-open.png",
+    "caption": "Скриншот 9 — breaker OPEN, быстрый ответ 503 и неизменившийся список заказов.",
+    "source": "Native terminal: live curl / pytest or displayed original command log",
+    "sha256": "6d394513fdd5c6474d19dab8b0960c366507a8dacab710f1ce11f82549aa8283"
+  },
+  {
+    "file": "docs/pr8-images/08-user-tests.png",
+    "caption": "Скриншот 10 — запуск pytest-cov для user-service.",
+    "source": "Native terminal: live curl / pytest or displayed original command log",
+    "sha256": "68830c7c0e0bd9ec7498c4ecb9c7984d9156d5ee8bf15567489f88393d5829b7"
+  },
+  {
+    "file": "docs/pr8-images/12-order-tests.png",
+    "caption": "Скриншот 11 — сохранённый журнал реального запуска с TEST_RABBITMQ_URL, без пропущенного брокерного теста.",
+    "source": "Native terminal: live curl / pytest or displayed original command log",
+    "sha256": "059bd174c7e1e5bf59c6d8cdaabe25388eb2eefc7e81a3a337dfc845e02ffab5"
+  },
+  {
+    "file": "docs/pr8-images/18-sqlite-persistence.png",
+    "caption": "Скриншот 12 — после docker compose restart сохранены пользователь ID 1 и заказ ID 2.",
+    "source": "Native terminal: live curl / pytest or displayed original command log",
+    "sha256": "404dc5ecbc0f98048d3f38e30229167efb13c98c896203f6f5143665dd974f39"
+  },
+  {
+    "file": "docs/pr8-images/swagger-users.png",
+    "caption": "Скриншот 13 — настоящий Swagger UI User Service через gateway.",
+    "source": "Compose browser screenshot, Actions run 44308798651",
+    "sha256": "4a34b8af67f9932c60ee0126a5430969da0292be78cf5838140cf3f2c763e668"
+  },
+  {
+    "file": "docs/pr8-images/swagger-orders.png",
+    "caption": "Скриншот 14 — Swagger UI Order Service.",
+    "source": "Compose browser screenshot, Actions run 44308798651",
+    "sha256": "20c5351b5f175acf5a70d90155898b5e69ee9e91c3f642a595c2eb6580513f75"
+  },
+  {
+    "file": "docs/pr8-images/swagger-execute.png",
+    "caption": "Скриншот 15 — фактический ответ сервера в Swagger UI.",
+    "source": "Compose browser screenshot, Actions run 44308798651",
+    "sha256": "02c95deac5189fb5103852607286d75cd7c123d68d22017c0eb1b808d48ece5d"
+  },
+  {
+    "file": "docs/pr8-images/gateway-rate-limit.png",
+    "caption": "Скриншот 16 — журнал реального превышения лимита, присутствует HTTP 429.",
+    "source": "Native terminal showing original hey/consumer log from run 44306055253; notification endpoint is the local Docker lab",
+    "sha256": "a08f88db2a2fad8fbbb31d7d652fe98010883f389fd463211a4ca4bce99b9d04"
+  },
+  {
+    "file": "docs/pr8-images/15-containers-notification.png",
+    "caption": "Скриншот 17 — контейнеры healthy и уведомление для созданного заказа.",
+    "source": "Native terminal: live curl / pytest or displayed original command log",
+    "sha256": "a218cde1b74d0daa81ce67187ccc07cd428ad75d5ac54e885677bd69b8e8aaee"
+  },
+  {
+    "file": "docs/pr8-images/notification-delivery.png",
+    "caption": "Скриншот 18 — лог фактической обработки OrderCreated из полного Compose-стенда.",
+    "source": "Native terminal showing original hey/consumer log from run 44306055253; notification endpoint is the local Docker lab",
+    "sha256": "e1aac8062e8c55cafb405c5c7861e26b50bce043948d68461d1cc650515bd704"
+  },
+  {
+    "file": "docs/pr8-images/grafana-breaker-open.png",
+    "caption": "Скриншот 19 — Grafana во время реального отказа зависимости: ошибки и открытый breaker.",
+    "source": "Compose browser screenshot, Actions run 44308798651",
+    "sha256": "1cb46b507db48cc6b862db86b526c6d54443e373100d7b4d758272db63ef8f75"
+  },
+  {
+    "file": "docs/pr8-images/hey-load.png",
+    "caption": "Скриншот 20 — исходный отчёт hey и распределение HTTP-кодов.",
+    "source": "Native terminal showing original Compose/hey logs, Actions run 44307634410",
+    "sha256": "cbc128528045f5e5cab1c120665908eab1012287bcd07d85e05fd5765d934fda"
+  },
+  {
+    "file": "docs/pr8-images/grafana-recovery.png",
+    "caption": "Скриншот 21 — дашборд после восстановления user-service, breaker закрыт.",
+    "source": "Compose browser screenshot, Actions run 44308798651",
+    "sha256": "2065bf70d0e554d5073e2dff101e918bd256b12d1ff059470d1a2f1edfa49414"
+  },
+  {
+    "file": "docs/pr8-images/jaeger-trace.png",
+    "caption": "Скриншот 22 — один реальный трейс включает создание заказа и HTTP-вызов User Service.",
+    "source": "Compose browser screenshot, Actions run 44308798651",
+    "sha256": "07df820230ad90423cd9fb3f0d02bd4afaa8e55c6d61c457a21bc97e19187dff"
+  },
+  {
+    "file": "docs/pr8-images/17-user-ghcr.png",
+    "caption": "Скриншот 23 — реальный успешный push user-service в GHCR из main.",
+    "source": "Native terminal showing original GHCR push log, Actions run 44304910936",
+    "sha256": "402640ba5630fa599a53e1cd5adb106f017f6611cf8639896c1757136d3a600f"
+  },
+  {
+    "file": "docs/pr8-images/order-ghcr.png",
+    "caption": "Скриншот 24 — реальный успешный push order-service в GHCR из main.",
+    "source": "Native terminal showing original GHCR push log, Actions run 44308798650",
+    "sha256": "d1b3a14ae0130d73214b3acd03268a94d4cfd31c8312e028d318d3d13e10a977"
+  },
+  {
+    "file": "docs/pr8-images/13-kubernetes-replicas.png",
+    "caption": "Скриншот 25 — исходный вывод kubectl из реального kind: Order Service 3/3 Ready.",
+    "source": "Native terminal showing original kubectl logs, Actions run 44302454714",
+    "sha256": "3d9f502ca2653f3944c09ee3fbfdec4d0f233b835c74e28a730a02648d0c7fda"
+  },
+  {
+    "file": "docs/pr8-images/14-kubernetes-verification.png",
+    "caption": "Скриншот 26 — выполнение scale, чтение данных из каждого pod и итоговая проверка.",
+    "source": "Native terminal showing original kubectl logs, Actions run 44302454714",
+    "sha256": "dd5e7a63258ca89343160262e63f15d0ef3e7e8bcff0ddf24ac436cedf5bdd01"
+  }
+]

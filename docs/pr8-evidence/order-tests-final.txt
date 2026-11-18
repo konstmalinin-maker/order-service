@@ -1,0 +1,45 @@
+.............................................                            [100%]
+=============================== warnings summary ===============================
+../venv-pr8/lib/python3.12/site-packages/starlette/testclient.py:37
+  /workspace/venv-pr8/lib/python3.12/site-packages/starlette/testclient.py:37: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = typing.Callable[[], typing.ContextManager[anyio.abc.BlockingPortal]]
+
+../venv-pr8/lib/python3.12/site-packages/starlette/middleware/wsgi.py:14
+  /workspace/venv-pr8/lib/python3.12/site-packages/starlette/middleware/wsgi.py:14: DeprecationWarning: starlette.middleware.wsgi is deprecated and will be removed in a future release. Please refer to https://github.com/abersheeran/a2wsgi as a replacement.
+    warnings.warn(
+
+tests/test_messaging.py::test_real_rabbitmq_event_delivery_and_deduplication
+  /workspace/order-service/notification_service/consumer.py:95: DeprecationWarning: BlockingConnection is deprecated and will be removed in Pika 2.0. Use Connection instead, which runs its own IOLoop on a background thread and provides a thread-safe blocking API that does not stall heartbeats on slow message processing. See https://pika.github.io/pika/latest/modules/adapters/thread_safe/
+    connection = pika.BlockingConnection(parameters)
+
+tests/test_messaging.py::test_real_rabbitmq_event_delivery_and_deduplication
+tests/test_messaging.py::test_real_rabbitmq_event_delivery_and_deduplication
+  /workspace/order-service/app/messaging.py:22: DeprecationWarning: BlockingConnection is deprecated and will be removed in Pika 2.0. Use Connection instead, which runs its own IOLoop on a background thread and provides a thread-safe blocking API that does not stall heartbeats on slow message processing. See https://pika.github.io/pika/latest/modules/adapters/thread_safe/
+    connection = pika.BlockingConnection(parameters)
+
+tests/test_messaging.py::test_real_rabbitmq_event_delivery_and_deduplication
+  /workspace/order-service/tests/test_messaging.py:152: DeprecationWarning: BlockingConnection is deprecated and will be removed in Pika 2.0. Use Connection instead, which runs its own IOLoop on a background thread and provides a thread-safe blocking API that does not stall heartbeats on slow message processing. See https://pika.github.io/pika/latest/modules/adapters/thread_safe/
+    connection = pika.BlockingConnection(pika.URLParameters(url))
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.12.14-final-0 _______________
+
+Name                               Stmts   Miss  Cover   Missing
+----------------------------------------------------------------
+app/__init__.py                        0      0   100%
+app/common_models.py                  12      0   100%
+app/main.py                           80      2    98%   30, 33
+app/messaging.py                      53      0   100%
+app/models.py                         24      0   100%
+app/observability.py                  45     10    78%   47-61
+app/repositories.py                   48      0   100%
+app/user_client.py                   107      2    98%   107-109
+notification_service/__init__.py       0      0   100%
+notification_service/consumer.py      88      2    98%   103-104
+notification_service/main.py          31      0   100%
+----------------------------------------------------------------
+TOTAL                                488     16    97%
+Coverage JSON written to file coverage.json
+Required test coverage of 80% reached. Total coverage: 96.72%
+45 passed, 6 warnings in 3.56s

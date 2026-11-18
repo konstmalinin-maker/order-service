@@ -1,0 +1,28 @@
+{
+  "compose_main": {
+    "run": 44308798651,
+    "commit": "c2c095970af6a579fb67d8ecf7cf81265b99111a",
+    "url": "https://github.com/konstmalinin-maker/order-service/actions/runs/44308798651",
+    "artifact": 14429543034
+  },
+  "compose_branch": {
+    "run": 44307634410,
+    "url": "https://github.com/konstmalinin-maker/order-service/actions/runs/44307634410",
+    "artifact": 14429541579
+  },
+  "kubernetes": {
+    "run": 44302454714,
+    "url": "https://github.com/konstmalinin-maker/order-service/actions/runs/44302454714",
+    "artifact": 14426907332
+  },
+  "user_publication": {
+    "run": 44304910936,
+    "url": "https://github.com/konstmalinin-maker/user-service/actions/runs/44304910936",
+    "digest": "sha256:2c1d9457717fe606a4c2b1d33a0b0c048f840e16ae1f7deccab67fffe116c63a"
+  },
+  "order_publication": {
+    "run": 44308798650,
+    "url": "https://github.com/konstmalinin-maker/order-service/actions/runs/44308798650",
+    "digest": "sha256:ca4182fff47f7b6cbe9b9f8b979874648ca5df6e8c7d8c7b2cb6a6fcece921fd"
+  }
+}

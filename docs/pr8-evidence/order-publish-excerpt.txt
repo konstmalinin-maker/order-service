@@ -1,0 +1,7 @@
+2026-11-18T12:57:55.8903511Z #15 pushing layers
+2026-11-18T12:57:57.7354730Z #15 pushing layers 2.0s done
+2026-11-18T12:57:57.7355625Z #15 pushing manifest for ghcr.io/konstmalinin-maker/order-service:latest@sha256:ca4182fff47f7b6cbe9b9f8b979874648ca5df6e8c7d8c7b2cb6a6fcece921fd
+2026-11-18T12:58:00.5981565Z #15 pushing manifest for ghcr.io/konstmalinin-maker/order-service:latest@sha256:ca4182fff47f7b6cbe9b9f8b979874648ca5df6e8c7d8c7b2cb6a6fcece921fd 2.9s done
+2026-11-18T12:58:00.9051535Z #15 pushing layers 0.3s done
+2026-11-18T12:58:00.9052653Z #15 pushing manifest for ghcr.io/konstmalinin-maker/order-service:c2c095970af6a579fb67d8ecf7cf81265b99111a@sha256:ca4182fff47f7b6cbe9b9f8b979874648ca5df6e8c7d8c7b2cb6a6fcece921fd
+2026-11-18T12:58:01.9387722Z #15 pushing manifest for ghcr.io/konstmalinin-maker/order-service:c2c095970af6a579fb67d8ecf7cf81265b99111a@sha256:ca4182fff47f7b6cbe9b9f8b979874648ca5df6e8c7d8c7b2cb6a6fcece921fd 1.0s done

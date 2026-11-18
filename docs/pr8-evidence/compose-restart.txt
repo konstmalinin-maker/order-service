@@ -1,0 +1,4 @@
+ Container pr8-user-service-1  Restarting
+ Container pr8-order-service-1  Restarting
+ Container pr8-user-service-1  Started
+ Container pr8-order-service-1  Started

@@ -1,0 +1,4682 @@
+[
+  {
+    "traceID": "724a326e22932770d50ae3b6a8693499",
+    "spans": [
+      {
+        "traceID": "724a326e22932770d50ae3b6a8693499",
+        "spanID": "b21b57932e38b0c4",
+        "operationName": "GET /users/{user_id} http send",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "724a326e22932770d50ae3b6a8693499",
+            "spanID": "1a3bb6e1fb9e2aa6"
+          }
+        ],
+        "startTime": 1795006712985259,
+        "duration": 13,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.response.body"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "724a326e22932770d50ae3b6a8693499",
+        "spanID": "effd748f0225b0b4",
+        "operationName": "POST /orders http receive",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "724a326e22932770d50ae3b6a8693499",
+            "spanID": "9e85add698a5c2a5"
+          }
+        ],
+        "startTime": 1795006712981118,
+        "duration": 17,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.request"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p2",
+        "warnings": null
+      },
+      {
+        "traceID": "724a326e22932770d50ae3b6a8693499",
+        "spanID": "fa801e0131bf2f39",
+        "operationName": "POST /orders http send",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "724a326e22932770d50ae3b6a8693499",
+            "spanID": "9e85add698a5c2a5"
+          }
+        ],
+        "startTime": 1795006712986505,
+        "duration": 9,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.response.body"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p2",
+        "warnings": null
+      },
+      {
+        "traceID": "724a326e22932770d50ae3b6a8693499",
+        "spanID": "8ab5cec3d7d0c3dd",
+        "operationName": "POST /orders http send",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "724a326e22932770d50ae3b6a8693499",
+            "spanID": "9e85add698a5c2a5"
+          }
+        ],
+        "startTime": 1795006712986571,
+        "duration": 7,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.response.body"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p2",
+        "warnings": null
+      },
+      {
+        "traceID": "724a326e22932770d50ae3b6a8693499",
+        "spanID": "9e85add698a5c2a5",
+        "operationName": "POST /orders",
+        "references": [],
+        "startTime": 1795006712980858,
+        "duration": 5772,
+        "tags": [
+          {
+            "key": "http.flavor",
+            "type": "string",
+            "value": "1.0"
+          },
+          {
+            "key": "http.host",
+            "type": "string",
+            "value": "172.18.0.8:5002"
+          },
+          {
+            "key": "http.method",
+            "type": "string",
+            "value": "POST"
+          },
+          {
+            "key": "http.route",
+            "type": "string",
+            "value": "/orders"
+          },
+          {
+            "key": "http.scheme",
+            "type": "string",
+            "value": "http"
+          },
+          {
+            "key": "http.server_name",
+            "type": "string",
+            "value": "orders"
+          },
+          {
+            "key": "http.status_code",
+            "type": "int64",
+            "value": 404
+          },
+          {
+            "key": "http.target",
+            "type": "string",
+            "value": "/orders"
+          },
+          {
+            "key": "http.url",
+            "type": "string",
+            "value": "http://172.18.0.8:5002/orders"
+          },
+          {
+            "key": "http.user_agent",
+            "type": "string",
+            "value": "python-httpx/0.28.1"
+          },
+          {
+            "key": "net.host.port",
+            "type": "int64",
+            "value": 5002
+          },
+          {
+            "key": "net.peer.ip",
+            "type": "string",
+            "value": "172.18.0.9"
+          },
+          {
+            "key": "net.peer.port",
+            "type": "int64",
+            "value": 34970
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "server"
+          }
+        ],
+        "logs": [],
+        "processID": "p2",
+        "warnings": null
+      },
+      {
+        "traceID": "724a326e22932770d50ae3b6a8693499",
+        "spanID": "9db0d08a0309e51a",
+        "operationName": "GET",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "724a326e22932770d50ae3b6a8693499",
+            "spanID": "9e85add698a5c2a5"
+          }
+        ],
+        "startTime": 1795006712982193,
+        "duration": 3201,
+        "tags": [
+          {
+            "key": "error",
+            "type": "bool",
+            "value": true
+          },
+          {
+            "key": "http.method",
+            "type": "string",
+            "value": "GET"
+          },
+          {
+            "key": "http.status_code",
+            "type": "int64",
+            "value": 404
+          },
+          {
+            "key": "http.url",
+            "type": "string",
+            "value": "http://user-service:5001/users/999999"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.httpx"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "otel.status_code",
+            "type": "string",
+            "value": "ERROR"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "client"
+          }
+        ],
+        "logs": [],
+        "processID": "p2",
+        "warnings": null
+      },
+      {
+        "traceID": "724a326e22932770d50ae3b6a8693499",
+        "spanID": "d1192e5e552f97b5",
+        "operationName": "GET /users/{user_id} http send",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "724a326e22932770d50ae3b6a8693499",
+            "spanID": "1a3bb6e1fb9e2aa6"
+          }
+        ],
+        "startTime": 1795006712984958,
+        "duration": 23,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.response.start"
+          },
+          {
+            "key": "http.status_code",
+            "type": "int64",
+            "value": 404
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "724a326e22932770d50ae3b6a8693499",
+        "spanID": "3eceed86250ab930",
+        "operationName": "GET /users/{user_id} http send",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "724a326e22932770d50ae3b6a8693499",
+            "spanID": "1a3bb6e1fb9e2aa6"
+          }
+        ],
+        "startTime": 1795006712985321,
+        "duration": 6,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.response.body"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "724a326e22932770d50ae3b6a8693499",
+        "spanID": "1a3bb6e1fb9e2aa6",
+        "operationName": "GET /users/{user_id}",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "724a326e22932770d50ae3b6a8693499",
+            "spanID": "9db0d08a0309e51a"
+          }
+        ],
+        "startTime": 1795006712983645,
+        "duration": 1719,
+        "tags": [
+          {
+            "key": "http.flavor",
+            "type": "string",
+            "value": "1.1"
+          },
+          {
+            "key": "http.host",
+            "type": "string",
+            "value": "172.18.0.4:5001"
+          },
+          {
+            "key": "http.method",
+            "type": "string",
+            "value": "GET"
+          },
+          {
+            "key": "http.route",
+            "type": "string",
+            "value": "/users/{user_id}"
+          },
+          {
+            "key": "http.scheme",
+            "type": "string",
+            "value": "http"
+          },
+          {
+            "key": "http.server_name",
+            "type": "string",
+            "value": "user-service:5001"
+          },
+          {
+            "key": "http.status_code",
+            "type": "int64",
+            "value": 404
+          },
+          {
+            "key": "http.target",
+            "type": "string",
+            "value": "/users/999999"
+          },
+          {
+            "key": "http.url",
+            "type": "string",
+            "value": "http://172.18.0.4:5001/users/999999"
+          },
+          {
+            "key": "http.user_agent",
+            "type": "string",
+            "value": "python-httpx/0.28.1"
+          },
+          {
+            "key": "net.host.port",
+            "type": "int64",
+            "value": 5001
+          },
+          {
+            "key": "net.peer.ip",
+            "type": "string",
+            "value": "172.18.0.8"
+          },
+          {
+            "key": "net.peer.port",
+            "type": "int64",
+            "value": 40374
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "server"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "724a326e22932770d50ae3b6a8693499",
+        "spanID": "3fe7352442d577ca",
+        "operationName": "POST /orders http send",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "724a326e22932770d50ae3b6a8693499",
+            "spanID": "9e85add698a5c2a5"
+          }
+        ],
+        "startTime": 1795006712986229,
+        "duration": 17,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.response.start"
+          },
+          {
+            "key": "http.status_code",
+            "type": "int64",
+            "value": 404
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p2",
+        "warnings": null
+      }
+    ],
+    "processes": {
+      "p1": {
+        "serviceName": "user-service",
+        "tags": [
+          {
+            "key": "telemetry.sdk.language",
+            "type": "string",
+            "value": "python"
+          },
+          {
+            "key": "telemetry.sdk.name",
+            "type": "string",
+            "value": "opentelemetry"
+          },
+          {
+            "key": "telemetry.sdk.version",
+            "type": "string",
+            "value": "1.34.1"
+          }
+        ]
+      },
+      "p2": {
+        "serviceName": "order-service",
+        "tags": [
+          {
+            "key": "telemetry.sdk.language",
+            "type": "string",
+            "value": "python"
+          },
+          {
+            "key": "telemetry.sdk.name",
+            "type": "string",
+            "value": "opentelemetry"
+          },
+          {
+            "key": "telemetry.sdk.version",
+            "type": "string",
+            "value": "1.34.1"
+          }
+        ]
+      }
+    },
+    "warnings": null
+  },
+  {
+    "traceID": "b18436c1d5d9b44fc81dd4b8eea84e83",
+    "spans": [
+      {
+        "traceID": "b18436c1d5d9b44fc81dd4b8eea84e83",
+        "spanID": "86ce8789f09a150a",
+        "operationName": "POST /orders",
+        "references": [],
+        "startTime": 1795006712846755,
+        "duration": 1921,
+        "tags": [
+          {
+            "key": "http.flavor",
+            "type": "string",
+            "value": "1.0"
+          },
+          {
+            "key": "http.host",
+            "type": "string",
+            "value": "172.18.0.8:5002"
+          },
+          {
+            "key": "http.method",
+            "type": "string",
+            "value": "POST"
+          },
+          {
+            "key": "http.route",
+            "type": "string",
+            "value": "/orders"
+          },
+          {
+            "key": "http.scheme",
+            "type": "string",
+            "value": "http"
+          },
+          {
+            "key": "http.server_name",
+            "type": "string",
+            "value": "orders"
+          },
+          {
+            "key": "http.status_code",
+            "type": "int64",
+            "value": 400
+          },
+          {
+            "key": "http.target",
+            "type": "string",
+            "value": "/orders"
+          },
+          {
+            "key": "http.url",
+            "type": "string",
+            "value": "http://172.18.0.8:5002/orders"
+          },
+          {
+            "key": "http.user_agent",
+            "type": "string",
+            "value": "python-httpx/0.28.1"
+          },
+          {
+            "key": "net.host.port",
+            "type": "int64",
+            "value": 5002
+          },
+          {
+            "key": "net.peer.ip",
+            "type": "string",
+            "value": "172.18.0.9"
+          },
+          {
+            "key": "net.peer.port",
+            "type": "int64",
+            "value": 34964
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "server"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "b18436c1d5d9b44fc81dd4b8eea84e83",
+        "spanID": "367f1ff997236eee",
+        "operationName": "POST /orders http receive",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "b18436c1d5d9b44fc81dd4b8eea84e83",
+            "spanID": "86ce8789f09a150a"
+          }
+        ],
+        "startTime": 1795006712847052,
+        "duration": 19,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.request"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "b18436c1d5d9b44fc81dd4b8eea84e83",
+        "spanID": "6668431ca965289d",
+        "operationName": "POST /orders http send",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "b18436c1d5d9b44fc81dd4b8eea84e83",
+            "spanID": "86ce8789f09a150a"
+          }
+        ],
+        "startTime": 1795006712848196,
+        "duration": 29,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.response.start"
+          },
+          {
+            "key": "http.status_code",
+            "type": "int64",
+            "value": 400
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "b18436c1d5d9b44fc81dd4b8eea84e83",
+        "spanID": "f158f6c5a41f2ce2",
+        "operationName": "POST /orders http send",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "b18436c1d5d9b44fc81dd4b8eea84e83",
+            "spanID": "86ce8789f09a150a"
+          }
+        ],
+        "startTime": 1795006712848535,
+        "duration": 12,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.response.body"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "b18436c1d5d9b44fc81dd4b8eea84e83",
+        "spanID": "350cfb4c4ab1c736",
+        "operationName": "POST /orders http send",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "b18436c1d5d9b44fc81dd4b8eea84e83",
+            "spanID": "86ce8789f09a150a"
+          }
+        ],
+        "startTime": 1795006712848615,
+        "duration": 8,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.response.body"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      }
+    ],
+    "processes": {
+      "p1": {
+        "serviceName": "order-service",
+        "tags": [
+          {
+            "key": "telemetry.sdk.language",
+            "type": "string",
+            "value": "python"
+          },
+          {
+            "key": "telemetry.sdk.name",
+            "type": "string",
+            "value": "opentelemetry"
+          },
+          {
+            "key": "telemetry.sdk.version",
+            "type": "string",
+            "value": "1.34.1"
+          }
+        ]
+      }
+    },
+    "warnings": null
+  },
+  {
+    "traceID": "623596b51309ca4352fe8c40c71af5c3",
+    "spans": [
+      {
+        "traceID": "623596b51309ca4352fe8c40c71af5c3",
+        "spanID": "b7c1f87a5dfd2862",
+        "operationName": "GET",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "623596b51309ca4352fe8c40c71af5c3",
+            "spanID": "dfce573b34cc6dd7"
+          }
+        ],
+        "startTime": 1795006778253646,
+        "duration": 3887,
+        "tags": [
+          {
+            "key": "error",
+            "type": "bool",
+            "value": true
+          },
+          {
+            "key": "http.method",
+            "type": "string",
+            "value": "GET"
+          },
+          {
+            "key": "http.url",
+            "type": "string",
+            "value": "http://user-service:5001/users/1"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.httpx"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "otel.status_code",
+            "type": "string",
+            "value": "ERROR"
+          },
+          {
+            "key": "otel.status_description",
+            "type": "string",
+            "value": "ConnectError: [Errno -3] Temporary failure in name resolution"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "client"
+          }
+        ],
+        "logs": [
+          {
+            "timestamp": 1795006778257519,
+            "fields": [
+              {
+                "key": "event",
+                "type": "string",
+                "value": "exception"
+              },
+              {
+                "key": "exception.escaped",
+                "type": "string",
+                "value": "False"
+              },
+              {
+                "key": "exception.message",
+                "type": "string",
+                "value": "[Errno -3] Temporary failure in name resolution"
+              },
+              {
+                "key": "exception.stacktrace",
+                "type": "string",
+                "value": "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 101, in map_httpcore_exceptions\n    yield\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 250, in handle_request\n    resp = self._pool.handle_request(req)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py\", line 256, in handle_request\n    raise exc from None\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py\", line 236, in handle_request\n    response = connection.handle_request(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 101, in handle_request\n    raise exc\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 78, in handle_request\n    stream = self._connect(request)\n             ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 124, in _connect\n    stream = self._network_backend.connect_tcp(**kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_backends/sync.py\", line 207, in connect_tcp\n    with map_exceptions(exc_map):\n         ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/contextlib.py\", line 158, in __exit__\n    self.gen.throw(value)\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_exceptions.py\", line 14, in map_exceptions\n    raise to_exc(exc) from exc\nhttpcore.ConnectError: [Errno -3] Temporary failure in name resolution\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/trace/__init__.py\", line 589, in use_span\n    yield span\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/sdk/trace/__init__.py\", line 1105, in start_as_current_span\n    yield span\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/instrumentation/httpx/__init__.py\", line 1028, in _handle_request_wrapper\n    raise exception.with_traceback(exception.__traceback__)\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/instrumentation/httpx/__init__.py\", line 992, in _handle_request_wrapper\n    response = wrapped(*args, **kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 249, in handle_request\n    with map_httpcore_exceptions():\n         ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/contextlib.py\", line 158, in __exit__\n    self.gen.throw(value)\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 118, in map_httpcore_exceptions\n    raise mapped_exc(message) from exc\nhttpx.ConnectError: [Errno -3] Temporary failure in name resolution\n"
+              },
+              {
+                "key": "exception.type",
+                "type": "string",
+                "value": "httpx.ConnectError"
+              }
+            ]
+          }
+        ],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "623596b51309ca4352fe8c40c71af5c3",
+        "spanID": "f84594b09823b992",
+        "operationName": "POST /orders http receive",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "623596b51309ca4352fe8c40c71af5c3",
+            "spanID": "dfce573b34cc6dd7"
+          }
+        ],
+        "startTime": 1795006778252941,
+        "duration": 14,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.request"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "623596b51309ca4352fe8c40c71af5c3",
+        "spanID": "65c0f82e153f2981",
+        "operationName": "GET",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "623596b51309ca4352fe8c40c71af5c3",
+            "spanID": "dfce573b34cc6dd7"
+          }
+        ],
+        "startTime": 1795006778758128,
+        "duration": 5738,
+        "tags": [
+          {
+            "key": "error",
+            "type": "bool",
+            "value": true
+          },
+          {
+            "key": "http.method",
+            "type": "string",
+            "value": "GET"
+          },
+          {
+            "key": "http.url",
+            "type": "string",
+            "value": "http://user-service:5001/users/1"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.httpx"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "otel.status_code",
+            "type": "string",
+            "value": "ERROR"
+          },
+          {
+            "key": "otel.status_description",
+            "type": "string",
+            "value": "ConnectError: [Errno -3] Temporary failure in name resolution"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "client"
+          }
+        ],
+        "logs": [
+          {
+            "timestamp": 1795006778763851,
+            "fields": [
+              {
+                "key": "event",
+                "type": "string",
+                "value": "exception"
+              },
+              {
+                "key": "exception.escaped",
+                "type": "string",
+                "value": "False"
+              },
+              {
+                "key": "exception.message",
+                "type": "string",
+                "value": "[Errno -3] Temporary failure in name resolution"
+              },
+              {
+                "key": "exception.stacktrace",
+                "type": "string",
+                "value": "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 101, in map_httpcore_exceptions\n    yield\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 250, in handle_request\n    resp = self._pool.handle_request(req)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py\", line 256, in handle_request\n    raise exc from None\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py\", line 236, in handle_request\n    response = connection.handle_request(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 101, in handle_request\n    raise exc\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 78, in handle_request\n    stream = self._connect(request)\n             ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 124, in _connect\n    stream = self._network_backend.connect_tcp(**kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_backends/sync.py\", line 207, in connect_tcp\n    with map_exceptions(exc_map):\n         ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/contextlib.py\", line 158, in __exit__\n    self.gen.throw(value)\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_exceptions.py\", line 14, in map_exceptions\n    raise to_exc(exc) from exc\nhttpcore.ConnectError: [Errno -3] Temporary failure in name resolution\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/trace/__init__.py\", line 589, in use_span\n    yield span\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/sdk/trace/__init__.py\", line 1105, in start_as_current_span\n    yield span\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/instrumentation/httpx/__init__.py\", line 1028, in _handle_request_wrapper\n    raise exception.with_traceback(exception.__traceback__)\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/instrumentation/httpx/__init__.py\", line 992, in _handle_request_wrapper\n    response = wrapped(*args, **kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 249, in handle_request\n    with map_httpcore_exceptions():\n         ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/contextlib.py\", line 158, in __exit__\n    self.gen.throw(value)\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 118, in map_httpcore_exceptions\n    raise mapped_exc(message) from exc\nhttpx.ConnectError: [Errno -3] Temporary failure in name resolution\n"
+              },
+              {
+                "key": "exception.type",
+                "type": "string",
+                "value": "httpx.ConnectError"
+              }
+            ]
+          }
+        ],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "623596b51309ca4352fe8c40c71af5c3",
+        "spanID": "63de54144b948486",
+        "operationName": "GET",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "623596b51309ca4352fe8c40c71af5c3",
+            "spanID": "dfce573b34cc6dd7"
+          }
+        ],
+        "startTime": 1795006779764465,
+        "duration": 6188,
+        "tags": [
+          {
+            "key": "error",
+            "type": "bool",
+            "value": true
+          },
+          {
+            "key": "http.method",
+            "type": "string",
+            "value": "GET"
+          },
+          {
+            "key": "http.url",
+            "type": "string",
+            "value": "http://user-service:5001/users/1"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.httpx"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "otel.status_code",
+            "type": "string",
+            "value": "ERROR"
+          },
+          {
+            "key": "otel.status_description",
+            "type": "string",
+            "value": "ConnectError: [Errno -3] Temporary failure in name resolution"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "client"
+          }
+        ],
+        "logs": [
+          {
+            "timestamp": 1795006779770636,
+            "fields": [
+              {
+                "key": "event",
+                "type": "string",
+                "value": "exception"
+              },
+              {
+                "key": "exception.escaped",
+                "type": "string",
+                "value": "False"
+              },
+              {
+                "key": "exception.message",
+                "type": "string",
+                "value": "[Errno -3] Temporary failure in name resolution"
+              },
+              {
+                "key": "exception.stacktrace",
+                "type": "string",
+                "value": "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 101, in map_httpcore_exceptions\n    yield\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 250, in handle_request\n    resp = self._pool.handle_request(req)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py\", line 256, in handle_request\n    raise exc from None\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py\", line 236, in handle_request\n    response = connection.handle_request(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 101, in handle_request\n    raise exc\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 78, in handle_request\n    stream = self._connect(request)\n             ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 124, in _connect\n    stream = self._network_backend.connect_tcp(**kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_backends/sync.py\", line 207, in connect_tcp\n    with map_exceptions(exc_map):\n         ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/contextlib.py\", line 158, in __exit__\n    self.gen.throw(value)\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_exceptions.py\", line 14, in map_exceptions\n    raise to_exc(exc) from exc\nhttpcore.ConnectError: [Errno -3] Temporary failure in name resolution\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/trace/__init__.py\", line 589, in use_span\n    yield span\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/sdk/trace/__init__.py\", line 1105, in start_as_current_span\n    yield span\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/instrumentation/httpx/__init__.py\", line 1028, in _handle_request_wrapper\n    raise exception.with_traceback(exception.__traceback__)\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/instrumentation/httpx/__init__.py\", line 992, in _handle_request_wrapper\n    response = wrapped(*args, **kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 249, in handle_request\n    with map_httpcore_exceptions():\n         ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/contextlib.py\", line 158, in __exit__\n    self.gen.throw(value)\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 118, in map_httpcore_exceptions\n    raise mapped_exc(message) from exc\nhttpx.ConnectError: [Errno -3] Temporary failure in name resolution\n"
+              },
+              {
+                "key": "exception.type",
+                "type": "string",
+                "value": "httpx.ConnectError"
+              }
+            ]
+          }
+        ],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "623596b51309ca4352fe8c40c71af5c3",
+        "spanID": "fc2c8cfcf2999e9d",
+        "operationName": "POST /orders http send",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "623596b51309ca4352fe8c40c71af5c3",
+            "spanID": "dfce573b34cc6dd7"
+          }
+        ],
+        "startTime": 1795006779771113,
+        "duration": 21,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.response.start"
+          },
+          {
+            "key": "error",
+            "type": "bool",
+            "value": true
+          },
+          {
+            "key": "http.status_code",
+            "type": "int64",
+            "value": 503
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "otel.status_code",
+            "type": "string",
+            "value": "ERROR"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "623596b51309ca4352fe8c40c71af5c3",
+        "spanID": "647ca8b330a5ba4b",
+        "operationName": "POST /orders http send",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "623596b51309ca4352fe8c40c71af5c3",
+            "spanID": "dfce573b34cc6dd7"
+          }
+        ],
+        "startTime": 1795006779771450,
+        "duration": 8,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.response.body"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "623596b51309ca4352fe8c40c71af5c3",
+        "spanID": "ab327b008902bda5",
+        "operationName": "POST /orders http send",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "623596b51309ca4352fe8c40c71af5c3",
+            "spanID": "dfce573b34cc6dd7"
+          }
+        ],
+        "startTime": 1795006779771509,
+        "duration": 5,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.response.body"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "623596b51309ca4352fe8c40c71af5c3",
+        "spanID": "dfce573b34cc6dd7",
+        "operationName": "POST /orders",
+        "references": [],
+        "startTime": 1795006778252658,
+        "duration": 1518906,
+        "tags": [
+          {
+            "key": "error",
+            "type": "bool",
+            "value": true
+          },
+          {
+            "key": "http.flavor",
+            "type": "string",
+            "value": "1.0"
+          },
+          {
+            "key": "http.host",
+            "type": "string",
+            "value": "172.18.0.8:5002"
+          },
+          {
+            "key": "http.method",
+            "type": "string",
+            "value": "POST"
+          },
+          {
+            "key": "http.route",
+            "type": "string",
+            "value": "/orders"
+          },
+          {
+            "key": "http.scheme",
+            "type": "string",
+            "value": "http"
+          },
+          {
+            "key": "http.server_name",
+            "type": "string",
+            "value": "orders"
+          },
+          {
+            "key": "http.status_code",
+            "type": "int64",
+            "value": 503
+          },
+          {
+            "key": "http.target",
+            "type": "string",
+            "value": "/orders"
+          },
+          {
+            "key": "http.url",
+            "type": "string",
+            "value": "http://172.18.0.8:5002/orders"
+          },
+          {
+            "key": "http.user_agent",
+            "type": "string",
+            "value": "python-httpx/0.28.1"
+          },
+          {
+            "key": "net.host.port",
+            "type": "int64",
+            "value": 5002
+          },
+          {
+            "key": "net.peer.ip",
+            "type": "string",
+            "value": "172.18.0.9"
+          },
+          {
+            "key": "net.peer.port",
+            "type": "int64",
+            "value": 57292
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "otel.status_code",
+            "type": "string",
+            "value": "ERROR"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "server"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      }
+    ],
+    "processes": {
+      "p1": {
+        "serviceName": "order-service",
+        "tags": [
+          {
+            "key": "telemetry.sdk.language",
+            "type": "string",
+            "value": "python"
+          },
+          {
+            "key": "telemetry.sdk.name",
+            "type": "string",
+            "value": "opentelemetry"
+          },
+          {
+            "key": "telemetry.sdk.version",
+            "type": "string",
+            "value": "1.34.1"
+          }
+        ]
+      }
+    },
+    "warnings": null
+  },
+  {
+    "traceID": "a4f12b935e8e440852381df4614a9ea3",
+    "spans": [
+      {
+        "traceID": "a4f12b935e8e440852381df4614a9ea3",
+        "spanID": "ebe6f57016e34dc1",
+        "operationName": "POST /orders http send",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "a4f12b935e8e440852381df4614a9ea3",
+            "spanID": "fb9039d3ba44283b"
+          }
+        ],
+        "startTime": 1795006783098412,
+        "duration": 25,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.response.start"
+          },
+          {
+            "key": "error",
+            "type": "bool",
+            "value": true
+          },
+          {
+            "key": "http.status_code",
+            "type": "int64",
+            "value": 503
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "otel.status_code",
+            "type": "string",
+            "value": "ERROR"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "a4f12b935e8e440852381df4614a9ea3",
+        "spanID": "90293847e51eb841",
+        "operationName": "POST /orders http send",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "a4f12b935e8e440852381df4614a9ea3",
+            "spanID": "fb9039d3ba44283b"
+          }
+        ],
+        "startTime": 1795006783098794,
+        "duration": 10,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.response.body"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "a4f12b935e8e440852381df4614a9ea3",
+        "spanID": "42135661c6563e33",
+        "operationName": "POST /orders http send",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "a4f12b935e8e440852381df4614a9ea3",
+            "spanID": "fb9039d3ba44283b"
+          }
+        ],
+        "startTime": 1795006783098868,
+        "duration": 8,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.response.body"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "a4f12b935e8e440852381df4614a9ea3",
+        "spanID": "fb9039d3ba44283b",
+        "operationName": "POST /orders",
+        "references": [],
+        "startTime": 1795006781565362,
+        "duration": 1533575,
+        "tags": [
+          {
+            "key": "error",
+            "type": "bool",
+            "value": true
+          },
+          {
+            "key": "http.flavor",
+            "type": "string",
+            "value": "1.0"
+          },
+          {
+            "key": "http.host",
+            "type": "string",
+            "value": "172.18.0.8:5002"
+          },
+          {
+            "key": "http.method",
+            "type": "string",
+            "value": "POST"
+          },
+          {
+            "key": "http.route",
+            "type": "string",
+            "value": "/orders"
+          },
+          {
+            "key": "http.scheme",
+            "type": "string",
+            "value": "http"
+          },
+          {
+            "key": "http.server_name",
+            "type": "string",
+            "value": "orders"
+          },
+          {
+            "key": "http.status_code",
+            "type": "int64",
+            "value": 503
+          },
+          {
+            "key": "http.target",
+            "type": "string",
+            "value": "/orders"
+          },
+          {
+            "key": "http.url",
+            "type": "string",
+            "value": "http://172.18.0.8:5002/orders"
+          },
+          {
+            "key": "http.user_agent",
+            "type": "string",
+            "value": "python-httpx/0.28.1"
+          },
+          {
+            "key": "net.host.port",
+            "type": "int64",
+            "value": 5002
+          },
+          {
+            "key": "net.peer.ip",
+            "type": "string",
+            "value": "172.18.0.9"
+          },
+          {
+            "key": "net.peer.port",
+            "type": "int64",
+            "value": 57310
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "otel.status_code",
+            "type": "string",
+            "value": "ERROR"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "server"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "a4f12b935e8e440852381df4614a9ea3",
+        "spanID": "dbca700d2989bdab",
+        "operationName": "POST /orders http receive",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "a4f12b935e8e440852381df4614a9ea3",
+            "spanID": "fb9039d3ba44283b"
+          }
+        ],
+        "startTime": 1795006781565599,
+        "duration": 14,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.request"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "a4f12b935e8e440852381df4614a9ea3",
+        "spanID": "53c26ab3ca11e661",
+        "operationName": "GET",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "a4f12b935e8e440852381df4614a9ea3",
+            "spanID": "fb9039d3ba44283b"
+          }
+        ],
+        "startTime": 1795006781566304,
+        "duration": 6773,
+        "tags": [
+          {
+            "key": "error",
+            "type": "bool",
+            "value": true
+          },
+          {
+            "key": "http.method",
+            "type": "string",
+            "value": "GET"
+          },
+          {
+            "key": "http.url",
+            "type": "string",
+            "value": "http://user-service:5001/users/1"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.httpx"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "otel.status_code",
+            "type": "string",
+            "value": "ERROR"
+          },
+          {
+            "key": "otel.status_description",
+            "type": "string",
+            "value": "ConnectError: [Errno -3] Temporary failure in name resolution"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "client"
+          }
+        ],
+        "logs": [
+          {
+            "timestamp": 1795006781573064,
+            "fields": [
+              {
+                "key": "event",
+                "type": "string",
+                "value": "exception"
+              },
+              {
+                "key": "exception.escaped",
+                "type": "string",
+                "value": "False"
+              },
+              {
+                "key": "exception.message",
+                "type": "string",
+                "value": "[Errno -3] Temporary failure in name resolution"
+              },
+              {
+                "key": "exception.stacktrace",
+                "type": "string",
+                "value": "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 101, in map_httpcore_exceptions\n    yield\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 250, in handle_request\n    resp = self._pool.handle_request(req)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py\", line 256, in handle_request\n    raise exc from None\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py\", line 236, in handle_request\n    response = connection.handle_request(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 101, in handle_request\n    raise exc\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 78, in handle_request\n    stream = self._connect(request)\n             ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 124, in _connect\n    stream = self._network_backend.connect_tcp(**kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_backends/sync.py\", line 207, in connect_tcp\n    with map_exceptions(exc_map):\n         ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/contextlib.py\", line 158, in __exit__\n    self.gen.throw(value)\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_exceptions.py\", line 14, in map_exceptions\n    raise to_exc(exc) from exc\nhttpcore.ConnectError: [Errno -3] Temporary failure in name resolution\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/trace/__init__.py\", line 589, in use_span\n    yield span\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/sdk/trace/__init__.py\", line 1105, in start_as_current_span\n    yield span\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/instrumentation/httpx/__init__.py\", line 1028, in _handle_request_wrapper\n    raise exception.with_traceback(exception.__traceback__)\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/instrumentation/httpx/__init__.py\", line 992, in _handle_request_wrapper\n    response = wrapped(*args, **kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 249, in handle_request\n    with map_httpcore_exceptions():\n         ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/contextlib.py\", line 158, in __exit__\n    self.gen.throw(value)\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 118, in map_httpcore_exceptions\n    raise mapped_exc(message) from exc\nhttpx.ConnectError: [Errno -3] Temporary failure in name resolution\n"
+              },
+              {
+                "key": "exception.type",
+                "type": "string",
+                "value": "httpx.ConnectError"
+              }
+            ]
+          }
+        ],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "a4f12b935e8e440852381df4614a9ea3",
+        "spanID": "b81e4907ec3f9920",
+        "operationName": "GET",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "a4f12b935e8e440852381df4614a9ea3",
+            "spanID": "fb9039d3ba44283b"
+          }
+        ],
+        "startTime": 1795006782073591,
+        "duration": 12901,
+        "tags": [
+          {
+            "key": "error",
+            "type": "bool",
+            "value": true
+          },
+          {
+            "key": "http.method",
+            "type": "string",
+            "value": "GET"
+          },
+          {
+            "key": "http.url",
+            "type": "string",
+            "value": "http://user-service:5001/users/1"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.httpx"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "otel.status_code",
+            "type": "string",
+            "value": "ERROR"
+          },
+          {
+            "key": "otel.status_description",
+            "type": "string",
+            "value": "ConnectError: [Errno -3] Temporary failure in name resolution"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "client"
+          }
+        ],
+        "logs": [
+          {
+            "timestamp": 1795006782086476,
+            "fields": [
+              {
+                "key": "event",
+                "type": "string",
+                "value": "exception"
+              },
+              {
+                "key": "exception.escaped",
+                "type": "string",
+                "value": "False"
+              },
+              {
+                "key": "exception.message",
+                "type": "string",
+                "value": "[Errno -3] Temporary failure in name resolution"
+              },
+              {
+                "key": "exception.stacktrace",
+                "type": "string",
+                "value": "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 101, in map_httpcore_exceptions\n    yield\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 250, in handle_request\n    resp = self._pool.handle_request(req)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py\", line 256, in handle_request\n    raise exc from None\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py\", line 236, in handle_request\n    response = connection.handle_request(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 101, in handle_request\n    raise exc\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 78, in handle_request\n    stream = self._connect(request)\n             ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 124, in _connect\n    stream = self._network_backend.connect_tcp(**kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_backends/sync.py\", line 207, in connect_tcp\n    with map_exceptions(exc_map):\n         ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/contextlib.py\", line 158, in __exit__\n    self.gen.throw(value)\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_exceptions.py\", line 14, in map_exceptions\n    raise to_exc(exc) from exc\nhttpcore.ConnectError: [Errno -3] Temporary failure in name resolution\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/trace/__init__.py\", line 589, in use_span\n    yield span\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/sdk/trace/__init__.py\", line 1105, in start_as_current_span\n    yield span\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/instrumentation/httpx/__init__.py\", line 1028, in _handle_request_wrapper\n    raise exception.with_traceback(exception.__traceback__)\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/instrumentation/httpx/__init__.py\", line 992, in _handle_request_wrapper\n    response = wrapped(*args, **kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 249, in handle_request\n    with map_httpcore_exceptions():\n         ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/contextlib.py\", line 158, in __exit__\n    self.gen.throw(value)\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 118, in map_httpcore_exceptions\n    raise mapped_exc(message) from exc\nhttpx.ConnectError: [Errno -3] Temporary failure in name resolution\n"
+              },
+              {
+                "key": "exception.type",
+                "type": "string",
+                "value": "httpx.ConnectError"
+              }
+            ]
+          }
+        ],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "a4f12b935e8e440852381df4614a9ea3",
+        "spanID": "9eb19fd4750ef08c",
+        "operationName": "GET",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "a4f12b935e8e440852381df4614a9ea3",
+            "spanID": "fb9039d3ba44283b"
+          }
+        ],
+        "startTime": 1795006783087150,
+        "duration": 10754,
+        "tags": [
+          {
+            "key": "error",
+            "type": "bool",
+            "value": true
+          },
+          {
+            "key": "http.method",
+            "type": "string",
+            "value": "GET"
+          },
+          {
+            "key": "http.url",
+            "type": "string",
+            "value": "http://user-service:5001/users/1"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.httpx"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "otel.status_code",
+            "type": "string",
+            "value": "ERROR"
+          },
+          {
+            "key": "otel.status_description",
+            "type": "string",
+            "value": "ConnectError: [Errno -3] Temporary failure in name resolution"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "client"
+          }
+        ],
+        "logs": [
+          {
+            "timestamp": 1795006783097888,
+            "fields": [
+              {
+                "key": "event",
+                "type": "string",
+                "value": "exception"
+              },
+              {
+                "key": "exception.escaped",
+                "type": "string",
+                "value": "False"
+              },
+              {
+                "key": "exception.message",
+                "type": "string",
+                "value": "[Errno -3] Temporary failure in name resolution"
+              },
+              {
+                "key": "exception.stacktrace",
+                "type": "string",
+                "value": "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 101, in map_httpcore_exceptions\n    yield\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 250, in handle_request\n    resp = self._pool.handle_request(req)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py\", line 256, in handle_request\n    raise exc from None\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py\", line 236, in handle_request\n    response = connection.handle_request(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 101, in handle_request\n    raise exc\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 78, in handle_request\n    stream = self._connect(request)\n             ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 124, in _connect\n    stream = self._network_backend.connect_tcp(**kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_backends/sync.py\", line 207, in connect_tcp\n    with map_exceptions(exc_map):\n         ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/contextlib.py\", line 158, in __exit__\n    self.gen.throw(value)\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_exceptions.py\", line 14, in map_exceptions\n    raise to_exc(exc) from exc\nhttpcore.ConnectError: [Errno -3] Temporary failure in name resolution\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/trace/__init__.py\", line 589, in use_span\n    yield span\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/sdk/trace/__init__.py\", line 1105, in start_as_current_span\n    yield span\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/instrumentation/httpx/__init__.py\", line 1028, in _handle_request_wrapper\n    raise exception.with_traceback(exception.__traceback__)\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/instrumentation/httpx/__init__.py\", line 992, in _handle_request_wrapper\n    response = wrapped(*args, **kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 249, in handle_request\n    with map_httpcore_exceptions():\n         ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/contextlib.py\", line 158, in __exit__\n    self.gen.throw(value)\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 118, in map_httpcore_exceptions\n    raise mapped_exc(message) from exc\nhttpx.ConnectError: [Errno -3] Temporary failure in name resolution\n"
+              },
+              {
+                "key": "exception.type",
+                "type": "string",
+                "value": "httpx.ConnectError"
+              }
+            ]
+          }
+        ],
+        "processID": "p1",
+        "warnings": null
+      }
+    ],
+    "processes": {
+      "p1": {
+        "serviceName": "order-service",
+        "tags": [
+          {
+            "key": "telemetry.sdk.language",
+            "type": "string",
+            "value": "python"
+          },
+          {
+            "key": "telemetry.sdk.name",
+            "type": "string",
+            "value": "opentelemetry"
+          },
+          {
+            "key": "telemetry.sdk.version",
+            "type": "string",
+            "value": "1.34.1"
+          }
+        ]
+      }
+    },
+    "warnings": null
+  },
+  {
+    "traceID": "063d94bfd000db3ff0f6dcd9ca46a1ef",
+    "spans": [
+      {
+        "traceID": "063d94bfd000db3ff0f6dcd9ca46a1ef",
+        "spanID": "82b191a6b4cb526a",
+        "operationName": "POST /orders http send",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "063d94bfd000db3ff0f6dcd9ca46a1ef",
+            "spanID": "9242b9f83af7306d"
+          }
+        ],
+        "startTime": 1795006781433182,
+        "duration": 8,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.response.body"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "063d94bfd000db3ff0f6dcd9ca46a1ef",
+        "spanID": "9242b9f83af7306d",
+        "operationName": "POST /orders",
+        "references": [],
+        "startTime": 1795006779903734,
+        "duration": 1529519,
+        "tags": [
+          {
+            "key": "error",
+            "type": "bool",
+            "value": true
+          },
+          {
+            "key": "http.flavor",
+            "type": "string",
+            "value": "1.0"
+          },
+          {
+            "key": "http.host",
+            "type": "string",
+            "value": "172.18.0.8:5002"
+          },
+          {
+            "key": "http.method",
+            "type": "string",
+            "value": "POST"
+          },
+          {
+            "key": "http.route",
+            "type": "string",
+            "value": "/orders"
+          },
+          {
+            "key": "http.scheme",
+            "type": "string",
+            "value": "http"
+          },
+          {
+            "key": "http.server_name",
+            "type": "string",
+            "value": "orders"
+          },
+          {
+            "key": "http.status_code",
+            "type": "int64",
+            "value": 503
+          },
+          {
+            "key": "http.target",
+            "type": "string",
+            "value": "/orders"
+          },
+          {
+            "key": "http.url",
+            "type": "string",
+            "value": "http://172.18.0.8:5002/orders"
+          },
+          {
+            "key": "http.user_agent",
+            "type": "string",
+            "value": "python-httpx/0.28.1"
+          },
+          {
+            "key": "net.host.port",
+            "type": "int64",
+            "value": 5002
+          },
+          {
+            "key": "net.peer.ip",
+            "type": "string",
+            "value": "172.18.0.9"
+          },
+          {
+            "key": "net.peer.port",
+            "type": "int64",
+            "value": 57296
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "otel.status_code",
+            "type": "string",
+            "value": "ERROR"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "server"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "063d94bfd000db3ff0f6dcd9ca46a1ef",
+        "spanID": "e4abf506f1631606",
+        "operationName": "GET",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "063d94bfd000db3ff0f6dcd9ca46a1ef",
+            "spanID": "9242b9f83af7306d"
+          }
+        ],
+        "startTime": 1795006779904742,
+        "duration": 6792,
+        "tags": [
+          {
+            "key": "error",
+            "type": "bool",
+            "value": true
+          },
+          {
+            "key": "http.method",
+            "type": "string",
+            "value": "GET"
+          },
+          {
+            "key": "http.url",
+            "type": "string",
+            "value": "http://user-service:5001/users/1"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.httpx"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "otel.status_code",
+            "type": "string",
+            "value": "ERROR"
+          },
+          {
+            "key": "otel.status_description",
+            "type": "string",
+            "value": "ConnectError: [Errno -3] Temporary failure in name resolution"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "client"
+          }
+        ],
+        "logs": [
+          {
+            "timestamp": 1795006779911520,
+            "fields": [
+              {
+                "key": "event",
+                "type": "string",
+                "value": "exception"
+              },
+              {
+                "key": "exception.escaped",
+                "type": "string",
+                "value": "False"
+              },
+              {
+                "key": "exception.message",
+                "type": "string",
+                "value": "[Errno -3] Temporary failure in name resolution"
+              },
+              {
+                "key": "exception.stacktrace",
+                "type": "string",
+                "value": "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 101, in map_httpcore_exceptions\n    yield\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 250, in handle_request\n    resp = self._pool.handle_request(req)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py\", line 256, in handle_request\n    raise exc from None\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py\", line 236, in handle_request\n    response = connection.handle_request(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 101, in handle_request\n    raise exc\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 78, in handle_request\n    stream = self._connect(request)\n             ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 124, in _connect\n    stream = self._network_backend.connect_tcp(**kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_backends/sync.py\", line 207, in connect_tcp\n    with map_exceptions(exc_map):\n         ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/contextlib.py\", line 158, in __exit__\n    self.gen.throw(value)\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_exceptions.py\", line 14, in map_exceptions\n    raise to_exc(exc) from exc\nhttpcore.ConnectError: [Errno -3] Temporary failure in name resolution\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/trace/__init__.py\", line 589, in use_span\n    yield span\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/sdk/trace/__init__.py\", line 1105, in start_as_current_span\n    yield span\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/instrumentation/httpx/__init__.py\", line 1028, in _handle_request_wrapper\n    raise exception.with_traceback(exception.__traceback__)\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/instrumentation/httpx/__init__.py\", line 992, in _handle_request_wrapper\n    response = wrapped(*args, **kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 249, in handle_request\n    with map_httpcore_exceptions():\n         ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/contextlib.py\", line 158, in __exit__\n    self.gen.throw(value)\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 118, in map_httpcore_exceptions\n    raise mapped_exc(message) from exc\nhttpx.ConnectError: [Errno -3] Temporary failure in name resolution\n"
+              },
+              {
+                "key": "exception.type",
+                "type": "string",
+                "value": "httpx.ConnectError"
+              }
+            ]
+          }
+        ],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "063d94bfd000db3ff0f6dcd9ca46a1ef",
+        "spanID": "d0542ce2dc5c1503",
+        "operationName": "POST /orders http receive",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "063d94bfd000db3ff0f6dcd9ca46a1ef",
+            "spanID": "9242b9f83af7306d"
+          }
+        ],
+        "startTime": 1795006779904014,
+        "duration": 19,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.request"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "063d94bfd000db3ff0f6dcd9ca46a1ef",
+        "spanID": "80c0a8fe00355fd2",
+        "operationName": "GET",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "063d94bfd000db3ff0f6dcd9ca46a1ef",
+            "spanID": "9242b9f83af7306d"
+          }
+        ],
+        "startTime": 1795006780412184,
+        "duration": 9356,
+        "tags": [
+          {
+            "key": "error",
+            "type": "bool",
+            "value": true
+          },
+          {
+            "key": "http.method",
+            "type": "string",
+            "value": "GET"
+          },
+          {
+            "key": "http.url",
+            "type": "string",
+            "value": "http://user-service:5001/users/1"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.httpx"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "otel.status_code",
+            "type": "string",
+            "value": "ERROR"
+          },
+          {
+            "key": "otel.status_description",
+            "type": "string",
+            "value": "ConnectError: [Errno -3] Temporary failure in name resolution"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "client"
+          }
+        ],
+        "logs": [
+          {
+            "timestamp": 1795006780421523,
+            "fields": [
+              {
+                "key": "event",
+                "type": "string",
+                "value": "exception"
+              },
+              {
+                "key": "exception.escaped",
+                "type": "string",
+                "value": "False"
+              },
+              {
+                "key": "exception.message",
+                "type": "string",
+                "value": "[Errno -3] Temporary failure in name resolution"
+              },
+              {
+                "key": "exception.stacktrace",
+                "type": "string",
+                "value": "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 101, in map_httpcore_exceptions\n    yield\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 250, in handle_request\n    resp = self._pool.handle_request(req)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py\", line 256, in handle_request\n    raise exc from None\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py\", line 236, in handle_request\n    response = connection.handle_request(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 101, in handle_request\n    raise exc\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 78, in handle_request\n    stream = self._connect(request)\n             ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 124, in _connect\n    stream = self._network_backend.connect_tcp(**kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_backends/sync.py\", line 207, in connect_tcp\n    with map_exceptions(exc_map):\n         ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/contextlib.py\", line 158, in __exit__\n    self.gen.throw(value)\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_exceptions.py\", line 14, in map_exceptions\n    raise to_exc(exc) from exc\nhttpcore.ConnectError: [Errno -3] Temporary failure in name resolution\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/trace/__init__.py\", line 589, in use_span\n    yield span\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/sdk/trace/__init__.py\", line 1105, in start_as_current_span\n    yield span\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/instrumentation/httpx/__init__.py\", line 1028, in _handle_request_wrapper\n    raise exception.with_traceback(exception.__traceback__)\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/instrumentation/httpx/__init__.py\", line 992, in _handle_request_wrapper\n    response = wrapped(*args, **kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 249, in handle_request\n    with map_httpcore_exceptions():\n         ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/contextlib.py\", line 158, in __exit__\n    self.gen.throw(value)\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 118, in map_httpcore_exceptions\n    raise mapped_exc(message) from exc\nhttpx.ConnectError: [Errno -3] Temporary failure in name resolution\n"
+              },
+              {
+                "key": "exception.type",
+                "type": "string",
+                "value": "httpx.ConnectError"
+              }
+            ]
+          }
+        ],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "063d94bfd000db3ff0f6dcd9ca46a1ef",
+        "spanID": "d0f8d728fe0e6468",
+        "operationName": "GET",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "063d94bfd000db3ff0f6dcd9ca46a1ef",
+            "spanID": "9242b9f83af7306d"
+          }
+        ],
+        "startTime": 1795006781422218,
+        "duration": 10034,
+        "tags": [
+          {
+            "key": "error",
+            "type": "bool",
+            "value": true
+          },
+          {
+            "key": "http.method",
+            "type": "string",
+            "value": "GET"
+          },
+          {
+            "key": "http.url",
+            "type": "string",
+            "value": "http://user-service:5001/users/1"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.httpx"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "otel.status_code",
+            "type": "string",
+            "value": "ERROR"
+          },
+          {
+            "key": "otel.status_description",
+            "type": "string",
+            "value": "ConnectError: [Errno -3] Temporary failure in name resolution"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "client"
+          }
+        ],
+        "logs": [
+          {
+            "timestamp": 1795006781432235,
+            "fields": [
+              {
+                "key": "event",
+                "type": "string",
+                "value": "exception"
+              },
+              {
+                "key": "exception.escaped",
+                "type": "string",
+                "value": "False"
+              },
+              {
+                "key": "exception.message",
+                "type": "string",
+                "value": "[Errno -3] Temporary failure in name resolution"
+              },
+              {
+                "key": "exception.stacktrace",
+                "type": "string",
+                "value": "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 101, in map_httpcore_exceptions\n    yield\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 250, in handle_request\n    resp = self._pool.handle_request(req)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py\", line 256, in handle_request\n    raise exc from None\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py\", line 236, in handle_request\n    response = connection.handle_request(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 101, in handle_request\n    raise exc\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 78, in handle_request\n    stream = self._connect(request)\n             ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 124, in _connect\n    stream = self._network_backend.connect_tcp(**kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_backends/sync.py\", line 207, in connect_tcp\n    with map_exceptions(exc_map):\n         ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/contextlib.py\", line 158, in __exit__\n    self.gen.throw(value)\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_exceptions.py\", line 14, in map_exceptions\n    raise to_exc(exc) from exc\nhttpcore.ConnectError: [Errno -3] Temporary failure in name resolution\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/trace/__init__.py\", line 589, in use_span\n    yield span\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/sdk/trace/__init__.py\", line 1105, in start_as_current_span\n    yield span\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/instrumentation/httpx/__init__.py\", line 1028, in _handle_request_wrapper\n    raise exception.with_traceback(exception.__traceback__)\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/instrumentation/httpx/__init__.py\", line 992, in _handle_request_wrapper\n    response = wrapped(*args, **kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 249, in handle_request\n    with map_httpcore_exceptions():\n         ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/contextlib.py\", line 158, in __exit__\n    self.gen.throw(value)\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 118, in map_httpcore_exceptions\n    raise mapped_exc(message) from exc\nhttpx.ConnectError: [Errno -3] Temporary failure in name resolution\n"
+              },
+              {
+                "key": "exception.type",
+                "type": "string",
+                "value": "httpx.ConnectError"
+              }
+            ]
+          }
+        ],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "063d94bfd000db3ff0f6dcd9ca46a1ef",
+        "spanID": "6d6d0609a98af6d4",
+        "operationName": "POST /orders http send",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "063d94bfd000db3ff0f6dcd9ca46a1ef",
+            "spanID": "9242b9f83af7306d"
+          }
+        ],
+        "startTime": 1795006781432726,
+        "duration": 23,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.response.start"
+          },
+          {
+            "key": "error",
+            "type": "bool",
+            "value": true
+          },
+          {
+            "key": "http.status_code",
+            "type": "int64",
+            "value": 503
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "otel.status_code",
+            "type": "string",
+            "value": "ERROR"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "063d94bfd000db3ff0f6dcd9ca46a1ef",
+        "spanID": "b75c2866d9bbccfb",
+        "operationName": "POST /orders http send",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "063d94bfd000db3ff0f6dcd9ca46a1ef",
+            "spanID": "9242b9f83af7306d"
+          }
+        ],
+        "startTime": 1795006781433105,
+        "duration": 12,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.response.body"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      }
+    ],
+    "processes": {
+      "p1": {
+        "serviceName": "order-service",
+        "tags": [
+          {
+            "key": "telemetry.sdk.language",
+            "type": "string",
+            "value": "python"
+          },
+          {
+            "key": "telemetry.sdk.name",
+            "type": "string",
+            "value": "opentelemetry"
+          },
+          {
+            "key": "telemetry.sdk.version",
+            "type": "string",
+            "value": "1.34.1"
+          }
+        ]
+      }
+    },
+    "warnings": null
+  },
+  {
+    "traceID": "3848f52c93ab5a4e0c5dda9aea1554a8",
+    "spans": [
+      {
+        "traceID": "3848f52c93ab5a4e0c5dda9aea1554a8",
+        "spanID": "558b294729be54f9",
+        "operationName": "POST /orders http send",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "3848f52c93ab5a4e0c5dda9aea1554a8",
+            "spanID": "9bb7f28452ef3b14"
+          }
+        ],
+        "startTime": 1795006778120302,
+        "duration": 8,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.response.body"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "3848f52c93ab5a4e0c5dda9aea1554a8",
+        "spanID": "21ce7a6ab9a13370",
+        "operationName": "POST /orders http send",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "3848f52c93ab5a4e0c5dda9aea1554a8",
+            "spanID": "9bb7f28452ef3b14"
+          }
+        ],
+        "startTime": 1795006778120365,
+        "duration": 5,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.response.body"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "3848f52c93ab5a4e0c5dda9aea1554a8",
+        "spanID": "9bb7f28452ef3b14",
+        "operationName": "POST /orders",
+        "references": [],
+        "startTime": 1795006776589496,
+        "duration": 1530931,
+        "tags": [
+          {
+            "key": "error",
+            "type": "bool",
+            "value": true
+          },
+          {
+            "key": "http.flavor",
+            "type": "string",
+            "value": "1.0"
+          },
+          {
+            "key": "http.host",
+            "type": "string",
+            "value": "172.18.0.8:5002"
+          },
+          {
+            "key": "http.method",
+            "type": "string",
+            "value": "POST"
+          },
+          {
+            "key": "http.route",
+            "type": "string",
+            "value": "/orders"
+          },
+          {
+            "key": "http.scheme",
+            "type": "string",
+            "value": "http"
+          },
+          {
+            "key": "http.server_name",
+            "type": "string",
+            "value": "orders"
+          },
+          {
+            "key": "http.status_code",
+            "type": "int64",
+            "value": 503
+          },
+          {
+            "key": "http.target",
+            "type": "string",
+            "value": "/orders"
+          },
+          {
+            "key": "http.url",
+            "type": "string",
+            "value": "http://172.18.0.8:5002/orders"
+          },
+          {
+            "key": "http.user_agent",
+            "type": "string",
+            "value": "python-httpx/0.28.1"
+          },
+          {
+            "key": "net.host.port",
+            "type": "int64",
+            "value": 5002
+          },
+          {
+            "key": "net.peer.ip",
+            "type": "string",
+            "value": "172.18.0.9"
+          },
+          {
+            "key": "net.peer.port",
+            "type": "int64",
+            "value": 57280
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "otel.status_code",
+            "type": "string",
+            "value": "ERROR"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "server"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "3848f52c93ab5a4e0c5dda9aea1554a8",
+        "spanID": "347117f926da9c85",
+        "operationName": "POST /orders http receive",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "3848f52c93ab5a4e0c5dda9aea1554a8",
+            "spanID": "9bb7f28452ef3b14"
+          }
+        ],
+        "startTime": 1795006776589749,
+        "duration": 14,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.request"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "3848f52c93ab5a4e0c5dda9aea1554a8",
+        "spanID": "ab63ab404d5a37ad",
+        "operationName": "GET",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "3848f52c93ab5a4e0c5dda9aea1554a8",
+            "spanID": "9bb7f28452ef3b14"
+          }
+        ],
+        "startTime": 1795006776590473,
+        "duration": 7124,
+        "tags": [
+          {
+            "key": "error",
+            "type": "bool",
+            "value": true
+          },
+          {
+            "key": "http.method",
+            "type": "string",
+            "value": "GET"
+          },
+          {
+            "key": "http.url",
+            "type": "string",
+            "value": "http://user-service:5001/users/1"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.httpx"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "otel.status_code",
+            "type": "string",
+            "value": "ERROR"
+          },
+          {
+            "key": "otel.status_description",
+            "type": "string",
+            "value": "ConnectError: [Errno -3] Temporary failure in name resolution"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "client"
+          }
+        ],
+        "logs": [
+          {
+            "timestamp": 1795006776597585,
+            "fields": [
+              {
+                "key": "event",
+                "type": "string",
+                "value": "exception"
+              },
+              {
+                "key": "exception.escaped",
+                "type": "string",
+                "value": "False"
+              },
+              {
+                "key": "exception.message",
+                "type": "string",
+                "value": "[Errno -3] Temporary failure in name resolution"
+              },
+              {
+                "key": "exception.stacktrace",
+                "type": "string",
+                "value": "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 101, in map_httpcore_exceptions\n    yield\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 250, in handle_request\n    resp = self._pool.handle_request(req)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py\", line 256, in handle_request\n    raise exc from None\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py\", line 236, in handle_request\n    response = connection.handle_request(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 101, in handle_request\n    raise exc\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 78, in handle_request\n    stream = self._connect(request)\n             ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 124, in _connect\n    stream = self._network_backend.connect_tcp(**kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_backends/sync.py\", line 207, in connect_tcp\n    with map_exceptions(exc_map):\n         ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/contextlib.py\", line 158, in __exit__\n    self.gen.throw(value)\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_exceptions.py\", line 14, in map_exceptions\n    raise to_exc(exc) from exc\nhttpcore.ConnectError: [Errno -3] Temporary failure in name resolution\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/trace/__init__.py\", line 589, in use_span\n    yield span\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/sdk/trace/__init__.py\", line 1105, in start_as_current_span\n    yield span\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/instrumentation/httpx/__init__.py\", line 1028, in _handle_request_wrapper\n    raise exception.with_traceback(exception.__traceback__)\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/instrumentation/httpx/__init__.py\", line 992, in _handle_request_wrapper\n    response = wrapped(*args, **kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 249, in handle_request\n    with map_httpcore_exceptions():\n         ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/contextlib.py\", line 158, in __exit__\n    self.gen.throw(value)\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 118, in map_httpcore_exceptions\n    raise mapped_exc(message) from exc\nhttpx.ConnectError: [Errno -3] Temporary failure in name resolution\n"
+              },
+              {
+                "key": "exception.type",
+                "type": "string",
+                "value": "httpx.ConnectError"
+              }
+            ]
+          }
+        ],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "3848f52c93ab5a4e0c5dda9aea1554a8",
+        "spanID": "d95c784b02da4a69",
+        "operationName": "GET",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "3848f52c93ab5a4e0c5dda9aea1554a8",
+            "spanID": "9bb7f28452ef3b14"
+          }
+        ],
+        "startTime": 1795006777098097,
+        "duration": 7589,
+        "tags": [
+          {
+            "key": "error",
+            "type": "bool",
+            "value": true
+          },
+          {
+            "key": "http.method",
+            "type": "string",
+            "value": "GET"
+          },
+          {
+            "key": "http.url",
+            "type": "string",
+            "value": "http://user-service:5001/users/1"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.httpx"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "otel.status_code",
+            "type": "string",
+            "value": "ERROR"
+          },
+          {
+            "key": "otel.status_description",
+            "type": "string",
+            "value": "ConnectError: [Errno -3] Temporary failure in name resolution"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "client"
+          }
+        ],
+        "logs": [
+          {
+            "timestamp": 1795006777105669,
+            "fields": [
+              {
+                "key": "event",
+                "type": "string",
+                "value": "exception"
+              },
+              {
+                "key": "exception.escaped",
+                "type": "string",
+                "value": "False"
+              },
+              {
+                "key": "exception.message",
+                "type": "string",
+                "value": "[Errno -3] Temporary failure in name resolution"
+              },
+              {
+                "key": "exception.stacktrace",
+                "type": "string",
+                "value": "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 101, in map_httpcore_exceptions\n    yield\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 250, in handle_request\n    resp = self._pool.handle_request(req)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py\", line 256, in handle_request\n    raise exc from None\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py\", line 236, in handle_request\n    response = connection.handle_request(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 101, in handle_request\n    raise exc\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 78, in handle_request\n    stream = self._connect(request)\n             ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 124, in _connect\n    stream = self._network_backend.connect_tcp(**kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_backends/sync.py\", line 207, in connect_tcp\n    with map_exceptions(exc_map):\n         ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/contextlib.py\", line 158, in __exit__\n    self.gen.throw(value)\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_exceptions.py\", line 14, in map_exceptions\n    raise to_exc(exc) from exc\nhttpcore.ConnectError: [Errno -3] Temporary failure in name resolution\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/trace/__init__.py\", line 589, in use_span\n    yield span\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/sdk/trace/__init__.py\", line 1105, in start_as_current_span\n    yield span\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/instrumentation/httpx/__init__.py\", line 1028, in _handle_request_wrapper\n    raise exception.with_traceback(exception.__traceback__)\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/instrumentation/httpx/__init__.py\", line 992, in _handle_request_wrapper\n    response = wrapped(*args, **kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 249, in handle_request\n    with map_httpcore_exceptions():\n         ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/contextlib.py\", line 158, in __exit__\n    self.gen.throw(value)\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 118, in map_httpcore_exceptions\n    raise mapped_exc(message) from exc\nhttpx.ConnectError: [Errno -3] Temporary failure in name resolution\n"
+              },
+              {
+                "key": "exception.type",
+                "type": "string",
+                "value": "httpx.ConnectError"
+              }
+            ]
+          }
+        ],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "3848f52c93ab5a4e0c5dda9aea1554a8",
+        "spanID": "fb84ffdf4cf92029",
+        "operationName": "GET",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "3848f52c93ab5a4e0c5dda9aea1554a8",
+            "spanID": "9bb7f28452ef3b14"
+          }
+        ],
+        "startTime": 1795006778106365,
+        "duration": 13049,
+        "tags": [
+          {
+            "key": "error",
+            "type": "bool",
+            "value": true
+          },
+          {
+            "key": "http.method",
+            "type": "string",
+            "value": "GET"
+          },
+          {
+            "key": "http.url",
+            "type": "string",
+            "value": "http://user-service:5001/users/1"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.httpx"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "otel.status_code",
+            "type": "string",
+            "value": "ERROR"
+          },
+          {
+            "key": "otel.status_description",
+            "type": "string",
+            "value": "ConnectError: [Errno -3] Temporary failure in name resolution"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "client"
+          }
+        ],
+        "logs": [
+          {
+            "timestamp": 1795006778119396,
+            "fields": [
+              {
+                "key": "event",
+                "type": "string",
+                "value": "exception"
+              },
+              {
+                "key": "exception.escaped",
+                "type": "string",
+                "value": "False"
+              },
+              {
+                "key": "exception.message",
+                "type": "string",
+                "value": "[Errno -3] Temporary failure in name resolution"
+              },
+              {
+                "key": "exception.stacktrace",
+                "type": "string",
+                "value": "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 101, in map_httpcore_exceptions\n    yield\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 250, in handle_request\n    resp = self._pool.handle_request(req)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py\", line 256, in handle_request\n    raise exc from None\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py\", line 236, in handle_request\n    response = connection.handle_request(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 101, in handle_request\n    raise exc\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 78, in handle_request\n    stream = self._connect(request)\n             ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 124, in _connect\n    stream = self._network_backend.connect_tcp(**kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_backends/sync.py\", line 207, in connect_tcp\n    with map_exceptions(exc_map):\n         ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/contextlib.py\", line 158, in __exit__\n    self.gen.throw(value)\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_exceptions.py\", line 14, in map_exceptions\n    raise to_exc(exc) from exc\nhttpcore.ConnectError: [Errno -3] Temporary failure in name resolution\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/trace/__init__.py\", line 589, in use_span\n    yield span\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/sdk/trace/__init__.py\", line 1105, in start_as_current_span\n    yield span\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/instrumentation/httpx/__init__.py\", line 1028, in _handle_request_wrapper\n    raise exception.with_traceback(exception.__traceback__)\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/instrumentation/httpx/__init__.py\", line 992, in _handle_request_wrapper\n    response = wrapped(*args, **kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 249, in handle_request\n    with map_httpcore_exceptions():\n         ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/contextlib.py\", line 158, in __exit__\n    self.gen.throw(value)\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 118, in map_httpcore_exceptions\n    raise mapped_exc(message) from exc\nhttpx.ConnectError: [Errno -3] Temporary failure in name resolution\n"
+              },
+              {
+                "key": "exception.type",
+                "type": "string",
+                "value": "httpx.ConnectError"
+              }
+            ]
+          }
+        ],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "3848f52c93ab5a4e0c5dda9aea1554a8",
+        "spanID": "fc67fa30b16824f8",
+        "operationName": "POST /orders http send",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "3848f52c93ab5a4e0c5dda9aea1554a8",
+            "spanID": "9bb7f28452ef3b14"
+          }
+        ],
+        "startTime": 1795006778119937,
+        "duration": 24,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.response.start"
+          },
+          {
+            "key": "error",
+            "type": "bool",
+            "value": true
+          },
+          {
+            "key": "http.status_code",
+            "type": "int64",
+            "value": 503
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "otel.status_code",
+            "type": "string",
+            "value": "ERROR"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      }
+    ],
+    "processes": {
+      "p1": {
+        "serviceName": "order-service",
+        "tags": [
+          {
+            "key": "telemetry.sdk.language",
+            "type": "string",
+            "value": "python"
+          },
+          {
+            "key": "telemetry.sdk.name",
+            "type": "string",
+            "value": "opentelemetry"
+          },
+          {
+            "key": "telemetry.sdk.version",
+            "type": "string",
+            "value": "1.34.1"
+          }
+        ]
+      }
+    },
+    "warnings": null
+  },
+  {
+    "traceID": "e0e6cba2b5112d30a047708405bdfd79",
+    "spans": [
+      {
+        "traceID": "e0e6cba2b5112d30a047708405bdfd79",
+        "spanID": "49c677dee42f2bc4",
+        "operationName": "OrderCreated publish",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "e0e6cba2b5112d30a047708405bdfd79",
+            "spanID": "f724a352a3d4d9bd"
+          }
+        ],
+        "startTime": 1795006713203612,
+        "duration": 759,
+        "tags": [
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "app.messaging"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": [
+          "clock skew adjustment disabled; not applying calculated delta of -81.852227ms"
+        ]
+      },
+      {
+        "traceID": "e0e6cba2b5112d30a047708405bdfd79",
+        "spanID": "4972faa5b91f17fd",
+        "operationName": "POST /orders http send",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "e0e6cba2b5112d30a047708405bdfd79",
+            "spanID": "f724a352a3d4d9bd"
+          }
+        ],
+        "startTime": 1795006713125100,
+        "duration": 23,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.response.start"
+          },
+          {
+            "key": "http.status_code",
+            "type": "int64",
+            "value": 201
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "e0e6cba2b5112d30a047708405bdfd79",
+        "spanID": "6272c2980bf83bfa",
+        "operationName": "POST /orders http send",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "e0e6cba2b5112d30a047708405bdfd79",
+            "spanID": "f724a352a3d4d9bd"
+          }
+        ],
+        "startTime": 1795006713125419,
+        "duration": 9,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.response.body"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "e0e6cba2b5112d30a047708405bdfd79",
+        "spanID": "1581ea8fbd488350",
+        "operationName": "POST /orders http send",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "e0e6cba2b5112d30a047708405bdfd79",
+            "spanID": "f724a352a3d4d9bd"
+          }
+        ],
+        "startTime": 1795006713125486,
+        "duration": 7,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.response.body"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "e0e6cba2b5112d30a047708405bdfd79",
+        "spanID": "f724a352a3d4d9bd",
+        "operationName": "POST /orders",
+        "references": [],
+        "startTime": 1795006713118731,
+        "duration": 6817,
+        "tags": [
+          {
+            "key": "http.flavor",
+            "type": "string",
+            "value": "1.0"
+          },
+          {
+            "key": "http.host",
+            "type": "string",
+            "value": "172.18.0.8:5002"
+          },
+          {
+            "key": "http.method",
+            "type": "string",
+            "value": "POST"
+          },
+          {
+            "key": "http.route",
+            "type": "string",
+            "value": "/orders"
+          },
+          {
+            "key": "http.scheme",
+            "type": "string",
+            "value": "http"
+          },
+          {
+            "key": "http.server_name",
+            "type": "string",
+            "value": "orders"
+          },
+          {
+            "key": "http.status_code",
+            "type": "int64",
+            "value": 201
+          },
+          {
+            "key": "http.target",
+            "type": "string",
+            "value": "/orders"
+          },
+          {
+            "key": "http.url",
+            "type": "string",
+            "value": "http://172.18.0.8:5002/orders"
+          },
+          {
+            "key": "http.user_agent",
+            "type": "string",
+            "value": "python-httpx/0.28.1"
+          },
+          {
+            "key": "net.host.port",
+            "type": "int64",
+            "value": 5002
+          },
+          {
+            "key": "net.peer.ip",
+            "type": "string",
+            "value": "172.18.0.9"
+          },
+          {
+            "key": "net.peer.port",
+            "type": "int64",
+            "value": 34984
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "server"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "e0e6cba2b5112d30a047708405bdfd79",
+        "spanID": "7eaba1ef1cfaedd6",
+        "operationName": "GET /users/{user_id} http send",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "e0e6cba2b5112d30a047708405bdfd79",
+            "spanID": "ab3593afa68609c3"
+          }
+        ],
+        "startTime": 1795006713121886,
+        "duration": 27,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.response.start"
+          },
+          {
+            "key": "http.status_code",
+            "type": "int64",
+            "value": 200
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p2",
+        "warnings": null
+      },
+      {
+        "traceID": "e0e6cba2b5112d30a047708405bdfd79",
+        "spanID": "ab3593afa68609c3",
+        "operationName": "GET /users/{user_id}",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "e0e6cba2b5112d30a047708405bdfd79",
+            "spanID": "dd33dc00071083fc"
+          }
+        ],
+        "startTime": 1795006713120420,
+        "duration": 1893,
+        "tags": [
+          {
+            "key": "http.flavor",
+            "type": "string",
+            "value": "1.1"
+          },
+          {
+            "key": "http.host",
+            "type": "string",
+            "value": "172.18.0.4:5001"
+          },
+          {
+            "key": "http.method",
+            "type": "string",
+            "value": "GET"
+          },
+          {
+            "key": "http.route",
+            "type": "string",
+            "value": "/users/{user_id}"
+          },
+          {
+            "key": "http.scheme",
+            "type": "string",
+            "value": "http"
+          },
+          {
+            "key": "http.server_name",
+            "type": "string",
+            "value": "user-service:5001"
+          },
+          {
+            "key": "http.status_code",
+            "type": "int64",
+            "value": 200
+          },
+          {
+            "key": "http.target",
+            "type": "string",
+            "value": "/users/1"
+          },
+          {
+            "key": "http.url",
+            "type": "string",
+            "value": "http://172.18.0.4:5001/users/1"
+          },
+          {
+            "key": "http.user_agent",
+            "type": "string",
+            "value": "python-httpx/0.28.1"
+          },
+          {
+            "key": "net.host.port",
+            "type": "int64",
+            "value": 5001
+          },
+          {
+            "key": "net.peer.ip",
+            "type": "string",
+            "value": "172.18.0.8"
+          },
+          {
+            "key": "net.peer.port",
+            "type": "int64",
+            "value": 40374
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "server"
+          }
+        ],
+        "logs": [],
+        "processID": "p2",
+        "warnings": [
+          "clock skew adjustment disabled; not applying calculated delta of -331.107\u00b5s"
+        ]
+      },
+      {
+        "traceID": "e0e6cba2b5112d30a047708405bdfd79",
+        "spanID": "8f3c1efdc7df74f5",
+        "operationName": "POST /orders http receive",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "e0e6cba2b5112d30a047708405bdfd79",
+            "spanID": "f724a352a3d4d9bd"
+          }
+        ],
+        "startTime": 1795006713119013,
+        "duration": 15,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.request"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "e0e6cba2b5112d30a047708405bdfd79",
+        "spanID": "dd33dc00071083fc",
+        "operationName": "GET",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "e0e6cba2b5112d30a047708405bdfd79",
+            "spanID": "f724a352a3d4d9bd"
+          }
+        ],
+        "startTime": 1795006713119767,
+        "duration": 2535,
+        "tags": [
+          {
+            "key": "http.method",
+            "type": "string",
+            "value": "GET"
+          },
+          {
+            "key": "http.status_code",
+            "type": "int64",
+            "value": 200
+          },
+          {
+            "key": "http.url",
+            "type": "string",
+            "value": "http://user-service:5001/users/1"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.httpx"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "client"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "e0e6cba2b5112d30a047708405bdfd79",
+        "spanID": "2d1f73ac221947b6",
+        "operationName": "OrderCreated consume",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "e0e6cba2b5112d30a047708405bdfd79",
+            "spanID": "49c677dee42f2bc4"
+          }
+        ],
+        "startTime": 1795006713204823,
+        "duration": 1978,
+        "tags": [
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "notification_service.consumer"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p3",
+        "warnings": null
+      },
+      {
+        "traceID": "e0e6cba2b5112d30a047708405bdfd79",
+        "spanID": "1c35efba0dbfb58f",
+        "operationName": "GET /users/{user_id} http send",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "e0e6cba2b5112d30a047708405bdfd79",
+            "spanID": "ab3593afa68609c3"
+          }
+        ],
+        "startTime": 1795006713122209,
+        "duration": 9,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.response.body"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p2",
+        "warnings": null
+      },
+      {
+        "traceID": "e0e6cba2b5112d30a047708405bdfd79",
+        "spanID": "67b7e5a8be2b597e",
+        "operationName": "GET /users/{user_id} http send",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "e0e6cba2b5112d30a047708405bdfd79",
+            "spanID": "ab3593afa68609c3"
+          }
+        ],
+        "startTime": 1795006713122269,
+        "duration": 6,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.response.body"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p2",
+        "warnings": null
+      }
+    ],
+    "processes": {
+      "p1": {
+        "serviceName": "order-service",
+        "tags": [
+          {
+            "key": "telemetry.sdk.language",
+            "type": "string",
+            "value": "python"
+          },
+          {
+            "key": "telemetry.sdk.name",
+            "type": "string",
+            "value": "opentelemetry"
+          },
+          {
+            "key": "telemetry.sdk.version",
+            "type": "string",
+            "value": "1.34.1"
+          }
+        ]
+      },
+      "p2": {
+        "serviceName": "user-service",
+        "tags": [
+          {
+            "key": "telemetry.sdk.language",
+            "type": "string",
+            "value": "python"
+          },
+          {
+            "key": "telemetry.sdk.name",
+            "type": "string",
+            "value": "opentelemetry"
+          },
+          {
+            "key": "telemetry.sdk.version",
+            "type": "string",
+            "value": "1.34.1"
+          }
+        ]
+      },
+      "p3": {
+        "serviceName": "notification-service",
+        "tags": [
+          {
+            "key": "telemetry.sdk.language",
+            "type": "string",
+            "value": "python"
+          },
+          {
+            "key": "telemetry.sdk.name",
+            "type": "string",
+            "value": "opentelemetry"
+          },
+          {
+            "key": "telemetry.sdk.version",
+            "type": "string",
+            "value": "1.34.1"
+          }
+        ]
+      }
+    },
+    "warnings": null
+  },
+  {
+    "traceID": "2fbb2b75961f87a0f6b78ce4532b2bf8",
+    "spans": [
+      {
+        "traceID": "2fbb2b75961f87a0f6b78ce4532b2bf8",
+        "spanID": "d1bec66d63ca8b67",
+        "operationName": "POST /orders http receive",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "2fbb2b75961f87a0f6b78ce4532b2bf8",
+            "spanID": "c67468338c0bb992"
+          }
+        ],
+        "startTime": 1795006783231438,
+        "duration": 14,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.request"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "2fbb2b75961f87a0f6b78ce4532b2bf8",
+        "spanID": "3474264fcb96dffe",
+        "operationName": "POST /orders http send",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "2fbb2b75961f87a0f6b78ce4532b2bf8",
+            "spanID": "c67468338c0bb992"
+          }
+        ],
+        "startTime": 1795006783232050,
+        "duration": 20,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.response.start"
+          },
+          {
+            "key": "error",
+            "type": "bool",
+            "value": true
+          },
+          {
+            "key": "http.status_code",
+            "type": "int64",
+            "value": 503
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "otel.status_code",
+            "type": "string",
+            "value": "ERROR"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "2fbb2b75961f87a0f6b78ce4532b2bf8",
+        "spanID": "baaa33cd2d80d1ef",
+        "operationName": "POST /orders http send",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "2fbb2b75961f87a0f6b78ce4532b2bf8",
+            "spanID": "c67468338c0bb992"
+          }
+        ],
+        "startTime": 1795006783232346,
+        "duration": 8,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.response.body"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "2fbb2b75961f87a0f6b78ce4532b2bf8",
+        "spanID": "8dbd5672687b5fce",
+        "operationName": "POST /orders http send",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "2fbb2b75961f87a0f6b78ce4532b2bf8",
+            "spanID": "c67468338c0bb992"
+          }
+        ],
+        "startTime": 1795006783232402,
+        "duration": 6,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.response.body"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "2fbb2b75961f87a0f6b78ce4532b2bf8",
+        "spanID": "c67468338c0bb992",
+        "operationName": "POST /orders",
+        "references": [],
+        "startTime": 1795006783231203,
+        "duration": 1252,
+        "tags": [
+          {
+            "key": "error",
+            "type": "bool",
+            "value": true
+          },
+          {
+            "key": "http.flavor",
+            "type": "string",
+            "value": "1.0"
+          },
+          {
+            "key": "http.host",
+            "type": "string",
+            "value": "172.18.0.8:5002"
+          },
+          {
+            "key": "http.method",
+            "type": "string",
+            "value": "POST"
+          },
+          {
+            "key": "http.route",
+            "type": "string",
+            "value": "/orders"
+          },
+          {
+            "key": "http.scheme",
+            "type": "string",
+            "value": "http"
+          },
+          {
+            "key": "http.server_name",
+            "type": "string",
+            "value": "orders"
+          },
+          {
+            "key": "http.status_code",
+            "type": "int64",
+            "value": 503
+          },
+          {
+            "key": "http.target",
+            "type": "string",
+            "value": "/orders"
+          },
+          {
+            "key": "http.url",
+            "type": "string",
+            "value": "http://172.18.0.8:5002/orders"
+          },
+          {
+            "key": "http.user_agent",
+            "type": "string",
+            "value": "python-httpx/0.28.1"
+          },
+          {
+            "key": "net.host.port",
+            "type": "int64",
+            "value": 5002
+          },
+          {
+            "key": "net.peer.ip",
+            "type": "string",
+            "value": "172.18.0.9"
+          },
+          {
+            "key": "net.peer.port",
+            "type": "int64",
+            "value": 57316
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "otel.status_code",
+            "type": "string",
+            "value": "ERROR"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "server"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      }
+    ],
+    "processes": {
+      "p1": {
+        "serviceName": "order-service",
+        "tags": [
+          {
+            "key": "telemetry.sdk.language",
+            "type": "string",
+            "value": "python"
+          },
+          {
+            "key": "telemetry.sdk.name",
+            "type": "string",
+            "value": "opentelemetry"
+          },
+          {
+            "key": "telemetry.sdk.version",
+            "type": "string",
+            "value": "1.34.1"
+          }
+        ]
+      }
+    },
+    "warnings": null
+  },
+  {
+    "traceID": "8be3354e68d7bb1f0828cc84e905015a",
+    "spans": [
+      {
+        "traceID": "8be3354e68d7bb1f0828cc84e905015a",
+        "spanID": "f2273d9e8f3358f6",
+        "operationName": "GET",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "8be3354e68d7bb1f0828cc84e905015a",
+            "spanID": "3ca086ca763cc72d"
+          }
+        ],
+        "startTime": 1795006775427125,
+        "duration": 18269,
+        "tags": [
+          {
+            "key": "error",
+            "type": "bool",
+            "value": true
+          },
+          {
+            "key": "http.method",
+            "type": "string",
+            "value": "GET"
+          },
+          {
+            "key": "http.url",
+            "type": "string",
+            "value": "http://user-service:5001/users/1"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.httpx"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "otel.status_code",
+            "type": "string",
+            "value": "ERROR"
+          },
+          {
+            "key": "otel.status_description",
+            "type": "string",
+            "value": "ConnectError: [Errno -3] Temporary failure in name resolution"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "client"
+          }
+        ],
+        "logs": [
+          {
+            "timestamp": 1795006775445349,
+            "fields": [
+              {
+                "key": "event",
+                "type": "string",
+                "value": "exception"
+              },
+              {
+                "key": "exception.escaped",
+                "type": "string",
+                "value": "False"
+              },
+              {
+                "key": "exception.message",
+                "type": "string",
+                "value": "[Errno -3] Temporary failure in name resolution"
+              },
+              {
+                "key": "exception.stacktrace",
+                "type": "string",
+                "value": "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 101, in map_httpcore_exceptions\n    yield\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 250, in handle_request\n    resp = self._pool.handle_request(req)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py\", line 256, in handle_request\n    raise exc from None\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py\", line 236, in handle_request\n    response = connection.handle_request(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 101, in handle_request\n    raise exc\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 78, in handle_request\n    stream = self._connect(request)\n             ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 124, in _connect\n    stream = self._network_backend.connect_tcp(**kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_backends/sync.py\", line 207, in connect_tcp\n    with map_exceptions(exc_map):\n         ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/contextlib.py\", line 158, in __exit__\n    self.gen.throw(value)\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_exceptions.py\", line 14, in map_exceptions\n    raise to_exc(exc) from exc\nhttpcore.ConnectError: [Errno -3] Temporary failure in name resolution\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/trace/__init__.py\", line 589, in use_span\n    yield span\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/sdk/trace/__init__.py\", line 1105, in start_as_current_span\n    yield span\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/instrumentation/httpx/__init__.py\", line 1028, in _handle_request_wrapper\n    raise exception.with_traceback(exception.__traceback__)\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/instrumentation/httpx/__init__.py\", line 992, in _handle_request_wrapper\n    response = wrapped(*args, **kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 249, in handle_request\n    with map_httpcore_exceptions():\n         ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/contextlib.py\", line 158, in __exit__\n    self.gen.throw(value)\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 118, in map_httpcore_exceptions\n    raise mapped_exc(message) from exc\nhttpx.ConnectError: [Errno -3] Temporary failure in name resolution\n"
+              },
+              {
+                "key": "exception.type",
+                "type": "string",
+                "value": "httpx.ConnectError"
+              }
+            ]
+          }
+        ],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "8be3354e68d7bb1f0828cc84e905015a",
+        "spanID": "0017850205ca443d",
+        "operationName": "GET",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "8be3354e68d7bb1f0828cc84e905015a",
+            "spanID": "3ca086ca763cc72d"
+          }
+        ],
+        "startTime": 1795006776446163,
+        "duration": 10041,
+        "tags": [
+          {
+            "key": "error",
+            "type": "bool",
+            "value": true
+          },
+          {
+            "key": "http.method",
+            "type": "string",
+            "value": "GET"
+          },
+          {
+            "key": "http.url",
+            "type": "string",
+            "value": "http://user-service:5001/users/1"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.httpx"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "otel.status_code",
+            "type": "string",
+            "value": "ERROR"
+          },
+          {
+            "key": "otel.status_description",
+            "type": "string",
+            "value": "ConnectError: [Errno -3] Temporary failure in name resolution"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "client"
+          }
+        ],
+        "logs": [
+          {
+            "timestamp": 1795006776456187,
+            "fields": [
+              {
+                "key": "event",
+                "type": "string",
+                "value": "exception"
+              },
+              {
+                "key": "exception.escaped",
+                "type": "string",
+                "value": "False"
+              },
+              {
+                "key": "exception.message",
+                "type": "string",
+                "value": "[Errno -3] Temporary failure in name resolution"
+              },
+              {
+                "key": "exception.stacktrace",
+                "type": "string",
+                "value": "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 101, in map_httpcore_exceptions\n    yield\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 250, in handle_request\n    resp = self._pool.handle_request(req)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py\", line 256, in handle_request\n    raise exc from None\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py\", line 236, in handle_request\n    response = connection.handle_request(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 101, in handle_request\n    raise exc\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 78, in handle_request\n    stream = self._connect(request)\n             ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 124, in _connect\n    stream = self._network_backend.connect_tcp(**kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_backends/sync.py\", line 207, in connect_tcp\n    with map_exceptions(exc_map):\n         ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/contextlib.py\", line 158, in __exit__\n    self.gen.throw(value)\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_exceptions.py\", line 14, in map_exceptions\n    raise to_exc(exc) from exc\nhttpcore.ConnectError: [Errno -3] Temporary failure in name resolution\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/trace/__init__.py\", line 589, in use_span\n    yield span\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/sdk/trace/__init__.py\", line 1105, in start_as_current_span\n    yield span\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/instrumentation/httpx/__init__.py\", line 1028, in _handle_request_wrapper\n    raise exception.with_traceback(exception.__traceback__)\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/instrumentation/httpx/__init__.py\", line 992, in _handle_request_wrapper\n    response = wrapped(*args, **kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 249, in handle_request\n    with map_httpcore_exceptions():\n         ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/contextlib.py\", line 158, in __exit__\n    self.gen.throw(value)\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 118, in map_httpcore_exceptions\n    raise mapped_exc(message) from exc\nhttpx.ConnectError: [Errno -3] Temporary failure in name resolution\n"
+              },
+              {
+                "key": "exception.type",
+                "type": "string",
+                "value": "httpx.ConnectError"
+              }
+            ]
+          }
+        ],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "8be3354e68d7bb1f0828cc84e905015a",
+        "spanID": "c003e3a41ed1056a",
+        "operationName": "POST /orders http send",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "8be3354e68d7bb1f0828cc84e905015a",
+            "spanID": "3ca086ca763cc72d"
+          }
+        ],
+        "startTime": 1795006776456744,
+        "duration": 25,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.response.start"
+          },
+          {
+            "key": "error",
+            "type": "bool",
+            "value": true
+          },
+          {
+            "key": "http.status_code",
+            "type": "int64",
+            "value": 503
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "otel.status_code",
+            "type": "string",
+            "value": "ERROR"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "8be3354e68d7bb1f0828cc84e905015a",
+        "spanID": "91841018f30ae5d4",
+        "operationName": "POST /orders http send",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "8be3354e68d7bb1f0828cc84e905015a",
+            "spanID": "3ca086ca763cc72d"
+          }
+        ],
+        "startTime": 1795006776457136,
+        "duration": 9,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.response.body"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "8be3354e68d7bb1f0828cc84e905015a",
+        "spanID": "99b4a4f40f0bac07",
+        "operationName": "POST /orders http send",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "8be3354e68d7bb1f0828cc84e905015a",
+            "spanID": "3ca086ca763cc72d"
+          }
+        ],
+        "startTime": 1795006776457198,
+        "duration": 5,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.response.body"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "8be3354e68d7bb1f0828cc84e905015a",
+        "spanID": "3ca086ca763cc72d",
+        "operationName": "POST /orders",
+        "references": [],
+        "startTime": 1795006774913989,
+        "duration": 1543269,
+        "tags": [
+          {
+            "key": "error",
+            "type": "bool",
+            "value": true
+          },
+          {
+            "key": "http.flavor",
+            "type": "string",
+            "value": "1.0"
+          },
+          {
+            "key": "http.host",
+            "type": "string",
+            "value": "172.18.0.8:5002"
+          },
+          {
+            "key": "http.method",
+            "type": "string",
+            "value": "POST"
+          },
+          {
+            "key": "http.route",
+            "type": "string",
+            "value": "/orders"
+          },
+          {
+            "key": "http.scheme",
+            "type": "string",
+            "value": "http"
+          },
+          {
+            "key": "http.server_name",
+            "type": "string",
+            "value": "orders"
+          },
+          {
+            "key": "http.status_code",
+            "type": "int64",
+            "value": 503
+          },
+          {
+            "key": "http.target",
+            "type": "string",
+            "value": "/orders"
+          },
+          {
+            "key": "http.url",
+            "type": "string",
+            "value": "http://172.18.0.8:5002/orders"
+          },
+          {
+            "key": "http.user_agent",
+            "type": "string",
+            "value": "python-httpx/0.28.1"
+          },
+          {
+            "key": "net.host.port",
+            "type": "int64",
+            "value": 5002
+          },
+          {
+            "key": "net.peer.ip",
+            "type": "string",
+            "value": "172.18.0.9"
+          },
+          {
+            "key": "net.peer.port",
+            "type": "int64",
+            "value": 40836
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "otel.status_code",
+            "type": "string",
+            "value": "ERROR"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "server"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "8be3354e68d7bb1f0828cc84e905015a",
+        "spanID": "cd76843d03ef886f",
+        "operationName": "POST /orders http receive",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "8be3354e68d7bb1f0828cc84e905015a",
+            "spanID": "3ca086ca763cc72d"
+          }
+        ],
+        "startTime": 1795006774914227,
+        "duration": 15,
+        "tags": [
+          {
+            "key": "asgi.event.type",
+            "type": "string",
+            "value": "http.request"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.fastapi"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "internal"
+          }
+        ],
+        "logs": [],
+        "processID": "p1",
+        "warnings": null
+      },
+      {
+        "traceID": "8be3354e68d7bb1f0828cc84e905015a",
+        "spanID": "aa513f92277627b1",
+        "operationName": "GET",
+        "references": [
+          {
+            "refType": "CHILD_OF",
+            "traceID": "8be3354e68d7bb1f0828cc84e905015a",
+            "spanID": "3ca086ca763cc72d"
+          }
+        ],
+        "startTime": 1795006774915685,
+        "duration": 10647,
+        "tags": [
+          {
+            "key": "error",
+            "type": "bool",
+            "value": true
+          },
+          {
+            "key": "http.method",
+            "type": "string",
+            "value": "GET"
+          },
+          {
+            "key": "http.url",
+            "type": "string",
+            "value": "http://user-service:5001/users/1"
+          },
+          {
+            "key": "otel.scope.name",
+            "type": "string",
+            "value": "opentelemetry.instrumentation.httpx"
+          },
+          {
+            "key": "otel.scope.version",
+            "type": "string",
+            "value": "0.55b1"
+          },
+          {
+            "key": "otel.status_code",
+            "type": "string",
+            "value": "ERROR"
+          },
+          {
+            "key": "otel.status_description",
+            "type": "string",
+            "value": "ConnectError: [Errno -3] Temporary failure in name resolution"
+          },
+          {
+            "key": "span.kind",
+            "type": "string",
+            "value": "client"
+          }
+        ],
+        "logs": [
+          {
+            "timestamp": 1795006774926316,
+            "fields": [
+              {
+                "key": "event",
+                "type": "string",
+                "value": "exception"
+              },
+              {
+                "key": "exception.escaped",
+                "type": "string",
+                "value": "False"
+              },
+              {
+                "key": "exception.message",
+                "type": "string",
+                "value": "[Errno -3] Temporary failure in name resolution"
+              },
+              {
+                "key": "exception.stacktrace",
+                "type": "string",
+                "value": "Traceback (most recent call last):\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 101, in map_httpcore_exceptions\n    yield\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 250, in handle_request\n    resp = self._pool.handle_request(req)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py\", line 256, in handle_request\n    raise exc from None\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection_pool.py\", line 236, in handle_request\n    response = connection.handle_request(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 101, in handle_request\n    raise exc\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 78, in handle_request\n    stream = self._connect(request)\n             ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_sync/connection.py\", line 124, in _connect\n    stream = self._network_backend.connect_tcp(**kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_backends/sync.py\", line 207, in connect_tcp\n    with map_exceptions(exc_map):\n         ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/contextlib.py\", line 158, in __exit__\n    self.gen.throw(value)\n  File \"/usr/local/lib/python3.12/site-packages/httpcore/_exceptions.py\", line 14, in map_exceptions\n    raise to_exc(exc) from exc\nhttpcore.ConnectError: [Errno -3] Temporary failure in name resolution\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/trace/__init__.py\", line 589, in use_span\n    yield span\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/sdk/trace/__init__.py\", line 1105, in start_as_current_span\n    yield span\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/instrumentation/httpx/__init__.py\", line 1028, in _handle_request_wrapper\n    raise exception.with_traceback(exception.__traceback__)\n  File \"/usr/local/lib/python3.12/site-packages/opentelemetry/instrumentation/httpx/__init__.py\", line 992, in _handle_request_wrapper\n    response = wrapped(*args, **kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 249, in handle_request\n    with map_httpcore_exceptions():\n         ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/contextlib.py\", line 158, in __exit__\n    self.gen.throw(value)\n  File \"/usr/local/lib/python3.12/site-packages/httpx/_transports/default.py\", line 118, in map_httpcore_exceptions\n    raise mapped_exc(message) from exc\nhttpx.ConnectError: [Errno -3] Temporary failure in name resolution\n"
+              },
+              {
+                "key": "exception.type",
+                "type": "string",
+                "value": "httpx.ConnectError"
+              }
+            ]
+          }
+        ],
+        "processID": "p1",
+        "warnings": null
+      }
+    ],
+    "processes": {
+      "p1": {
+        "serviceName": "order-service",
+        "tags": [
+          {
+            "key": "telemetry.sdk.language",
+            "type": "string",
+            "value": "python"
+          },
+          {
+            "key": "telemetry.sdk.name",
+            "type": "string",
+            "value": "opentelemetry"
+          },
+          {
+            "key": "telemetry.sdk.version",
+            "type": "string",
+            "value": "1.34.1"
+          }
+        ]
+      }
+    },
+    "warnings": null
+  }
+]

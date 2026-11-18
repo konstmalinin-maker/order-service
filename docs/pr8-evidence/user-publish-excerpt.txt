@@ -1,0 +1,10 @@
+2026-11-18T12:32:52.2541482Z All checks passed!
+2026-11-18T12:32:55.7117235Z Required test coverage of 80% reached. Total coverage: 94.65%
+2026-11-18T12:32:55.7117599Z 21 passed, 2 warnings in 2.09s
+2026-11-18T12:33:25.5232671Z #16 pushing layers
+2026-11-18T12:33:27.1261300Z #16 pushing layers 1.9s done
+2026-11-18T12:33:27.1262669Z #16 pushing manifest for ghcr.io/konstmalinin-maker/user-service:latest@sha256:2c1d9457717fe606a4c2b1d33a0b0c048f840e16ae1f7deccab67fffe116c63a
+2026-11-18T12:33:29.0697098Z #16 pushing manifest for ghcr.io/konstmalinin-maker/user-service:latest@sha256:2c1d9457717fe606a4c2b1d33a0b0c048f840e16ae1f7deccab67fffe116c63a 1.9s done
+2026-11-18T12:33:29.4276286Z #16 pushing layers 0.4s done
+2026-11-18T12:33:29.4277424Z #16 pushing manifest for ghcr.io/konstmalinin-maker/user-service:59ad3d2126040f164dd3a172d9884e389c9268aa@sha256:2c1d9457717fe606a4c2b1d33a0b0c048f840e16ae1f7deccab67fffe116c63a
+2026-11-18T12:33:30.5009098Z #16 pushing manifest for ghcr.io/konstmalinin-maker/user-service:59ad3d2126040f164dd3a172d9884e389c9268aa@sha256:2c1d9457717fe606a4c2b1d33a0b0c048f840e16ae1f7deccab67fffe116c63a 1.1s done

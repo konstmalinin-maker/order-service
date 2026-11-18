@@ -1,0 +1,68 @@
+{
+  "user": {
+    "id": 1,
+    "email": "29db79935e7d4daaa9e595d98b9bde91@example.com",
+    "name": "Kubernetes Student",
+    "created_at": "2026-11-18T12:19:31.089414Z"
+  },
+  "orders": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "total": 100.5,
+      "status": "created",
+      "created_at": "2026-11-18T12:19:31.121733Z"
+    },
+    {
+      "id": 2,
+      "user_id": 1,
+      "total": 200.25,
+      "status": "created",
+      "created_at": "2026-11-18T12:19:31.130007Z"
+    },
+    {
+      "id": 3,
+      "user_id": 1,
+      "total": 300.0,
+      "status": "created",
+      "created_at": "2026-11-18T12:19:31.137505Z"
+    }
+  ],
+  "replicas": {
+    "order-service-77ff76c499-4szt4": [
+      1,
+      2,
+      3
+    ],
+    "order-service-77ff76c499-7qsqg": [
+      1,
+      2,
+      3
+    ],
+    "order-service-77ff76c499-pw56d": [
+      1,
+      2,
+      3
+    ]
+  },
+  "notifications": [
+    {
+      "event_id": "71d62f4a-4955-4dc1-a6c4-545ae6b3870f",
+      "order_id": 1,
+      "user_id": 1,
+      "received_at": "2026-11-18T12:19:31.563230+00:00"
+    },
+    {
+      "event_id": "d58e7b70-f0a5-4280-91a5-86ba6b491f58",
+      "order_id": 2,
+      "user_id": 1,
+      "received_at": "2026-11-18T12:19:31.580701+00:00"
+    },
+    {
+      "event_id": "b3ca49f5-2ecd-4fcd-91ff-0cb91f85eec0",
+      "order_id": 3,
+      "user_id": 1,
+      "received_at": "2026-11-18T12:19:31.598476+00:00"
+    }
+  ]
+}

@@ -115,3 +115,7 @@ E — prometheus-flask-exporter через WSGI-монтирование Flask �
 F — OpenTelemetry SDK, HTTPX-инструментация, общий контекст traceparent, Jaeger.
 G — CI/CD обоих репозиториев, покрытие и GHCR.
 H — Deployment/Service/ConfigMap/PVC, probes и проверенное масштабирование kind до 3 реплик.
+
+## Отчёт и подтверждения
+
+[Отчёт с 26 скриншотами](PR8_Отчёт_Малинин.md), [исходные журналы и результаты](docs/pr8-evidence/README.md).

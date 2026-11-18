@@ -1,0 +1,17 @@
+.....................                                                    [100%]
+=============================== warnings summary ===============================
+../venv-pr8/lib/python3.12/site-packages/starlette/testclient.py:37
+  /workspace/venv-pr8/lib/python3.12/site-packages/starlette/testclient.py:37: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = typing.Callable[[], typing.ContextManager[anyio.abc.BlockingPortal]]
+
+../venv-pr8/lib/python3.12/site-packages/starlette/middleware/wsgi.py:14
+  /workspace/venv-pr8/lib/python3.12/site-packages/starlette/middleware/wsgi.py:14: DeprecationWarning: starlette.middleware.wsgi is deprecated and will be removed in a future release. Please refer to https://github.com/abersheeran/a2wsgi as a replacement.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.12.14-final-0 _______________
+
+Coverage JSON written to file coverage.json
+Required test coverage of 80% reached. Total coverage: 94.65%
+21 passed, 2 warnings in 2.10s

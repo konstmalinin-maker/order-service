@@ -1,0 +1,1 @@
+notification-service-1  | 2026-11-18 12:43:14,147 INFO notification_service.consumer notification_sent event_id=bdf598db-ac6f-48ca-8e91-16c83735b168 order_id=1 user_id=1

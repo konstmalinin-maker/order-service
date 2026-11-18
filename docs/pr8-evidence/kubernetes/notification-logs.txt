@@ -1,0 +1,100 @@
+2026-11-18 12:19:11,977 WARNING notification_service.consumer notification_reconnect: AMQPConnectionError
+2026-11-18 12:19:12,979 INFO pika.adapters.utils.connection_workflow Pika version 1.5.0 connecting to ('10.96.30.252', 5672)
+2026-11-18 12:19:12,979 ERROR pika.adapters.utils.io_services_utils Socket failed to connect: <socket.socket fd=10, family=2, type=1, proto=6, laddr=('10.244.0.11', 32802)>; error=111 (Connection refused)
+2026-11-18 12:19:12,979 ERROR pika.adapters.utils.connection_workflow TCP Connection attempt failed: ConnectionRefusedError(111, 'Connection refused'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.96.30.252', 5672))
+2026-11-18 12:19:12,979 ERROR pika.adapters.utils.connection_workflow AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused') (host='rabbitmq', port=5672)
+2026-11-18 12:19:12,980 ERROR pika.adapters.utils.connection_workflow AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused') (host='rabbitmq', port=5672); first exception - None.
+2026-11-18 12:19:12,980 ERROR pika.adapters.utils.connection_workflow AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused') (host='rabbitmq', port=5672); first exception - None
+2026-11-18 12:19:12,980 ERROR pika.adapters.blocking_connection Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused') (host='rabbitmq', port=5672); first exception - None
+2026-11-18 12:19:12,980 ERROR pika.adapters.blocking_connection Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/pika/adapters/blocking_connection.py", line 527, in _create_connection
+    raise self._reap_last_connection_workflow_error(result)
+pika.exceptions.AMQPConnectionError
+2026-11-18 12:19:12,980 WARNING notification_service.consumer notification_reconnect: AMQPConnectionError
+2026-11-18 12:19:13,982 INFO pika.adapters.utils.connection_workflow Pika version 1.5.0 connecting to ('10.96.30.252', 5672)
+2026-11-18 12:19:13,982 ERROR pika.adapters.utils.io_services_utils Socket failed to connect: <socket.socket fd=10, family=2, type=1, proto=6, laddr=('10.244.0.11', 32816)>; error=111 (Connection refused)
+2026-11-18 12:19:13,982 ERROR pika.adapters.utils.connection_workflow TCP Connection attempt failed: ConnectionRefusedError(111, 'Connection refused'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.96.30.252', 5672))
+2026-11-18 12:19:13,982 ERROR pika.adapters.utils.connection_workflow AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused') (host='rabbitmq', port=5672)
+2026-11-18 12:19:13,982 ERROR pika.adapters.utils.connection_workflow AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused') (host='rabbitmq', port=5672); first exception - None.
+2026-11-18 12:19:13,983 ERROR pika.adapters.utils.connection_workflow AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused') (host='rabbitmq', port=5672); first exception - None
+2026-11-18 12:19:13,983 ERROR pika.adapters.blocking_connection Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused') (host='rabbitmq', port=5672); first exception - None
+2026-11-18 12:19:13,983 ERROR pika.adapters.blocking_connection Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/pika/adapters/blocking_connection.py", line 527, in _create_connection
+    raise self._reap_last_connection_workflow_error(result)
+pika.exceptions.AMQPConnectionError
+2026-11-18 12:19:13,983 WARNING notification_service.consumer notification_reconnect: AMQPConnectionError
+2026-11-18 12:19:14,985 INFO pika.adapters.utils.connection_workflow Pika version 1.5.0 connecting to ('10.96.30.252', 5672)
+2026-11-18 12:19:14,986 ERROR pika.adapters.utils.io_services_utils Socket failed to connect: <socket.socket fd=10, family=2, type=1, proto=6, laddr=('10.244.0.11', 37170)>; error=111 (Connection refused)
+2026-11-18 12:19:14,986 ERROR pika.adapters.utils.connection_workflow TCP Connection attempt failed: ConnectionRefusedError(111, 'Connection refused'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.96.30.252', 5672))
+2026-11-18 12:19:14,986 ERROR pika.adapters.utils.connection_workflow AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused') (host='rabbitmq', port=5672)
+2026-11-18 12:19:14,986 ERROR pika.adapters.utils.connection_workflow AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused') (host='rabbitmq', port=5672); first exception - None.
+2026-11-18 12:19:14,986 ERROR pika.adapters.utils.connection_workflow AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused') (host='rabbitmq', port=5672); first exception - None
+2026-11-18 12:19:14,987 ERROR pika.adapters.blocking_connection Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused') (host='rabbitmq', port=5672); first exception - None
+2026-11-18 12:19:14,987 ERROR pika.adapters.blocking_connection Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/pika/adapters/blocking_connection.py", line 527, in _create_connection
+    raise self._reap_last_connection_workflow_error(result)
+pika.exceptions.AMQPConnectionError
+2026-11-18 12:19:14,987 WARNING notification_service.consumer notification_reconnect: AMQPConnectionError
+2026-11-18 12:19:15,989 INFO pika.adapters.utils.connection_workflow Pika version 1.5.0 connecting to ('10.96.30.252', 5672)
+2026-11-18 12:19:15,989 ERROR pika.adapters.utils.io_services_utils Socket failed to connect: <socket.socket fd=10, family=2, type=1, proto=6, laddr=('10.244.0.11', 37180)>; error=111 (Connection refused)
+2026-11-18 12:19:15,989 ERROR pika.adapters.utils.connection_workflow TCP Connection attempt failed: ConnectionRefusedError(111, 'Connection refused'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.96.30.252', 5672))
+2026-11-18 12:19:15,989 ERROR pika.adapters.utils.connection_workflow AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused') (host='rabbitmq', port=5672)
+2026-11-18 12:19:15,989 ERROR pika.adapters.utils.connection_workflow AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused') (host='rabbitmq', port=5672); first exception - None.
+2026-11-18 12:19:15,989 ERROR pika.adapters.utils.connection_workflow AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused') (host='rabbitmq', port=5672); first exception - None
+2026-11-18 12:19:15,990 ERROR pika.adapters.blocking_connection Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused') (host='rabbitmq', port=5672); first exception - None
+2026-11-18 12:19:15,990 ERROR pika.adapters.blocking_connection Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/pika/adapters/blocking_connection.py", line 527, in _create_connection
+    raise self._reap_last_connection_workflow_error(result)
+pika.exceptions.AMQPConnectionError
+2026-11-18 12:19:15,990 WARNING notification_service.consumer notification_reconnect: AMQPConnectionError
+INFO:     10.244.0.1:54872 - "GET /health HTTP/1.1" 503 Service Unavailable
+2026-11-18 12:19:16,992 INFO pika.adapters.utils.connection_workflow Pika version 1.5.0 connecting to ('10.96.30.252', 5672)
+2026-11-18 12:19:16,992 ERROR pika.adapters.utils.io_services_utils Socket failed to connect: <socket.socket fd=10, family=2, type=1, proto=6, laddr=('10.244.0.11', 37184)>; error=111 (Connection refused)
+2026-11-18 12:19:16,992 ERROR pika.adapters.utils.connection_workflow TCP Connection attempt failed: ConnectionRefusedError(111, 'Connection refused'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.96.30.252', 5672))
+2026-11-18 12:19:16,992 ERROR pika.adapters.utils.connection_workflow AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused') (host='rabbitmq', port=5672)
+2026-11-18 12:19:16,993 ERROR pika.adapters.utils.connection_workflow AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused') (host='rabbitmq', port=5672); first exception - None.
+2026-11-18 12:19:16,993 ERROR pika.adapters.utils.connection_workflow AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused') (host='rabbitmq', port=5672); first exception - None
+2026-11-18 12:19:16,993 ERROR pika.adapters.blocking_connection Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused') (host='rabbitmq', port=5672); first exception - None
+2026-11-18 12:19:16,993 ERROR pika.adapters.blocking_connection Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/pika/adapters/blocking_connection.py", line 527, in _create_connection
+    raise self._reap_last_connection_workflow_error(result)
+pika.exceptions.AMQPConnectionError
+2026-11-18 12:19:16,993 WARNING notification_service.consumer notification_reconnect: AMQPConnectionError
+2026-11-18 12:19:17,995 INFO pika.adapters.utils.connection_workflow Pika version 1.5.0 connecting to ('10.96.30.252', 5672)
+2026-11-18 12:19:17,995 ERROR pika.adapters.utils.io_services_utils Socket failed to connect: <socket.socket fd=10, family=2, type=1, proto=6, laddr=('10.244.0.11', 37192)>; error=111 (Connection refused)
+2026-11-18 12:19:17,995 ERROR pika.adapters.utils.connection_workflow TCP Connection attempt failed: ConnectionRefusedError(111, 'Connection refused'); dest=(<AddressFamily.AF_INET: 2>, <SocketKind.SOCK_STREAM: 1>, 6, '', ('10.96.30.252', 5672))
+2026-11-18 12:19:17,995 ERROR pika.adapters.utils.connection_workflow AMQPConnector - reporting failure: AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused') (host='rabbitmq', port=5672)
+2026-11-18 12:19:17,995 ERROR pika.adapters.utils.connection_workflow AMQP connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused') (host='rabbitmq', port=5672); first exception - None.
+2026-11-18 12:19:17,995 ERROR pika.adapters.utils.connection_workflow AMQPConnectionWorkflow - reporting failure: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused') (host='rabbitmq', port=5672); first exception - None
+2026-11-18 12:19:17,995 ERROR pika.adapters.blocking_connection Connection workflow failed: AMQPConnectionWorkflowFailed: 1 exceptions in all; last exception - AMQPConnectorSocketConnectError: ConnectionRefusedError(111, 'Connection refused') (host='rabbitmq', port=5672); first exception - None
+2026-11-18 12:19:17,995 ERROR pika.adapters.blocking_connection Error in _create_connection().
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/pika/adapters/blocking_connection.py", line 527, in _create_connection
+    raise self._reap_last_connection_workflow_error(result)
+pika.exceptions.AMQPConnectionError
+2026-11-18 12:19:17,996 WARNING notification_service.consumer notification_reconnect: AMQPConnectionError
+2026-11-18 12:19:18,997 INFO pika.adapters.utils.connection_workflow Pika version 1.5.0 connecting to ('10.96.30.252', 5672)
+2026-11-18 12:19:18,998 INFO pika.adapters.utils.io_services_utils Socket connected: <socket.socket fd=10, family=2, type=1, proto=6, laddr=('10.244.0.11', 37198), raddr=('10.96.30.252', 5672)>
+2026-11-18 12:19:18,998 INFO pika.adapters.utils.connection_workflow Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7b4c0c484e30>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7b4c0c484e30> params=<URLParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>).
+2026-11-18 12:19:19,007 INFO pika.adapters.utils.connection_workflow AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7b4c0c484e30> params=<URLParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2026-11-18 12:19:19,007 INFO pika.adapters.utils.connection_workflow AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7b4c0c484e30> params=<URLParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2026-11-18 12:19:19,007 INFO pika.adapters.blocking_connection Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7b4c0c484e30> params=<URLParameters host=rabbitmq port=5672 virtual_host=/ ssl=False>>
+2026-11-18 12:19:19,008 INFO pika.adapters.blocking_connection Created channel=1
+INFO:     10.244.0.1:54876 - "GET /health HTTP/1.1" 200 OK
+INFO:     10.244.0.1:40514 - "GET /live HTTP/1.1" 200 OK
+INFO:     10.244.0.1:40516 - "GET /health HTTP/1.1" 200 OK
+INFO:     10.244.0.1:40518 - "GET /live HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55416 - "GET /health HTTP/1.1" 200 OK
+2026-11-18 12:19:31,565 INFO notification_service.consumer notification_sent event_id=71d62f4a-4955-4dc1-a6c4-545ae6b3870f order_id=1 user_id=1
+2026-11-18 12:19:31,574 INFO notification_service.consumer notification_duplicate event_id=71d62f4a-4955-4dc1-a6c4-545ae6b3870f order_id=1 user_id=1
+2026-11-18 12:19:31,582 INFO notification_service.consumer notification_sent event_id=d58e7b70-f0a5-4280-91a5-86ba6b491f58 order_id=2 user_id=1
+2026-11-18 12:19:31,594 INFO notification_service.consumer notification_duplicate event_id=d58e7b70-f0a5-4280-91a5-86ba6b491f58 order_id=2 user_id=1
+2026-11-18 12:19:31,600 INFO notification_service.consumer notification_sent event_id=b3ca49f5-2ecd-4fcd-91ff-0cb91f85eec0 order_id=3 user_id=1
+2026-11-18 12:19:31,610 INFO notification_service.consumer notification_duplicate event_id=b3ca49f5-2ecd-4fcd-91ff-0cb91f85eec0 order_id=3 user_id=1
+INFO:     10.244.0.1:40530 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55416 - "GET /notifications HTTP/1.1" 200 OK

@@ -1,0 +1,128 @@
+{
+  "user_created": {
+    "id": 1,
+    "email": "3f7ab0b14a6c4f11a21a12e4ba80515d@example.com",
+    "name": "Konstantin Malinin",
+    "created_at": "2026-11-18T12:58:32.170723Z"
+  },
+  "user_updated": {
+    "id": 1,
+    "email": "3f7ab0b14a6c4f11a21a12e4ba80515d@example.com",
+    "name": "Malinin K. N.",
+    "created_at": "2026-11-18T12:58:32.170723Z"
+  },
+  "order_created": {
+    "id": 1,
+    "user_id": 1,
+    "total": 1250.5,
+    "status": "created",
+    "created_at": "2026-11-18T12:58:33.123080Z"
+  },
+  "notifications": [
+    {
+      "event_id": "85c7dd1c-6bf5-4d55-aa41-1d6090d7dea2",
+      "order_id": 1,
+      "user_id": 1,
+      "received_at": "2026-11-18T12:58:33.205041+00:00"
+    }
+  ],
+  "persistence_after_restart": true,
+  "rate_limit_statuses": {
+    "429": 40
+  },
+  "outage": {
+    "failures": [
+      {
+        "response": {
+          "error": "user-service недоступен после 3 попыток",
+          "circuit_breaker": "closed"
+        },
+        "seconds": 1.6755885659999876
+      },
+      {
+        "response": {
+          "error": "user-service недоступен после 3 попыток",
+          "circuit_breaker": "closed"
+        },
+        "seconds": 1.6631733039999972
+      },
+      {
+        "response": {
+          "error": "user-service недоступен после 3 попыток",
+          "circuit_breaker": "closed"
+        },
+        "seconds": 1.6510865949999811
+      },
+      {
+        "response": {
+          "error": "user-service недоступен после 3 попыток",
+          "circuit_breaker": "closed"
+        },
+        "seconds": 1.6616939319999915
+      },
+      {
+        "response": {
+          "error": "user-service недоступен после 3 попыток",
+          "circuit_breaker": "open"
+        },
+        "seconds": 1.6656553260000067
+      }
+    ],
+    "fast_rejection": {
+      "error": "user-service недоступен: circuit breaker открыт",
+      "circuit_breaker": "open"
+    },
+    "seconds": 0.13359206999999174,
+    "health": {
+      "status": "ok",
+      "service": "order-service",
+      "storage": "sqlite",
+      "circuit_breaker": "open",
+      "pending_events": 0
+    },
+    "orders_unchanged": true
+  },
+  "trace_id": "e0e6cba2b5112d30a047708405bdfd79",
+  "recovery_order": {
+    "id": 2,
+    "user_id": 1,
+    "total": 33.33,
+    "status": "created",
+    "created_at": "2026-11-18T13:00:26.131280Z"
+  },
+  "prometheus": {
+    "status": "success",
+    "data": {
+      "resultType": "vector",
+      "result": [
+        {
+          "metric": {
+            "service": "user-service"
+          },
+          "value": [
+            1795006844.312,
+            "0.14243809523809522"
+          ]
+        },
+        {
+          "metric": {
+            "service": "order-service"
+          },
+          "value": [
+            1795006844.312,
+            "1.603448275862069"
+          ]
+        },
+        {
+          "metric": {
+            "service": "notification-service"
+          },
+          "value": [
+            1795006844.312,
+            "0.20689655172413793"
+          ]
+        }
+      ]
+    }
+  }
+}

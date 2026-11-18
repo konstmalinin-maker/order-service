@@ -1,0 +1,25 @@
+NAME                                   READY   UP-TO-DATE   AVAILABLE   AGE   CONTAINERS             IMAGES                    SELECTOR
+deployment.apps/notification-service   1/1     1            1           25s   notification-service   pr8-order-service:local   app=notification-service
+deployment.apps/order-service          3/3     3            3           25s   order-service          pr8-order-service:local   app=order-service
+deployment.apps/rabbitmq               1/1     1            1           25s   rabbitmq               rabbitmq:4.1-alpine       app=rabbitmq
+deployment.apps/user-service           1/1     1            1           25s   user-service           pr8-user-service:local    app=user-service
+
+NAME                                        READY   STATUS    RESTARTS   AGE   IP            NODE                    NOMINATED NODE   READINESS GATES
+pod/notification-service-5b468c5dcf-pbqlb   1/1     Running   0          25s   10.244.0.11   pr8-lab-control-plane   <none>           <none>
+pod/order-service-77ff76c499-4szt4          1/1     Running   0          7s    10.244.0.13   pr8-lab-control-plane   <none>           <none>
+pod/order-service-77ff76c499-7qsqg          1/1     Running   0          25s   10.244.0.10   pr8-lab-control-plane   <none>           <none>
+pod/order-service-77ff76c499-pw56d          1/1     Running   0          7s    10.244.0.14   pr8-lab-control-plane   <none>           <none>
+pod/rabbitmq-c7cfbddbf-v2z5q                1/1     Running   0          25s   10.244.0.12   pr8-lab-control-plane   <none>           <none>
+pod/user-service-6d9d45db7c-rv5nl           1/1     Running   0          25s   10.244.0.9    pr8-lab-control-plane   <none>           <none>
+
+NAME                           TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)    AGE   SELECTOR
+service/notification-service   ClusterIP   10.96.144.250   <none>        5003/TCP   25s   app=notification-service
+service/order-service          ClusterIP   10.96.112.99    <none>        5002/TCP   25s   app=order-service
+service/rabbitmq               ClusterIP   10.96.30.252    <none>        5672/TCP   25s   app=rabbitmq
+service/user-service           ClusterIP   10.96.172.110   <none>        5001/TCP   25s   app=user-service
+
+NAME                                              STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   VOLUMEATTRIBUTESCLASS   AGE   VOLUMEMODE
+persistentvolumeclaim/notification-service-data   Bound    pvc-19deb7ce-1a6f-4a45-83bf-09b5826d70b2   256Mi      RWO            standard       <unset>                 25s   Filesystem
+persistentvolumeclaim/order-service-data          Bound    pvc-e08720c6-bec0-4007-947d-5097be6afc24   256Mi      RWO            standard       <unset>                 25s   Filesystem
+persistentvolumeclaim/rabbitmq-data               Bound    pvc-a07f4fb5-eb88-4e43-aa7e-56a4db997d6e   256Mi      RWO            standard       <unset>                 25s   Filesystem
+persistentvolumeclaim/user-service-data           Bound    pvc-4d02946f-1e30-4df7-82f8-eb3b6e132bce   256Mi      RWO            standard       <unset>                 25s   Filesystem

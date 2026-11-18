@@ -1,0 +1,11 @@
++ kubectl apply -f k8s/services.yaml
+deployment "rabbitmq" successfully rolled out
+deployment "user-service" successfully rolled out
+deployment "order-service" successfully rolled out
+deployment "notification-service" successfully rolled out
++ kubectl scale -n pr8 deployment order-service --replicas=3
+deployment "order-service" successfully rolled out
+order-service-77ff76c499-4szt4 sees orders [1, 2, 3]
+order-service-77ff76c499-7qsqg sees orders [1, 2, 3]
+order-service-77ff76c499-pw56d sees orders [1, 2, 3]
+PASS: 3 Ready replicas, shared SQLite PVC, HTTP create/read and RabbitMQ notifications

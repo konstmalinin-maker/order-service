@@ -1,0 +1,10 @@
+NAME                         IMAGE                             COMMAND                  SERVICE                CREATED         STATUS                     PORTS
+pr8-config-init-1            pr8-order-service:local           "python scripts/init…"   config-init            2 minutes ago   Exited (0) 2 minutes ago   
+pr8-gateway-1                nginx:1.28-alpine                 "/docker-entrypoint.…"   gateway                2 minutes ago   Up 2 minutes (healthy)     0.0.0.0:80->80/tcp, [::]:80->80/tcp
+pr8-grafana-1                grafana/grafana:11.6.0            "/run.sh"                grafana                2 minutes ago   Up 2 minutes               127.0.0.1:3000->3000/tcp
+pr8-jaeger-1                 jaegertracing/all-in-one:1.68.0   "/go/bin/all-in-one-…"   jaeger                 2 minutes ago   Up 2 minutes               4317-4318/tcp, 9411/tcp, 14250/tcp, 14268/tcp, 127.0.0.1:16686->16686/tcp
+pr8-notification-service-1   pr8-order-service:local           "uvicorn notificatio…"   notification-service   2 minutes ago   Up 2 minutes (healthy)     5002/tcp
+pr8-order-service-1          pr8-order-service:local           "uvicorn app.main:ap…"   order-service          2 minutes ago   Up 2 minutes (healthy)     5002/tcp
+pr8-prometheus-1             prom/prometheus:v3.3.0            "/bin/prometheus --c…"   prometheus             2 minutes ago   Up 2 minutes               127.0.0.1:9090->9090/tcp
+pr8-rabbitmq-1               rabbitmq:4.1-management-alpine    "docker-entrypoint.s…"   rabbitmq               2 minutes ago   Up 2 minutes (healthy)     4369/tcp, 5671/tcp, 127.0.0.1:5672->5672/tcp, 15671/tcp, 15691-15692/tcp, 25672/tcp, 127.0.0.1:15672->15672/tcp
+pr8-user-service-1           pr8-user-service:local            "uvicorn app.main:ap…"   user-service           2 minutes ago   Up 50 seconds (healthy)    5001/tcp

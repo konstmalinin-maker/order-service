@@ -1,0 +1,7 @@
+NAME                                    READY   STATUS    RESTARTS   AGE   IP            NODE                    NOMINATED NODE   READINESS GATES
+notification-service-5b468c5dcf-pbqlb   1/1     Running   0          27s   10.244.0.11   pr8-lab-control-plane   <none>           <none>
+order-service-77ff76c499-4szt4          1/1     Running   0          9s    10.244.0.13   pr8-lab-control-plane   <none>           <none>
+order-service-77ff76c499-7qsqg          1/1     Running   0          27s   10.244.0.10   pr8-lab-control-plane   <none>           <none>
+order-service-77ff76c499-pw56d          1/1     Running   0          9s    10.244.0.14   pr8-lab-control-plane   <none>           <none>
+rabbitmq-c7cfbddbf-v2z5q                1/1     Running   0          27s   10.244.0.12   pr8-lab-control-plane   <none>           <none>
+user-service-6d9d45db7c-rv5nl           1/1     Running   0          27s   10.244.0.9    pr8-lab-control-plane   <none>           <none>

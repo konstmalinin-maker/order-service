@@ -1,0 +1,31 @@
+{
+  "user": {
+    "id": 1,
+    "email": "29db79935e7d4daaa9e595d98b9bde91@example.com",
+    "name": "Kubernetes Student",
+    "created_at": "2026-11-18T12:19:31.089414Z"
+  },
+  "order_ids": [
+    1,
+    2,
+    3
+  ],
+  "replicas": {
+    "order-service-77ff76c499-4szt4": [
+      1,
+      2,
+      3
+    ],
+    "order-service-77ff76c499-7qsqg": [
+      1,
+      2,
+      3
+    ],
+    "order-service-77ff76c499-pw56d": [
+      1,
+      2,
+      3
+    ]
+  },
+  "notification_count": 3
+}
