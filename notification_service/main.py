@@ -1,5 +1,6 @@
 """Notification-service: consumer + health/diagnostics; отдельный процесс и SQLite."""
 
+import logging
 import os
 from contextlib import asynccontextmanager
 
@@ -47,4 +48,5 @@ def create_app(db_path=None, consumer_factory=NotificationConsumer):
     return app
 
 
+logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s %(message)s")
 app = create_app()

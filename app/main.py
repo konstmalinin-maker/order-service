@@ -1,5 +1,6 @@
 """FastAPI order-service: отдельная БД, generated SDK, tracing и события."""
 
+import logging
 import os
 import sqlite3
 from contextlib import asynccontextmanager
@@ -136,4 +137,5 @@ def create_app(db_path=None, user_client=None, publisher=None):
     return app
 
 
+logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s %(message)s")
 app = create_app()
