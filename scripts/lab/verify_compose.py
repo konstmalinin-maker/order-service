@@ -166,7 +166,18 @@ with sync_playwright() as p:
         time.sleep(1)
     (OUT / "jaeger-query.json").write_text(json.dumps(traces, indent=2))
     assert matches, "No actual cross-service trace"
-    trace = matches[0]
+    successful = [
+        t
+        for t in matches
+        if any(
+            tag["key"] == "http.status_code" and tag["value"] == 201
+            for span in t["spans"]
+            if span["operationName"] == "POST /orders"
+            for tag in span["tags"]
+        )
+    ]
+    assert successful, "No successful order creation trace"
+    trace = successful[0]
     (OUT / "cross-service-trace.json").write_text(json.dumps(trace, indent=2))
     results["trace_id"] = trace["traceID"]
     screenshot(page, "http://127.0.0.1:16686/trace/" + trace["traceID"], "jaeger-trace")
