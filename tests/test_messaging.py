@@ -120,6 +120,7 @@ def test_notification_http_health_and_lifecycle(tmp_path):
     api = create_app(tmp_path / "n.db", consumer_factory=Consumer)
     with TestClient(api) as client:
         assert client.get("/health").status_code == 200
+        assert client.get("/live").status_code == 200
         assert client.get("/notifications").json() == []
         created[0].connected = False
         assert client.get("/health").status_code == 503

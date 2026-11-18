@@ -69,3 +69,41 @@ jobs:
         with:
           name: image-digest
           path: image-digest.txt
+
+  kubernetes-lab:
+    needs: test
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: konstmalinin-maker/user-service
+          path: user-service-source
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install httpx
+      - name: Install official kind
+        run: |
+          curl -fsSL https://kind.sigs.k8s.io/dl/v0.30.0/kind-linux-amd64 -o "$RUNNER_TEMP/kind"
+          chmod +x "$RUNNER_TEMP/kind"
+          echo "$RUNNER_TEMP" >> "$GITHUB_PATH"
+      - name: Real local kind cluster, services and three replicas
+        env:
+          USER_SERVICE_DIR: ./user-service-source
+        run: bash k8s/run_kind_lab.sh
+      - name: Preserve diagnostics
+        if: always()
+        run: |
+          kubectl get -n pr8 pods -o wide > k8s/evidence/pods-final.txt 2>&1 || true
+          kubectl logs -n pr8 -l app=order-service --all-containers --tail=100 > k8s/evidence/order-logs.txt 2>&1 || true
+          kubectl logs -n pr8 -l app=notification-service --all-containers --tail=100 > k8s/evidence/notification-logs.txt 2>&1 || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: kubernetes-lab-evidence
+          path: k8s/evidence/
+      - name: Remove disposable lab cluster
+        if: always()
+        run: kind delete cluster --name pr8-lab || true

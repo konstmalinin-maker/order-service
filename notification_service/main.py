@@ -25,6 +25,10 @@ def create_app(db_path=None, consumer_factory=NotificationConsumer):
     app.state.repo = repo
     app.state.consumer = consumer
 
+    @app.get("/live")
+    def live():
+        return {"status": "ok"}
+
     @app.get("/health")
     def health():
         return JSONResponse(
